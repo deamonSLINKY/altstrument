@@ -218,7 +218,7 @@ versions:
 
 When a release brings its own first-party video, put it in `video` and move the previous one to the top of `videos`. See `m-vave-fm-1/mutable-dreams.yaml`. The same YouTube video may appear only once per entry, whatever the URL form. `pnpm validate` warns when a video's `version` is missing from `versions[]` or when `video` and `videos` are not in the same newest-first order as `versions[]`.
 
-`pnpm validate` checks every `video` and `videos` entry against YouTube's oEmbed endpoint and every `image` URL for an image content type. A removed or missing target (404) is an error; network trouble is only a warning. Set `ALTSTRUMENT_SKIP_REMOTE=1` to skip these checks. Workshop Computer cards are fetched at build time (see above) and take their video from the upstream `info.yaml` `demo-link`, so there is no `video` to write for them.
+`pnpm validate` checks every `video` and `videos` entry against YouTube's oEmbed endpoint and every `image` URL for an image content type. A removed or missing target (404) is an error; network trouble is only a warning. Set `ALTSTRUMENT_SKIP_REMOTE=1` to skip these checks. In a pull request, CI only checks the media of the files the PR changes, so a link that broke elsewhere in the catalog won't fail your PR; a daily run on `main` checks every link. Workshop Computer cards are fetched at build time (see above) and take their video from the upstream `info.yaml` `demo-link`, so there is no `video` to write for them.
 
 ## One project, several devices
 

@@ -17,7 +17,8 @@
  *   - file names must be kebab-case slugs
  *   - a video's `version` is in `versions`, and `video` + `videos` follow
  *     the versions order, newest first (warnings)
- *   - every hotlinked `video` / `videos` / `image` still resolves (network; see below)
+ *   - every hotlinked `video` / `videos` / `image` still resolves (network; see below),
+ *     or only those in the files a pull request changes (ALTSTRUMENT_CHANGED_FILES)
  *
  * Exit code 1 on any error. Warnings are printed but do not fail the run.
  */
@@ -84,6 +85,28 @@ function loadYaml(file: string): unknown {
     fail(file, `YAML parse error: ${(e as Error).message}`);
     return undefined;
   }
+}
+
+// ---- symlinks --------------------------------------------------------------
+//
+// Pull requests come from untrusted forks. A symlink could pull a file from
+// outside the repo into the build or public/, or hide an entry from the
+// PR-scoped media check, so none are allowed. Stop before reading any YAML:
+// a parse error quotes the file it read.
+
+function rejectSymlinks(dir: string) {
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, e.name);
+    if (e.isSymbolicLink()) fail(p, 'symlinks are not allowed');
+    else if (e.isDirectory()) rejectSymlinks(p);
+  }
+}
+rejectSymlinks(join(ROOT, 'src'));
+rejectSymlinks(join(ROOT, 'public'));
+if (errors.length) {
+  for (const e of errors) console.error(`  x ${e}`);
+  console.error('\nCatalog validation failed.');
+  process.exit(1);
 }
 
 // ---- devices ---------------------------------------------------------------
@@ -304,8 +327,34 @@ for (const slug of deviceSlugs) {
 // A definitive answer (404, 401, 403, 410, wrong type) is an error; timeouts,
 // 5xx and DNS trouble are warnings so a flaky network doesn't block a build.
 // ALTSTRUMENT_SKIP_REMOTE=1 skips the pass (offline development).
+//
+// Links rot without any commit, so a pull request should not fail on media it
+// didn't touch. CI sets ALTSTRUMENT_CHANGED_FILES to a file of NUL-separated
+// repo-relative paths (`git diff -z --name-only`) and only those files' media
+// are checked; pushes to main and the daily run check everything. The list is
+// ignored outside a pull_request run, and an unreadable or empty list means
+// everything is checked: a broken list must never loosen the run.
 
 const DEFINITIVE = new Set([401, 403, 404, 410]);
+
+/** Repo-relative paths the PR changes, or undefined to check every file. */
+function changedFiles(): Set<string> | undefined {
+  const listFile = process.env.ALTSTRUMENT_CHANGED_FILES;
+  if (!listFile) return undefined;
+  const fallBack = (why: string) => {
+    warnings.push(`ALTSTRUMENT_CHANGED_FILES: ${why}; checking all hotlinked media`);
+    return undefined;
+  };
+  if (process.env.GITHUB_EVENT_NAME !== 'pull_request') return fallBack('ignored outside a pull_request run');
+  let paths: string[];
+  try {
+    paths = readFileSync(listFile, 'utf8').split('\0').filter(Boolean);
+  } catch (e) {
+    return fallBack(`could not read ${listFile} (${(e as Error).message})`);
+  }
+  if (!paths.length) return fallBack(`${listFile} lists no files`);
+  return new Set(paths);
+}
 const REMOTE_CONCURRENCY = 8;
 
 async function request(url: string, method: 'GET' | 'HEAD'): Promise<Response> {
@@ -354,6 +403,13 @@ async function checkRemote(kind: 'video' | 'image', url: string): Promise<[boole
 }
 
 let remoteNote = '';
+let unchangedNote = '';
+const changed = process.env.ALTSTRUMENT_SKIP_REMOTE ? undefined : changedFiles();
+if (changed) {
+  const total = remoteChecks.length;
+  remoteChecks.splice(0, total, ...remoteChecks.filter((c) => changed.has(rel(c.file))));
+  unchangedNote = ` (${total - remoteChecks.length} in unchanged files not checked)`;
+}
 if (process.env.ALTSTRUMENT_SKIP_REMOTE) {
   remoteNote = `, ${remoteChecks.length} hotlinked media not checked (ALTSTRUMENT_SKIP_REMOTE)`;
 } else if (remoteChecks.length) {
@@ -374,7 +430,9 @@ if (process.env.ALTSTRUMENT_SKIP_REMOTE) {
       }
     }),
   );
-  remoteNote = `, ${remoteChecks.length - broken}/${remoteChecks.length} hotlinked media OK`;
+  remoteNote = `, ${remoteChecks.length - broken}/${remoteChecks.length} hotlinked media OK${unchangedNote}`;
+} else if (changed) {
+  remoteNote = `, no hotlinked media in changed files${unchangedNote}`;
 }
 
 // ---- report ----------------------------------------------------------------

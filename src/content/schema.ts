@@ -101,7 +101,8 @@ export const LICENSES = [
   'unspecified', // sentinel: no license file or statement found
 ] as const;
 
-const url = z.url();
+/** http(s) only: these land in href/src attributes, so javascript: and data: must not parse. */
+const url = z.url({ protocol: /^https?$/ });
 const slug = z
   .string()
   .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'must be lowercase kebab-case');

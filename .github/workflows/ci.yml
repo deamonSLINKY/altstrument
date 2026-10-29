@@ -1,12 +1,23 @@
 name: CI
 
+# Keep this `pull_request`, never `pull_request_target`: PRs from forks run
+# their own code here, and must get no secrets and a read-only token.
 on:
   pull_request:
   push:
     branches: [main]
+  # Hotlinked media rot without a commit; PRs only check their own files, so a
+  # daily run on main checks every link.
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 concurrency:
-  group: ci-${{ github.ref }}
+  # Per event, so the daily run and a push to main don't cancel each other.
+  group: ci-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -14,6 +25,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # A PR checks out its merge commit; HEAD^1 is the base branch tip.
+          fetch-depth: 2
+          persist-credentials: false
+
+      # Only the PR's own files get their hotlinked media checked (see
+      # scripts/validate.ts). The list goes to a file at a fixed path: paths
+      # come from the PR, so none of them is ever written to $GITHUB_ENV.
+      - name: List files this PR changes
+        if: github.event_name == 'pull_request'
+        run: |
+          git rev-parse --verify -q HEAD^2 > /dev/null || { echo "::error::expected a PR merge commit"; exit 1; }
+          list="$RUNNER_TEMP/changed-files"
+          git diff -z --no-renames --name-only HEAD^1 HEAD > "$list"
+          echo "ALTSTRUMENT_CHANGED_FILES=$list" >> "$GITHUB_ENV"
 
       - uses: pnpm/action-setup@v4
 
