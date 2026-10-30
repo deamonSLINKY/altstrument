@@ -52,8 +52,8 @@ install_notes: >-
 brick_risk: true
 tags: [generative, sequencer, drums, synth-engine, fx, performance, emulator, midi, dx7, editor]
 video:
-  url: https://youtu.be/NSJR3SOgDXo
-  title: "PERF-1 Tour, Custom Firmware for the M-VAVE FM-1"
+  url: https://youtu.be/0w80JSwKdaM
+  title: "PERF-1 0.15.0 update, Custom Firmware for the M-VAVE FM-1"
   credit: deamonSLINKY
   first_party: true
   found_via: https://github.com/deamonSLINKY/PERF-1
