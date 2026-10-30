@@ -1,0 +1,51 @@
+device: montreal-assembly-count-to-5
+name: Count to 5 Nightly
+summary: Montreal Assembly's alternate firmware for the Count to 5, with three new modes in place of the standard ones. Ships on the 5th anniversary units and runs on rev k, l and m boards.
+description: >-
+  Nightly is a separate firmware branch from Montreal Assembly, not an update
+  to the standard Count to 5 firmware, and it has no equivalent of the
+  standard transcendence mode. Mode 1 runs two mode 1 delays that feed back
+  into each other, with DIR 1 and DIR 2 setting each one's direction and
+  speed, FBK the cross-feedback, and held-Q controls for each buffer's length
+  and a low-pass filter in the feedback paths. Mode 2 is an auto-stutter:
+  up to three units each record a slice of a set length and repeat it 2 to 16
+  times before resampling, with the E switch choosing how many are audible
+  and the soft footswitch freezing the current slices. Mode 3 is a long delay
+  with two vibrato heads, modulated by a square-wave LFO with quantizable
+  depth, and a third head that feeds back into the write head; the soft
+  footswitch sets that head to full feedback and cuts the input. Release
+  0.911, which shipped on the 5th anniversary units, doubled the mode 2
+  capture length to about 2.5 seconds and softened the mode 3 vibrato, and
+  0.92 added support for rev m boards and made the tap gesture easier to
+  trigger.
+status: dormant
+authors:
+  - name: Montreal Assembly
+    url: https://mtlasm.com/
+source_status: closed
+license: proprietary
+license_notes: >-
+  Closed-source official firmware, free to Count to 5 owners from the
+  manufacturer's Google Drive links. The nightly page describes it as tested
+  but still beta.
+homepage: https://mtlasm.com/nightly/
+distribution: download
+install_notes: >-
+  Read the board revision printed on the main circuit board ("xyz rev"
+  followed by a letter). 0.92 runs on rev k, l and m boards; 0.911 and the
+  0.900 beta need rev k or l. Flash the .dfu file over USB with ST's DfuSe
+  Demo or dfu-util, following Montreal Assembly's firmware update page at
+  https://mtlasm.com/count-to-5-firmware-update/. To go back, flash a
+  standard firmware file for the same board revision.
+brick_risk: false
+tags: [official, delay, looper, sampler, pitch, stutter, vibrato]
+versions:
+  - version: '0.92'
+    url: https://drive.google.com/file/d/1VujMCC0U31Wbe5HgObWU1151hk6Qmdv2/view
+    notes: For rev k, l and m boards. Adds support for rev m boards and makes the tap gesture easier to trigger.
+  - version: '0.911'
+    url: https://drive.google.com/file/d/1zjmK1UpYfMf2xe60OEFRapgs66Jgb3b-/view
+    notes: For rev k and l boards. Shipped on the 5th anniversary units. Mode 2 capture length raised to about 2.5 seconds; mode 3 feedback-head delay changes and vibrato are smoother.
+  - version: 0.900 beta
+    url: https://drive.google.com/open?id=1ULAGPi9ydra9Yv906VE4EjTSq5nkwoTM
+    notes: For rev k and l boards. The pre-release of the nightly branch; superseded by 0.911.

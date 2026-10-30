@@ -13,14 +13,16 @@ links:
   manufacturer: https://mtlasm.com/product/count-to-5/
   community:
     - label: Count to 5 firmware and installation page
-      url: https://mtlasm.blogspot.com/p/count.html
+      url: https://mtlasm.com/count-to-5-firmware-update/
     - label: Count to 5 megathread on ilovefuzz
       url: https://ilovefuzz.com/viewtopic.php?f=206&t=43246
 notes: >-
   No custom or third-party firmware is known. Montreal Assembly publishes its
-  own firmware updates as .dfu files for specific board revisions (h/i, j and
-  k/l, printed on the circuit board), flashed over USB with ST's DfuSe tool or
-  dfu-util; a file for one revision does not work on another.
+  own firmware updates as .dfu files for specific board revisions (h/i, j,
+  k/l and m, printed on the circuit board), flashed over USB with ST's DfuSe
+  tool or dfu-util; a file for one revision does not work on another. Besides
+  the standard firmware it publishes Nightly, an alternate branch with
+  different modes.
 image:
   src: /images/devices/montreal-assembly-count-to-5.webp
   style: photo

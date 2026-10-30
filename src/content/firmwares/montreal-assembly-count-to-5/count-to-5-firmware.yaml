@@ -2,18 +2,22 @@ device: montreal-assembly-count-to-5
 name: Count to 5 firmware (official)
 summary: Montreal Assembly's own firmware updates for the Count to 5, published as .dfu files per circuit board revision, with alternative builds for rev k/l boards.
 description: >-
-  Montreal Assembly posts each firmware release on its blog with a download
-  link and a list of changes. The files are built for one board revision each:
-  rev h and i boards (the first units) end at 0.931h, rev j boards (the
-  three-toggle version from the May/June 2015 preorder) at 0.931j, and rev k
-  and l boards at 0.963k. For rev k/l the page also keeps the earlier builds as
-  alternatives: 0.95k adds per-head volume in mode 3, 0.941k changes how the
-  soft footswitch records and has no mode 3 volume controls, and 0.94k is the
-  original rev k release. Release 0.96k added new mode 1 and mode 3 features
-  and a blinking LED when the quantization mode changes, 0.962k lets the soft
-  footswitch freeze the buffer in mode 1, and 0.963k fixes a mode 1 modulation
-  bug that 0.962k introduced. The manufacturer also publishes a manual for
-  0.963 and a one-page reference card for 0.96k.
+  Montreal Assembly lists every firmware file on its firmware update page,
+  and posted the earlier releases on its blog with a list of changes. The
+  files are built for specific board revisions: rev h and i boards (the first
+  units) end at 0.931h, rev j boards (the three-toggle version from the
+  May/June 2015 preorder) at 0.931j, and rev k, l and m boards are on 0.971k.
+  Releases 0.97k and 0.971k carry the 0.963k feature set over to the rev m
+  boards, and 0.971k fixes bugs in the mode 3 alternate functions of 0.97k.
+  For rev k/l the page also keeps the earlier builds as alternatives: 0.95k
+  adds per-head volume in mode 3, 0.941k changes how the soft footswitch
+  records and has no mode 3 volume controls, and 0.94k is the original rev k
+  release. Release 0.96k added new mode 1 and mode 3 features and a blinking
+  LED when the quantization mode changes, 0.962k lets the soft footswitch
+  freeze the buffer in mode 1, and 0.963k fixes a mode 1 modulation bug that
+  0.962k introduced. The manufacturer also publishes a manual for 0.963 and a
+  one-page reference card for 0.96k. Its alternate Nightly firmware has its
+  own entry.
 status: dormant
 authors:
   - name: Montreal Assembly
@@ -23,18 +27,24 @@ license: proprietary
 license_notes: >-
   Closed-source official firmware, free to Count to 5 owners from the
   manufacturer's Google Drive links.
-homepage: https://mtlasm.blogspot.com/p/count.html
+homepage: https://mtlasm.com/count-to-5-firmware-update/
 distribution: download
 install_notes: >-
   Read the board revision printed on the circuit board ("xyz rev" followed by
-  h, i, j, k or l) and download only the file for that revision. Connect the
-  USB mini cable before applying 9 V power, then flash the .dfu file with ST's
-  DfuSe Demo on Windows, or with dfu-util on Linux and macOS (for example
-  `dfu-util -a 0 -D application_release_0_963_k_l.dfu`). Power down and refit
-  the backplate afterwards.
+  h, i, j, k, l or m) and download only the file for that revision. Connect
+  the USB mini cable before applying 9 V power, then flash the .dfu file with
+  ST's DfuSe Demo on Windows, or with dfu-util on Linux and macOS (for example
+  `dfu-util -a 0 -D application_release_0_971_k_l_m.dfu`). Power down and
+  refit the backplate afterwards.
 brick_risk: false
 tags: [official, delay, looper, sampler, pitch]
 versions:
+  - version: 0.971k
+    url: https://drive.google.com/file/d/1zAHMCFEFy9Ujxs5rL2iF6M7vhdAiCrlR/view
+    notes: For rev k, l and m boards; the current standard release. Like 0.963k, with rev m support and fixes for the mode 3 alternate functions in 0.97k.
+  - version: 0.97k
+    url: https://drive.google.com/file/d/1es1ahCodxjVlSH5_m6PUY1Pd7vZBeOJV/view
+    notes: For rev k, l and m boards. The first standard release for rev m boards, based on 0.963k; has bugs in the mode 3 alternate functions. Superseded by 0.971k.
   - version: 0.963k
     date: 2016-11-15
     url: https://mtlasm.blogspot.com/2016/11/minor-firmware-update-0963-for-ct5.html
