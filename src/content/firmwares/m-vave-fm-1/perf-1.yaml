@@ -3,7 +3,7 @@ name: PERF-1
 summary: >-
   Live-performance groovebox for the FM-1: sixteen genres of self-playing pieces you
   steer in real time, with an auto-DJ, a deep drum sequencer, an acid line that
-  answers itself, chord progressions you can hear, editable effects, Flex Beat, DJ snips,
+  answers itself, chord progressions, editable effects, Flex Beat, DJ snips,
   a web editor and your own DX7 voices.
 description: >-
   A fork of RedtailWorks' HYP-1. The pad, bass, acid line, pluck and drums play
