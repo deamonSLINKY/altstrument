@@ -3,27 +3,34 @@ name: PERF-1
 summary: >-
   Live-performance groovebox for the FM-1: sixteen genres of self-playing pieces you
   steer in real time, with an auto-DJ, a deep drum sequencer, an acid line that
-  answers itself, editable effects, Flex Beat, DJ snips, a web editor and your own DX7 voices.
+  answers itself, chord progressions you can hear, editable effects, Flex Beat, DJ snips,
+  a web editor and your own DX7 voices.
 description: >-
   A fork of RedtailWorks' HYP-1. The pad, bass, acid line, pluck and drums play
   by themselves from power-on; one button breaks the music down, builds it and drops
   it, and an auto-DJ can run that whole arc, bring in the next piece and follow the
   chords. There are sixteen genres of ten pieces (hypnotic techno, lofi, house, dubstep,
   dub, DnB, breaks, garage, electro, trap, disco, funk, reggae, synthwave, amapiano,
-  trip-hop), each with its own kits, patterns, effects, compressor and chord habits, and
-  any piece can be stored. The drum sequencer has Euclidean fills, per-lane chance, lane
+  trip-hop), each with its own kits, patterns, effects, compressor and harmony: the chord
+  changes every so many bars by genre, minor keys get a real dominant, and most genres loop
+  a progression that starts from home. Any piece can be stored. A set page gives a piece
+  several auto-DJ rounds with a tempo ramp, and an intro brings the parts in one by one for
+  mixing in. The drum sequencer has Euclidean fills, per-lane chance, lane
   lengths for polymeter, a density control, a source pattern per lane, drum drift, a steps
   page (ratchets, push, ghost and accent on every step) and a phrase page (pattern chains,
   slices, half and double time, conditions). The acid line answers itself and can be edited
-  step by step and frozen; the bass can play as a line; the pluck can remember and repeat
-  itself (deja vu). The pluck can be one of 30 built-in DX7-style voices or up to 16 of your
-  own loaded from a .syx file. The home screen shows the chord as a turning sigil with an
+  step by step and frozen; the bass can play as a line with nine named figures; the pluck can
+  remember and repeat itself (deja vu), its loop can be frozen and written step by step, and it
+  plays out on MIDI. The saw pads sweep a resonant filter with every breath and stab. The pluck
+  can be one of 30 DX7 voices from public-domain banks (or a built-in set of 30) or up to 16 of
+  your own loaded from a .syx file. The home screen shows the chord as a turning sigil with an
   eye that follows the section. There are four banks of effects (every effect has a page
   that draws it), beat FX, 27 Flex Beat patterns and DJ snips, scenes, undo, a mood macro,
   a JAM page, a stereo compressor and look-ahead limiter, and MIDI clock in. The second
   core renders the reverb, pad and DX voices, with load shedding and a USB status log. The
   project site has the installer (with backup and restore), a browser emulator with sound,
-  a parameter and DX7 voice editor, and a manual.
+  a parameter and DX7 voice editor, and a manual that opens with a beginner's guide, with
+  printable PDFs.
 status: active
 authors:
   - name: deamonSLINKY
@@ -45,8 +52,8 @@ install_notes: >-
 brick_risk: true
 tags: [generative, sequencer, drums, synth-engine, fx, performance, emulator, midi, dx7, editor]
 video:
-  url: https://youtu.be/NSJR3SOgDXo
-  title: "PERF-1 Tour, Custom Firmware for the M-VAVE FM-1"
+  url: https://youtu.be/0w80JSwKdaM
+  title: "PERF-1 0.15.0 update, Custom Firmware for the M-VAVE FM-1"
   credit: deamonSLINKY
   first_party: true
   found_via: https://github.com/deamonSLINKY/PERF-1
@@ -57,6 +64,14 @@ image:
   source_url: https://github.com/deamonSLINKY/PERF-1
   first_party: true
 versions:
+  - version: 0.15.1
+    date: 2026-10-30
+    url: https://github.com/deamonSLINKY/PERF-1/releases/tag/v0.15.1
+    notes: Breakdowns keep the pad's stabs, the Synth theme's look settled, a beginner's guide at the start of the manual, and printable PDFs of the guide, the quick manual and the whole manual.
+  - version: 0.15.0
+    date: 2026-10-30
+    url: https://github.com/deamonSLINKY/PERF-1/releases/tag/v0.15.0
+    notes: Harmony by genre (a harmonic rhythm in bars, a dominant in minor, chord loops from home), a fuller pad, nine bass figures, a Pluck steps page and the pluck on MIDI, a set page (rounds, tempo ramp, intro), the Synth theme as a look of its own, and human-made DX7 voices by default.
   - version: 0.14.0
     date: 2026-10-28
     url: https://github.com/deamonSLINKY/PERF-1/releases/tag/v0.14.0
