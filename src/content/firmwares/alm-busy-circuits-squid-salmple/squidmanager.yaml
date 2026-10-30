@@ -1,0 +1,64 @@
+device: alm-busy-circuits-squid-salmple
+name: SquidManager
+kind: tool
+summary: Windows and macOS bank editor for the Squid Salmple that edits banks straight from the USB drive, with drag-and-drop samples, cue sets, loop point editing on a waveform view and parameter cloning between channels.
+description: >-
+  SquidManager opens the bank folders on a Squid Salmple USB drive and edits the parameters of every channel.
+  Samples can be dropped onto a channel, several at a time, and audio that is not WAV is converted. Dropping
+  files on a cue set can concatenate them and create a cue for each, and a Chop command splits a sample into
+  cue sets. A zoomable waveform shows the start, loop and end markers, with zero-crossing alignment, and
+  samples can be auditioned while loop points are adjusted. Parameters can be cloned from one channel to
+  another. The project page lists version 1.4.2 as current, but the repository has no tag for 1.4.1 or
+  1.4.2. There is no Linux build. The macOS build is unsigned, so the quarantine flag has to be removed by hand.
+status: active
+authors:
+  - name: Chris Roberts
+    url: https://github.com/cpr2323
+source: https://github.com/cpr2323/SquidManager
+source_status: open
+license: MIT
+license_notes: >-
+  LICENSE.txt is the MIT license, with the licenses of bundled third-party components in the Licenses folder.
+homepage: https://cpr2323.github.io/squidmanager/index.html
+distribution: download
+install_notes: >-
+  Download the Windows or macOS build from the project page. On macOS, run xattr -d com.apple.quarantine on the
+  downloaded app before opening it. The tool edits files on the module's USB drive and does not flash anything.
+  It can also be built with CMake after initialising the JUCE and oolib submodules.
+brick_risk: false
+tags: [editor, sampler, librarian, eurorack]
+video:
+  url: https://www.youtube.com/watch?v=PUvG2BMoOJw
+  title: SquidManager 1.4 Release
+  credit: Chris Roberts
+  first_party: true
+  found_via: https://cpr2323.github.io/squidmanager/index.html
+  version: "1.4"
+videos:
+  - url: https://www.youtube.com/watch?v=X3H9KiAY2HQ
+    title: SquidManager v1.2 Release Video
+    credit: Chris Roberts
+    first_party: true
+    found_via: https://cpr2323.github.io/squidmanager/index.html
+    version: v1.2
+versions:
+  - version: "1.4"
+    date: 2026-09-16
+    url: https://github.com/cpr2323/SquidManager/tree/1.4
+    notes: Git tag; no GitHub release page.
+  - version: v1.3
+    date: 2025-04-27
+    url: https://github.com/cpr2323/SquidManager/tree/v1.3
+    notes: Git tag; no GitHub release page.
+  - version: v1.2
+    date: 2024-12-29
+    url: https://github.com/cpr2323/SquidManager/tree/v1.2
+    notes: Git tag; no GitHub release page.
+  - version: v1.1
+    date: 2024-10-05
+    url: https://github.com/cpr2323/SquidManager/tree/v1.1
+    notes: Git tag; no GitHub release page.
+  - version: v1.0.0
+    date: 2024-09-02
+    url: https://github.com/cpr2323/SquidManager/tree/v1.0.0
+    notes: Git tag; no GitHub release page.

@@ -1,7 +1,7 @@
 device: teenage-engineering-op-1
 name: op1emu
 kind: tool
-summary: Work-in-progress OP-1 emulator built on a Blackfin CPU simulator, booting a real firmware image and NAND dump, with a headless mode for scripted runs.
+summary: Work-in-progress OP-1 emulator built on a Blackfin CPU simulator, booting a real firmware image and NAND dump, with a headless mode for scripted runs and a WebAssembly build that runs in Chrome or Edge on your own NAND image.
 status: active
 authors:
   - name: op1emu
@@ -9,10 +9,11 @@ authors:
 source: https://github.com/op1emu/op1emu
 source_status: open
 license: MIT
+homepage: https://op1emu.github.io/op1emu/
 install_notes: Build with CMake; it runs a firmware image (te-boot.ldr) and NAND image you supply.
 tags: [emulator, research]
 versions:
-  - version: main @ 4dfc73d
-    date: 2026-10-29
-    url: https://github.com/op1emu/op1emu/commit/4dfc73dad3195375bbd61c1b39572bd731d1a753
+  - version: main @ a76e466
+    date: 2026-10-30
+    url: https://github.com/op1emu/op1emu/commit/a76e466febbdc9db6e46583cc2d9e38f5c5d80b8
     notes: No tagged releases; this is the latest commit.

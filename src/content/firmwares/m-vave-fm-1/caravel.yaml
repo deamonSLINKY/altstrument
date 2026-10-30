@@ -40,6 +40,13 @@ video:
   first_party: true
   found_via: https://github.com/bonszaimusic/caravel#readme
 versions:
+- version: 0.7.0
+  date: 2026-10-29
+  url: https://github.com/bonszaimusic/caravel/releases/tag/v0.7.0
+  notes: >-
+    Runs the DRONE, SEM, HADES, STASIS and HALL loops from RAM, puts CHORUS before REVERB, and lists HOME macro and
+    pair recordings under the owning track's SEQ > AUTOMATION. The new automation list is not yet checked on a device,
+    and the four Random Morph snapshots stay volatile.
 - version: 0.6.0
   date: 2026-10-27
   url: https://github.com/bonszaimusic/caravel/releases/tag/v0.6.0

@@ -6,7 +6,7 @@ summary: >-
 description: >-
   Needs a Daisy Pod with an added 128x64 I2C OLED and a hand-wired micro SD socket. The looper has four
   tempo-locked stereo layers with undo, per-layer filter, effects and reverb send, vari-speed, and WAV export of
-  the performance. Alongside it run a 10-voice FM engine built on the msfa DX7 core with a few thousand DX7 SysEx
+  the performance. Alongside it run a 16-voice FM engine built on the msfa DX7 core with a few thousand DX7 SysEx
   presets, a granular instrument, an 8-voice string ensemble, and one sampler that works as a chromatic sound
   player or a sliced drum kit and can import OP-1 drum and instrument packs you supply. All engines play at the
   same time, each on its own MIDI channel, and share a plate reverb and delay. Presets, performances and samples
@@ -40,6 +40,14 @@ image:
   source_url: https://github.com/Peteranthony1st/PZD-Daisy-Pod-Groovebox
   first_party: true
 versions:
+  - version: v3.5.3
+    date: 2026-10-29
+    url: https://github.com/Peteranthony1st/PZD-Daisy-Pod-Groovebox/releases/tag/v3.5.3
+    notes: Raises the Dexed engine from 10 to 16 voices with a Voices control (default 12) and fades out a stolen voice over about 5 ms to remove clicks. No SD card changes.
+  - version: v3.5.2
+    date: 2026-10-29
+    url: https://github.com/Peteranthony1st/PZD-Daisy-Pod-Groovebox/releases/tag/v3.5.2
+    notes: Adds snapshots that save every engine at once, stores MIDI channels in presets instead of performances, and adds full DX7 voice editing to Dexed.
   - version: v3.5.1
     date: 2026-10-28
     url: https://github.com/Peteranthony1st/PZD-Daisy-Pod-Groovebox/releases/tag/v3.5.1

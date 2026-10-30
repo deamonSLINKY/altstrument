@@ -1,0 +1,25 @@
+name: Clutch
+manufacturer: WMD
+category: eurorack
+tagline: dual-layer hi-hat sample player Eurorack module
+description: >-
+  The Clutch is a WMD Eurorack module that plays hi-hat sounds from two sample layers. Layer A is
+  controlled by knobs and CV, layer B by knobs only, and a CV disable switch cuts modulation to return to
+  the knob settings. Built-in hits and sample pairs from a memory card can be used, and the module has
+  onboard effects and a Feel control for groove. Its settings are kept in a HIHAT.INI file on the card.
+links:
+  manufacturer: https://www.wmdevices.com/products/clutch
+notes: >-
+  No custom firmware is catalogued for this module. The one entry is a computer-side editor and sample
+  manager that works on the files of the memory card and does not change the module's firmware.
+related: []
+image:
+  src: /images/devices/wmd-clutch.webp
+  style: photo
+  alt: WMD Clutch Eurorack module seen from the front, a black panel with six knobs, a card slot, switches, a column of labelled jacks and the WMD logo at the bottom
+  width: 1200
+  height: 1200
+  credit: WMD
+  license: manufacturer product image
+  source_url: https://www.wmdevices.com/products/clutch
+  original_url: https://cdn.shopify.com/s/files/1/0977/3366/files/clutch-module-wmd-wmd-drums-eurorack-module-3560452.jpg?v=1763993313

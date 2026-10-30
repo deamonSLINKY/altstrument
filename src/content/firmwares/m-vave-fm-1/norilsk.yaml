@@ -5,9 +5,9 @@ summary: >-
   with a looper per generator, snapshots with morphing, sessions and no sequencer.
 description: >-
   Sounds come from a random draw of engine family and seed, and effect chains are drawn from 38 recipes that can be
-  steered toward an abrasive or a dark path. Three generators share four voices, with a DISINTEGRATOR control,
-  latching, 23 scales, a master delay, plate reverb and drive. Each generator has Tonitor's looper. Sixteen
-  snapshots can be morphed over up to 30 seconds, and 64 session slots are kept in flash. Notes can come from the keys or
+  steered toward an abrasive or a dark path; a family or recipe can also be picked from an alphabetical list, and a
+  MACHINE path draws industrial percussion. Three generators share four voices, with a DISINTEGRATOR control,
+  latching, 23 scales, a master delay, plate reverb and drive. Each generator has Tonitor's looper, and its settings can be stored in one of 64 preset slots. Sixteen snapshots can be morphed over up to 30 seconds, and 64 session slots are kept in flash. Notes can come from the keys or
   USB MIDI, and the FM-1 is also a USB audio interface. A LOAD page shows how busy each core is. A browser page
   backs up and restores sessions. It was called Molecular until build 17, reuses code from Tonitor and Bigorna, and
   is built on Felucca and SLOOP's hardware layer. Releases are numbered builds.
@@ -39,7 +39,7 @@ image:
   source_url: https://nzimas.github.io/norilsk/screens.html
   first_party: true
 versions:
-- version: main @ 24f46f5
+- version: main @ bafd91c
   date: 2026-10-29
-  url: https://github.com/nzimas/norilsk/commit/24f46f55572ab3401b5c7f46c67c702a9cd821f9
-  notes: No tagged releases; this is the latest commit. The installer's firmware is build 45.
+  url: https://github.com/nzimas/norilsk/commit/bafd91cff8d18e297b2546def990521030fabbcf
+  notes: No tagged releases; this is the latest commit. The installer's firmware is build 48.

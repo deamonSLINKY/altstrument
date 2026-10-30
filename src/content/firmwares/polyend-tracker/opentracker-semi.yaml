@@ -1,0 +1,56 @@
+device: polyend-tracker
+name: OpenTracker semi fork
+summary: >-
+  Fork of OpenTracker that adds pattern generators (acid, call and response, BBCut, Grids, Marbles), Performance
+  scenes and MIDI learn, master dynamics, sidechain and reverb models, extra Sample Editor effects and many display themes.
+description: >-
+  Follows upstream OpenTracker releases and adds its own on top, with a separate image name so it does not collide
+  with upstream's on the SD card. The Pattern screen gains generators that write ordinary steps and step FX, so the
+  patterns still play on stock firmware: a TB-3PO-style acid line, call and response, BBCut cuts, turnarounds, Grids
+  and Marbles, and Track Link. The Performance screen adds BBCut and TILT-style play modes, generator controls as
+  effects, scenes with morphing and MIDI learn with CC out. The master section adds dynamics, two sidechains,
+  more reverb and delay models and colour stages. The Sample Editor gains a tuner, Paulstretch, granular and several
+  degradation effects, and there are more LFO shapes, two Plaits-style synth models, a theme editor on the device
+  and about thirty display themes. The full parameter guide is FORK.md. The README reports a
+  USB transfer speed measured on a real Tracker, and notes that the 16-track patterns of 2.x projects are read by stock
+  firmware only for tracks 1 to 8, not yet confirmed on a stock unit.
+status: active
+authors:
+  - name: semierendonmez-commits
+    url: https://github.com/semierendonmez-commits
+source: https://github.com/semierendonmez-commits/polyend-tracker-re-semi
+source_status: open
+license: Apache-2.0
+license_notes: >-
+  Apache-2.0 (LICENSE), which upstream OpenTracker added on 2026-10-28. The README describes the Grids generator as
+  using Mutable Instruments Grids' drum map, which is GPL-3.0, and other ports keep their own terms, so the combined
+  image may carry GPL obligations; no per-component notice file was found.
+distribution: download
+requires_stock: Polyend stock 1.9.2 kept on the card as the way back
+install_notes: >-
+  Copy PolyendTrackerOTs2232.ptf from the release into /Firmware on the SD card and install it from Config, Firmware
+  update, as with upstream. Keep Polyend's stock PolyendTracker_1.9.2.ptf on the card as well, and keep only one other
+  image there, because the rear reset button installs a random .ptf from the folder. To go back, install the stock
+  file the same way or write its name into /Firmware/ot_restore.txt and power-cycle. Projects saved by 2.x use the
+  Mini's 16-track patterns.
+brick_risk: true
+tags: [sequencer, generative, sampler, fx, fork, ui]
+image:
+  url: https://raw.githubusercontent.com/semierendonmez-commits/polyend-tracker-re-semi/v2/screenshots/2.2.3-semi/midi-learn.png
+  alt: "Performance FX screen in MIDI learn mode: twelve labelled columns from Volume/Velocity to Volume LFO speed, learned CC21, CC22, CC74 and N36 shown above them and a message about learning a control"
+  credit: semierendonmez-commits
+  source_url: https://github.com/semierendonmez-commits/polyend-tracker-re-semi
+  first_party: true
+versions:
+  - version: 2.2.3-semi.3
+    date: 2026-10-30
+    url: https://github.com/semierendonmez-commits/polyend-tracker-re-semi/releases/tag/2.2.3-semi.3
+    notes: Adds MIDI learn on the Performance screen with CC out, an on-device theme editor and a Trigger theme.
+  - version: 2.2.3-semi.1
+    date: 2026-10-30
+    url: https://github.com/semierendonmez-commits/polyend-tracker-re-semi/releases/tag/2.2.3-semi.1
+    notes: Moves the fork onto OpenTracker 2.2.3, with its SD streaming of long samples and theme files.
+  - version: v2.2.1-semi
+    date: 2026-10-25
+    url: https://github.com/semierendonmez-commits/polyend-tracker-re-semi/releases/tag/v2.2.1-semi
+    notes: First release of the fork. Eight more semi releases followed within days.

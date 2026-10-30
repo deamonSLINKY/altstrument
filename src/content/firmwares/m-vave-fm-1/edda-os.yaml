@@ -1,17 +1,19 @@
 device: m-vave-fm-1
 name: EDDA OS
 summary: >-
-  Felucca 1.1.5.1 fork for one artist's live set: thirteen preloaded songs, 16-WAV user drum kits, a fourth
-  sample slot, chord and filter additions, sequencer MIDI out with clock and twelve full-screen visualisers.
+  Felucca 1.7.0 fork for one artist's live set: thirteen preloaded songs, 16-WAV user drum kits, a fourth sample slot,
+  chord and filter additions, a tempo that matches the decks, tempo bend and sequencer MIDI out with clock.
 description: >-
   Built for the author's live performance of an album, with the album's songs loadable and cued from the keys, a
-  Camelot-wheel key lock, a bank of rhythm patterns and a hard stop that re-enters on the one. Other additions
-  are user drum kits of 16 WAV pads built from the web editor, a fourth user sample slot, CHORD+ with voice
-  leading and strum, a one-knob filter per track, micro timing per step, dotted delay times, a sequencer output
-  on USB MIDI with clock, and twelve visualisers over the HOME screen. The author's guide says the build passes
-  the project's host tests and compiles with JieLi's toolchain on GitHub, and that it had not yet been flashed
-  onto an FM-1. Install instructions are written for a Windows laptop with GitHub Actions doing the build. Felucca
-  settings, projects and user samples are kept when moving between the two.
+  Camelot-wheel key lock, a bank of rhythm patterns and a hard stop that re-enters on the one. Version 1.7.0-EDDA
+  merges Felucca 1.7.0 (EDDA OS 1.1.5 was built on Felucca 1.1.5.1). It counts tempo at the FM-1's real sample rate
+  and adds a TEMPO BEND on GLO with G#4 or A#4 that slows or speeds the set by about 4 percent. Other additions are
+  user drum kits of 16 WAV pads built from the web editor, a fourth user sample slot, CHORD+ with voice leading and
+  strum, a one-knob DJ filter per track, dotted delay times, a sequencer output on USB MIDI with clock and show cues.
+  To fit the app slot, the device build leaves out the twelve visualisers, the USB serial console and 48 kHz USB
+  audio; the browser emulator keeps the visualisers. The author's guide says the host tests pass and the package
+  compiles with JieLi's toolchain on GitHub, and that it had not yet been flashed onto an FM-1. Projects stay in
+  Felucca's own format and EDDA OS 1.1.5's projects open.
 status: active
 authors:
 - name: mrsheez
@@ -25,14 +27,15 @@ license_notes: >-
 homepage: https://github.com/mrsheez/felucca/blob/main/EDDA-OS.md
 distribution: source-only
 install_notes: >-
-  EDDA-OS.md has two routes: let GitHub Actions build the package and publish an installer page from your own
-  fork, or build with WSL2 on Windows and serve the installer locally, then install in Chrome or Edge over USB or
-  with tools/fm1_install.py. The CI also writes its latest package to the ci-out branch. The installer's Return to
-  official V15 and Felucca's own installer go back; the guide says installing is at your own risk.
+  The guide recommends a single HTML installer with the package inside, opened in Chrome or Edge with the FM-1 on
+  USB (EDDA-OS-Installer-1.7.0.html); web/make_site.py --onefile makes it from a built package, and main holds no
+  built copy. EDDA-OS.md also describes letting GitHub Actions build the package and publish an installer page from
+  your own fork, or building with WSL2 on Windows and installing with tools/fm1_install.py. The CI writes its latest package to the ci-out branch. The installer's Return
+  to official V15 and Felucca's own installer go back; the guide says installing is at your own risk.
 brick_risk: true
 tags: [performance, sequencer, sampler, midi, fork, editor, ui]
 versions:
-- version: main @ 13dd665
-  date: 2026-10-08
-  url: https://github.com/mrsheez/felucca/commit/13dd66517d2f8973c2f3fcefdeb7ac7b0d948e4f
-  notes: No tagged releases; this is the latest commit, labelled 1.1.5-EDDA in the guide.
+- version: main @ 7300323
+  date: 2026-10-30
+  url: https://github.com/mrsheez/felucca/commit/73003234f08f346dfec2d5f20246c1be3efb5fb3
+  notes: No tagged releases; this is the latest commit, labelled 1.7.0-EDDA in the guide.

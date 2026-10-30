@@ -23,7 +23,7 @@ license_notes: >-
 distribution: source-only
 tags: [sdk, rust, alternative-os, simulator]
 versions:
-  - version: main @ f3c07e8
-    date: 2026-10-27
-    url: https://github.com/FirestormAudio/deluge-sdk/commit/f3c07e8
+  - version: main @ 6792add
+    date: 2026-10-30
+    url: https://github.com/FirestormAudio/deluge-sdk/commit/6792add8e9aefa5aa192fae3da67b73fb5449113
     notes: No tagged releases; this is the latest commit.

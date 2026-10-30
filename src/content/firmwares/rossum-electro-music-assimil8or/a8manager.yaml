@@ -7,10 +7,10 @@ description: >-
   and zone of a preset, including stereo-linked channels and the MIDI setup editor.
   Samples can be dropped onto a preset, auditioned with the module's play and loop
   modes, and have their sample and loop points set on a zoomable waveform. It also
-  checks the card for file name length and character problems and offers fixes. The
-  project page lists version 2.7 as current, though the repository has no tag or
-  release for it yet, and the same author publishes similar
-  managers for other modules. Builds for Linux do not exist yet. The macOS build is
+  checks the card for file name length and character problems and offers fixes. Versions
+  2.7 and later need macOS 11 or later; the 2.6.3 build is kept for older Macs
+  down to macOS 10.13. The repository has git tags but no GitHub releases, and
+  the same author publishes similar managers for other modules. Builds for Linux do not exist yet. The macOS build is
   unsigned, so the quarantine flag has to be removed by hand.
 status: active
 authors:
@@ -40,6 +40,18 @@ video:
   first_party: true
   found_via: https://cpr2323.github.io/a8manager/index.html
 versions:
+  - version: v2.7.1
+    date: 2026-10-29
+    url: https://github.com/cpr2323/A8Manager/tree/v2.7.1
+    notes: Git tag; no GitHub release page. Fixes sample drops that deleted or truncated source files, and adds waveform menu items and hot keys for setting loop and sample points.
+  - version: v2.7
+    date: 2026-10-22
+    url: https://github.com/cpr2323/A8Manager/tree/v2.7
+    notes: Git tag; no GitHub release page. New interface, MIT licence and a rewritten audition that follows the module's play and loop modes.
+  - version: v2.6.3
+    date: 2026-10-29
+    url: https://github.com/cpr2323/A8Manager/tree/v2.6.3
+    notes: Git tag; no GitHub release page. Build of the 2.6 line for Macs older than macOS 11, down to macOS 10.13.
   - version: v2.6.2
     date: 2025-08-11
     url: https://github.com/cpr2323/A8Manager/tree/v2.6.2

@@ -42,7 +42,7 @@ image:
   source_url: https://github.com/pjac1810/fm1-ios#readme
   first_party: true
 versions:
-- version: main @ a9725fc
+- version: main @ 629ed56
   date: 2026-10-29
-  url: https://github.com/pjac1810/fm1-ios/commit/a9725fcbb0adbb8353c447a8a4b7fa2dbd1801e1
+  url: https://github.com/pjac1810/fm1-ios/commit/629ed563f81c7529b7f2be733c1528f14504f916
   notes: No tagged releases; this is the latest commit.

@@ -28,12 +28,12 @@ license_notes: >-
   other SID tunes are included.
 homepage: https://thomasj.github.io/fm1-sidj/
 distribution: browser-installer
-requires_stock: M-VAVE stock firmware, Felucca or X0X
+requires_stock: M-VAVE stock firmware (V15 or V16), Felucca or X0X
 install_notes: >-
   Web installer in Chrome or Edge with the FM-1 on USB, or the .fwsc from the releases page with tools/fm1_install.py;
   songs are added on the same page or with tools/fm1_sid.py. The README says installing is at your own risk and that two
   failed starts give a safe mode and four the chip's own update mode, from which tools/fm1_rescue.sh puts M-VAVE's
-  firmware back with the FM-1.fwsc you download from M-VAVE. To build it, use Docker with the JieLi toolchain and AC79 SDK.
+  firmware back with the stock .fwsc (V15 or V16) you download from M-VAVE. To build it, use Docker with the JieLi toolchain and AC79 SDK.
 brick_risk: true
 tags: [chiptune, sid, emulator, midi, usb-audio, performance]
 video:
@@ -43,6 +43,14 @@ video:
   first_party: true
   found_via: https://github.com/thomasj/fm1-sidj#readme
 versions:
+- version: 1.1.1
+  date: 2026-10-30
+  url: https://github.com/thomasj/fm1-sidj/releases/tag/v1.1.1
+  notes: Songs added after a trip to the official firmware now clear what that firmware left behind, so old songs no longer come back as duplicates.
+- version: 1.1.0
+  date: 2026-10-30
+  url: https://github.com/thomasj/fm1-sidj/releases/tag/v1.1.0
+  notes: Gives every remix control a MIDI control change number (CC 70 and up) and lets the installer and rescue script go back to M-VAVE's V16 as well as V15. The release says it was installed from V16, V15 and SLOOP 2.8.4.
 - version: 1.0.1
   date: 2026-10-29
   url: https://github.com/thomasj/fm1-sidj/releases/tag/v1.0.1

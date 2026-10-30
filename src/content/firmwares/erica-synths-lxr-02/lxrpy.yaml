@@ -1,0 +1,44 @@
+device: erica-synths-lxr-02
+name: lxrpy
+kind: tool
+summary: Python library and command-line tools that read and write LXR-02 kit, pattern, song and global config files and manage the SD card contents.
+description: >-
+  A Python package that parses and writes the LXR-02's SD card formats, which are .SND kits, .PAT patterns,
+  .SNG songs, GLO.CFG settings and PRJ.NFO project names. It exposes voice parameters, the kit effect bus,
+  per-step automation and modulation destinations, and can copy voices between kits and voice patterns between
+  patterns. Three console scripts list the projects on a card, copy kit files into a project by index and clean
+  out kits and patterns. The README links the author's reverse-engineered file format notes and Erica Synths'
+  published firmware source as references. It runs on a computer and does not change the unit's firmware.
+status: active
+authors:
+  - name: Justin (jhw)
+    url: https://github.com/jhw
+source: https://github.com/jhw/lxrpy
+source_status: open
+license: MIT
+license_notes: >-
+  The README's License section and the pyproject.toml say MIT. The repository has no LICENSE file.
+distribution: source-only
+requires_stock: LXR-02 file formats as used by stock firmware 1.7 or later
+install_notes: >-
+  Install with pip from the Git tag, for example pip install git+https://github.com/jhw/lxrpy.git@v0.3.1. It needs
+  Python 3.8 or newer. The scripts work on a mounted SD card and do not flash anything.
+brick_risk: false
+tags: [library, python, midi, librarian, drums]
+versions:
+  - version: v0.3.1
+    date: 2026-10-24
+    url: https://github.com/jhw/lxrpy/tree/v0.3.1
+    notes: Git tag; no GitHub release page.
+  - version: v0.3.0
+    date: 2026-10-24
+    url: https://github.com/jhw/lxrpy/tree/v0.3.0
+    notes: Git tag; no GitHub release page.
+  - version: v0.2.0
+    date: 2026-05-10
+    url: https://github.com/jhw/lxrpy/tree/v0.2.0
+    notes: Git tag; no GitHub release page.
+  - version: v0.1.0
+    date: 2026-02-24
+    url: https://github.com/jhw/lxrpy/tree/v0.1.0
+    notes: Git tag; no GitHub release page.

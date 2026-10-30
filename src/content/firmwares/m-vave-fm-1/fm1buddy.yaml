@@ -41,6 +41,13 @@ image:
   source_url: https://konsumer.js.org/fm1buddy/
   first_party: true
 versions:
+- version: 0.1.16
+  date: 2026-10-30
+  url: https://github.com/konsumer/fm1buddy/releases/tag/v0.1.16
+  notes: Adds a midimap.txt builder tab and fixes a recovery start-up race.
+- version: 0.1.15
+  date: 2026-10-28
+  url: https://github.com/konsumer/fm1buddy/releases/tag/v0.1.15
 - version: 0.1.14
   date: 2026-10-28
   url: https://github.com/konsumer/fm1buddy/releases/tag/v0.1.14

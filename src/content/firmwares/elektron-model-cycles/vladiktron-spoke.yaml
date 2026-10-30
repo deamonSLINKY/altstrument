@@ -10,8 +10,8 @@ description: >-
   first run it asks for Elektron's official OS 1.13 file or the downloaded zip, checks the version and SHA-256 and
   decodes it into the app's data folder; other versions, modified OS files and the Model:Samples OS are refused. The
   repository contains no Elektron firmware, and its notes say it must stay that way. It reuses code from Modded-Cycles,
-  elektron-model-tweaks and elektron-firmware-tool, all MIT, and the project's release notes list signing,
-  notarisation and a first release as still open. The panel artwork follows the hardware's layout, which the notes
+  elektron-model-tweaks and elektron-firmware-tool, all MIT. The 0.1.0 app needs an Apple Silicon Mac and is not
+  notarised, so macOS asks for approval on first launch. The panel artwork follows the hardware's layout, which the notes
   flag as the part most likely to draw a complaint from Elektron.
 status: active
 authors:
@@ -24,17 +24,18 @@ license_notes: >-
   The README states GPL-2.0-only, the same terms as the statically linked Unicorn. Third-party code and licences are
   listed in THIRD-PARTY-NOTICES.md. Model:Cycles and Elektron are trademarks of Elektron Music Machines MAV AB, and
   the project says it is not affiliated with Elektron.
-distribution: source-only
+distribution: download
 requires_stock: "1.13"
 install_notes: >-
-  Needs CMake and the Xcode command line tools. Run native/build.sh with the path to your own
-  model-cycles_OS1.13.syx (Elektron's support page has it as a zip), then open the built app. Without the file the app
-  asks for it on first run. Data lives in ~/Library/Application Support/Vladiktron Spoke/. Nothing is flashed to a
+  Download the zip from the release (Apple Silicon Mac, macOS 14 or later), move the app to Applications and approve it
+  under Privacy & Security, since it is not notarised. On first run it asks for your own model-cycles_OS1.13.syx or
+  the zip from Elektron's support page. Building from source needs CMake and the Xcode command line tools; run
+  build.sh with the path to the OS file. Data lives in ~/Library/Application Support/Vladiktron Spoke/. Nothing is flashed to a
   device.
 brick_risk: false
 tags: [emulator, research, usb-audio, midi]
 versions:
-  - version: main @ 113fbac
-    date: 2026-10-29
-    url: https://github.com/imaf6971/vladiktron-spoke/commit/113fbacc42df8e4d5a2e673e9ed824fac337be3b
-    notes: No tagged releases; this is the latest commit.
+  - version: v0.1.0
+    date: 2026-10-30
+    url: https://github.com/imaf6971/vladiktron-spoke/releases/tag/v0.1.0
+    notes: First release. Prebuilt macOS app zip; no Elektron firmware included.

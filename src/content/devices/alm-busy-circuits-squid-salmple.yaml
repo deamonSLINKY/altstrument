@@ -1,0 +1,25 @@
+name: Squid Salmple
+manufacturer: ALM Busy Circuits
+category: eurorack
+tagline: eight-channel Eurorack sampler that loads sample banks from a USB drive
+description: >-
+  The Squid Salmple (ALM022) is a 21HP Eurorack sampler from ALM Busy Circuits with eight sample
+  channels, each with a trigger input, and a small display for editing. Sample banks are stored as
+  WAV-based files on a USB drive, and the module records from a sample input. It has four stereo-pair
+  outputs, a mix output and three assignable CV inputs.
+links:
+  manufacturer: https://busycircuits.com/pages/alm022
+notes: >-
+  No custom firmware is catalogued for this module. The one entry is a computer-side bank editor that works on
+  the files of the USB drive and does not change the module's firmware.
+related: []
+image:
+  src: /images/devices/alm-busy-circuits-squid-salmple.webp
+  style: photo
+  alt: Squid Salmple Eurorack module at an angle, a white panel with eight trigger jacks and green LEDs, a small display, USB port, blue buttons and black knobs, with a black circuit board behind it
+  width: 1200
+  height: 1200
+  credit: ALM Busy Circuits
+  license: manufacturer product image
+  source_url: https://busycircuits.com/pages/alm022
+  original_url: https://busycircuits.com/cdn/shop/files/ALM022-Squid-Salmple-02.png

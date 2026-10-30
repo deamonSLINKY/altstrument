@@ -1,0 +1,45 @@
+device: m5stack-cardputer
+name: Catputer
+summary: >-
+  Offline generative lofi radio for the Cardputer ADV that composes chords, bass, melody and drums in four moods
+  while a pixel-art cat animates in a room that follows the mood.
+description: >-
+  Composes endless lofi music on the device from a seed, with Cozy, Rainy, Night and Sunny moods, six chord and lead
+  tones, three bass tones, 4/4, 3/4 or 6/8 meter and an automatic or manual tempo of 40 to 180 BPM. Two sound engines
+  share the same composer, a pure synthesis one and a hybrid one that adds a small bank of one-shots, and sessions can
+  be saved as favorites. The screen shows a cat and a room, with a strip of part activity, and a sleep timer and
+  automatic dimming are included. A desktop SDL preview and offline exports share the music engine. The README calls
+  the current build a development candidate that still needs physical verification of audio, display and install. A
+  project licence has not been chosen yet.
+status: active
+authors:
+  - name: Anton Lenev
+    url: https://github.com/m0rg0t
+source: https://github.com/m0rg0t/catputer
+source_status: open
+license: unspecified
+license_notes: >-
+  The repository has no LICENSE file, and the README and docs/THIRD_PARTY.md say a project licence has not been
+  selected yet. Dependencies keep their own licences, such as MIT for the M5Stack libraries.
+homepage: https://m0rg0t.github.io/catputer/
+distribution: download
+requires_stock: Cardputer ADV
+install_notes: >-
+  The project site offers a development zip with the application .bin, install notes and checksums. Install it
+  with M5Apps and its Installer from the SD card. Building from source uses PlatformIO and CMake, and the build
+  scripts never flash the device. Optional microSD storage keeps settings and favorites; without it they stay in
+  RAM until restart. The README says the Bluetooth chip cannot stream audio to headphones directly, so use the 3.5
+  mm output.
+brick_risk: false
+tags: [generative, lofi, ambient, synth-engine, open-source]
+image:
+  url: https://raw.githubusercontent.com/m0rg0t/catputer/main/docs/media/scene-day.gif
+  alt: Catputer sunny scene, a pixel-art orange cat with headphones on a window seat in a sunlit room with plants and a desk, with part indicators and the meter along the bottom
+  credit: Anton Lenev
+  source_url: https://github.com/m0rg0t/catputer
+  first_party: true
+versions:
+  - version: main @ 7fecace
+    date: 2026-10-02
+    url: https://github.com/m0rg0t/catputer/commit/7fecace
+    notes: No tagged releases; this is the latest commit.

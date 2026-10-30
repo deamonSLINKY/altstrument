@@ -1,0 +1,43 @@
+device: m-vave-fm-1
+name: Penumbra
+summary: >-
+  Space-drone instrument: five slowly beating drone voices held on the scene's key, a soft synth voice in a shimmer
+  reverb, a looper, six journeys of scenes and eight user slots.
+description: >-
+  The drone starts when the unit is switched on. The black keys hold five drone voices, each steady or swelling, and
+  the white keys play VOX, a four-voice synth with four sounds, a wave from saw to narrow pulse and glide. Other parts
+  are a kick tuned to the key, a slow swell, a bed of wind noise, a shimmer reverb, a tape delay and a master stage.
+  A looper records VOX and the kick in layers and follows the key of the current scene. Holding a key lets the knobs
+  play its sound, and MORPH walks to the next scene by hand. Six preset journeys and eight user slots survive a power
+  cut, and there is a sleep timer, MIDI clock in and out, USB audio and screen-reader support. It carries M-VAVE's
+  update loader so the unit can switch to another firmware. The author is credited as Lunar Eclipse Forge.
+status: active
+authors:
+- name: Lunar Eclipse Forge (MadMooneyham)
+  url: https://github.com/MadMooneyham
+source: https://github.com/MadMooneyham/Penumbra
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  Stated in the README and LICENSING.md. Built on Felucca's platform layer and Charles Vestal's X0X. The JieLi SDK
+  files are not in the tree.
+distribution: download
+install_notes: >-
+  Write penumbra-1.0.fwsc from the release with an FM-1 firmware installer; BUILDING.md explains building and serving
+  a web installer, and the README says it will also be offered on The Firmware Hub. Holding OCT- and OCT+ for five
+  seconds puts the FM-1 in update mode if an install does not start. Installing is at your own risk.
+brick_risk: true
+tags: [ambient, synth-engine, looper, fx, reverb, delay, performance, midi, usb-audio, fork]
+image:
+  url: https://raw.githubusercontent.com/MadMooneyham/Penumbra/main/assets/card.png
+  alt: "Penumbra home screen: scene name ECLIPSE, a ringed logo with orange points on a dark star field, the text 1/4 A AEOLIAN and PLAYING, and DRONE, VOX, SPACE and TONE knob values at zero"
+  credit: MadMooneyham
+  source_url: https://github.com/MadMooneyham/Penumbra
+  first_party: true
+versions:
+- version: '1.0'
+  date: 2026-10-29
+  url: https://github.com/MadMooneyham/Penumbra/releases/tag/v1.0
+  notes: >-
+    First stable release, with its own update identity FM-1_73010000. Journeys, user slots and settings from the
+    0.13 to 0.17 betas carry over.

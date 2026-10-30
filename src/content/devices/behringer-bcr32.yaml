@@ -1,0 +1,37 @@
+name: BCR32
+manufacturer: Behringer
+category: controller
+tagline: MIDI controller with 32 encoders and a four-track step sequencer
+description: >-
+  The BCR32 (BE 0715-AAW) is a desktop MIDI controller from Behringer with 32
+  push encoders ringed by LEDs, 16 RGB buttons and a small OLED display. The
+  manufacturer's page describes two modes, a plain controller and a four-track
+  step sequencer called Zaquencer. It has USB-C with two USB MIDI ports, MIDI in
+  and two MIDI outs, four CV and four gate outputs, analog sync in and out and
+  two footswitch inputs. The controller is built around a GigaDevice GD32F405
+  microcontroller.
+platform: GigaDevice GD32F405RE (Arm Cortex-M4F), bare metal
+stock_firmware: Behringer Zaquencer/controller firmware (closed source)
+links:
+  manufacturer: https://www.behringer.com/en/products/0715-AAW
+  community:
+    - label: Music Tribe Open Source organisation
+      url: https://github.com/MusicTribeOpenSource
+    - label: BCR32 demo firmware and documentation repository
+      url: https://github.com/MusicTribeOpenSource/0715-AAW
+notes: >-
+  The official repository documents the pin assignments, the schematic and the
+  USB hand-over to the bootloader, which makes it a starting point for new
+  firmware. The stock firmware stays closed and the repository does not say how
+  to restore it after installing the demo.
+image:
+  src: /images/devices/behringer-bcr32.webp
+  style: photo
+  alt: Top view of the Behringer BCR32, a black unit with 16 backlit buttons above four rows of eight encoders, an OLED display and select encoder at right, and red buttons beside them
+  width: 1200
+  height: 1007
+  credit: Behringer
+  license: manufacturer product image
+  source_url: https://www.behringer.com/en/products/0715-AAW
+  original_url: https://cdn-media.empowertribe.com/4bd8d3179b1bdc40677ffaaa11220e10/Image_BE_0715-AAW_BCR32_Top_XL.png
+pinned: [bcr32-demo]

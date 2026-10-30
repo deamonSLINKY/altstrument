@@ -31,6 +31,10 @@ image:
   source_url: https://github.com/dspaudio/orbit
   first_party: true
 versions:
+- version: 0.8.2
+  date: 2026-10-29
+  url: https://github.com/dspaudio/orbit/releases/tag/v0.8.2
+  notes: Adds a stereo delay type (mono, wide or ping-pong), frees about 19 KB of static RAM and removes the full-screen visualizer; project and preset formats are unchanged. The release says it was installed on an FM-1.
 - version: 0.8.1
   date: 2026-10-28
   url: https://github.com/dspaudio/orbit/releases/tag/v0.8.1

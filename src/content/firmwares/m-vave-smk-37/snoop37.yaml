@@ -5,7 +5,8 @@ summary: >-
   drums. The reference port for the fm1-to-smk37 kit.
 description: >-
   Development moved from the archived genkigenki/Snoop37 repository to the branch snoop37 of the genkigenki/sloop-fm1
-  fork. SMK-37 support is offered upstream as isod89/sloop-fm1 pull requests 112 and 130.
+  fork. SMK-37 support is offered upstream as isod89/sloop-fm1 pull requests 112 and 130, both still open when checked.
+  isod89 also publishes its own SMK-37 releases as SLOOP Pro, which is a separate entry; it credits this port's work.
 status: active
 authors:
 - name: genkigenki

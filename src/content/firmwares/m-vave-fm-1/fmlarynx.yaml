@@ -39,6 +39,10 @@ image:
   source_url: https://github.com/ejtb76/FMLarynx#readme
   first_party: true
 versions:
+- version: 0.1.1
+  date: 2026-10-30
+  url: https://github.com/ejtb76/FMLarynx/releases/tag/v0.1.1
+  notes: Same firmware as 0.1, rebuilt and signed on GitHub by the Firmware Hub's shared workflow; package identity FM-1_984.
 - version: '0.1'
   date: 2026-10-20
   url: https://github.com/ejtb76/FMLarynx/releases/tag/v0.1

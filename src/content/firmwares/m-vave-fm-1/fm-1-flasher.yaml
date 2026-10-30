@@ -6,7 +6,7 @@ summary: >-
   SysEx, so a firmware can be swapped without a computer. A touchscreen lists the firmwares on the card and starts the install.
 description: >-
   An Adafruit Feather RP2040 USB Host acts as the USB host for the FM-1, with the Feather's own PIO USB port or a MAX3421E USB Host FeatherWing, and a 3.5-inch TFT FeatherWing that provides the
-  touch screen and the microSD slot (its pins clash with the MAX3421E wing). The screen browses the card's firmwares as cards or a list,
+  touch screen and the microSD slot (its pins clash with the MAX3421E wing). A Feather RP2350 with the wing also installs, once the display's CS and DC pins are rewired and a CircuitPython fix for the shared SPI bus is applied. The screen browses the card's firmwares as cards or a list,
   keeps favourites and shows a firmware's details before installing. The update
   protocol is ported from M-VAVE's WebUpdate.js, with each package checked the way the FM-1 checks it before writing.
   The README reports installs from the REPL of V15 to SLOOP in 70 seconds, SLOOP back to V15 with the factory voices
@@ -34,7 +34,7 @@ install_notes: >-
 brick_risk: true
 tags: [flasher, loader, usb-midi, sysex, python, utility]
 versions:
-- version: main @ a9c50d8
-  date: 2026-10-29
-  url: https://github.com/jedgarpark/FM-1_Flasher/commit/a9c50d877661a2f75b2129f2cc404588166abacd
+- version: main @ cdfedc2
+  date: 2026-10-30
+  url: https://github.com/jedgarpark/FM-1_Flasher/commit/cdfedc24249f625ecd48ccb9e40c915212d3f069
   notes: No tagged releases; this is the latest commit.

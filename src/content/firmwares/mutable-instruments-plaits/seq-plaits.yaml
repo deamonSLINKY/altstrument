@@ -1,0 +1,45 @@
+device: mutable-instruments-plaits
+name: SEQ PLAITS
+summary: >-
+  Plaits firmware that keeps all 24 stock 1.2 engines and adds a built-in generative sequencer: 16 steps in a minor
+  key, clocked from TRIG or free-running at 130 BPM, with V/OCT choosing the key.
+description: >-
+  The engines, the HARMONICS, TIMBRE and MORPH controls and the low-pass gate are described as the official Plaits 1.2
+  code, untouched. The sequencer writes a pattern of one, two or four sections over minor-key chords and a melody
+  that moves over two octaves, and each step has a rank so DENSITY adds notes without changing the ones already
+  playing. FREQUENCY sets the envelope, the small knobs set density, length and speed, and holding the left button
+  makes a new pattern. A cable in a CV jack turns its small knob back into the stock attenuverter. Engine, octave
+  and settings are saved across power cycles. It is a separate build from the same author's DUB STAB PLAITS, from
+  the same repository and project site. Only the built files are published for it, and the author reports tests in a
+  Cortex-M4 emulator.
+status: active
+authors:
+  - name: narti_live
+    url: https://github.com/Narti-Live
+source: https://github.com/Narti-Live/dub-base-Plaits
+source_status: binary-only
+license: unspecified
+license_notes: >-
+  The repository's LICENSE file is MIT, with copyright lines for Narti Live and for Emilie Gillet's Plaits firmware, and
+  covers the repository. The published source is the DUB STAB PLAITS patch series, not SEQ PLAITS, so this build's own
+  terms are not stated.
+homepage: https://narti-live.github.io/dub-base-Plaits/seq/
+distribution: download
+install_notes: >-
+  Unplug all cables, set FREQUENCY to noon, hold the left button while powering on and play the firmware WAV into
+  MODEL at about 80 percent volume (2 minutes 39 seconds), or use the flasher on the project page. A raw .bin for SWD
+  is also provided. To go back, flash the official Plaits WAV or DUB STAB PLAITS the same way. Your saved engine and
+  settings start fresh once, and the page warns that this is unofficial firmware used at your own risk.
+brick_risk: true
+tags: [ai-assisted, sequencer, generative, chords, synth-engine]
+image:
+  url: https://raw.githubusercontent.com/Narti-Live/dub-base-Plaits/main/assets/seq-plaits-functions.jpg
+  alt: SEQ PLAITS control sheet on a dark background, a Plaits panel drawing with labels for each knob, button and jack, and a table of the 24 stock engines in three banks
+  credit: narti_live
+  source_url: https://narti-live.github.io/dub-base-Plaits/seq/
+  first_party: true
+versions:
+  - version: v1.0
+    date: 2026-10-29
+    url: https://github.com/Narti-Live/dub-base-Plaits/commit/e0146c498b6a7eba316666e573995715e3807e6f
+    notes: First release, shown on the project page; the repository has no tags or releases.

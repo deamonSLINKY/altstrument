@@ -1,0 +1,52 @@
+device: m-vave-fm-1
+name: XMOD
+summary: >-
+  MOD and XM tracker: up to 32 channels with a FastTracker 2 replayer, a ProTracker mode for MODs, a pattern editor
+  and a browser song manager that moves .xm and .mod files to and from the FM-1.
+description: >-
+  The player is a port of ft2-clone's replay logic, with a ProTracker mode that models Amiga panning and the A500
+  and LED filters. The pattern editor uses one knob per field and shows 4 or 8 channels. Other pages cover the order
+  list, instruments with volume and panning envelopes, loops and finetune, a mixer with mute and solo, and on-screen
+  help for each XM effect. Up to 32 songs fit in 608 KB of flash, and two example songs are built in. Over USB the
+  unit sends MIDI clock and start and stop, accepts transport and notes, and works as an audio input. A web song
+  manager and a browser simulator are published on the project site. Songs live in an area that other firmwares
+  overwrite, so the README advises backing up before switching, and it says XMOD is untested on V16.
+status: active
+authors:
+- name: KotMorderca
+  url: https://github.com/KotMorderca
+source: https://github.com/KotMorderca/XMOD
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  Stated in the README and THIRD_PARTY.md. The hardware layer is Felucca's (GPL-3.0-only), ft2-clone and pt2-clone
+  code is BSD-3-Clause, the Spleen fonts are BSD-2-Clause and the example songs are CC0. The JieLi SDK files are read
+  from your own checkout at build time and are not in the tree.
+homepage: https://kotmorderca.github.io/XMOD/
+distribution: browser-installer
+requires_stock: V15 or another custom firmware (V16 untested)
+install_notes: >-
+  Install xmod.fwsc from the release with any FM-1 installer, such as The Firmware Hub, Felucca's web installer or
+  tools/install.cmd; the song manager page also installs a package. After installing from Felucca the FM-1 may need
+  a power cycle. Holding OCT- and OCT+ at power-on gives update mode if it does not start. Songs are kept in flash
+  that other firmwares use for their own data, so back them up with the song manager before switching. Installing
+  is at your own risk.
+brick_risk: true
+tags: [tracker, sampler, sequencer, synth-engine, editor, emulator, midi, usb-audio, fork]
+image:
+  url: https://raw.githubusercontent.com/KotMorderca/XMOD/main/docs/screen-pattern.png
+  alt: "XMOD pattern page: four tracker channels of note, instrument and effect cells with the cursor row highlighted, a PLAY indicator at the top and a controls hint at the bottom"
+  credit: KotMorderca
+  source_url: https://github.com/KotMorderca/XMOD
+  first_party: true
+versions:
+- version: 1.1.0
+  date: 2026-10-29
+  url: https://github.com/KotMorderca/XMOD/releases/tag/v1.1.0
+  notes: >-
+    Song space grows to 608 KB, the song manager gains Reconnect and Refresh buttons, the encoder scrolls the mixer's
+    channel window, and a volume overflow at full volume with hard panning is fixed.
+- version: 1.0.0
+  date: 2026-10-28
+  url: https://github.com/KotMorderca/XMOD/releases/tag/v1.0.0
+  notes: First release; the release page has no notes beyond the changelog link.

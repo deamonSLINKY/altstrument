@@ -1,0 +1,46 @@
+device: m-vave-fm-1
+name: Smileyface
+summary: >-
+  Acid bass-line firmware: write a 16-step pattern or roll a random one with the LFO button, then play with 303-style
+  filter, accent, slide and Devil Fish-style knob pages, with a browser simulator.
+description: >-
+  Built on the author's Chipbox. The screen shows the 16 steps as bars, with smileys under them that are asleep on
+  a rest and awake on a note. Keys write notes, ENV sets an accent, SEL slides a step into the next, EDIT writes a
+  rest, and SELECT with SEL rotates the pattern. Six knob pages follow the panel of the TD-3-MO acid box: filter
+  cutoff, resonance, envelope mod and decay, then tune, accent, slide and tempo, then drive, accent decay, key
+  tracking and attack, then FM, swing, length and level, and two pages of switches for wave, sub oscillator,
+  muffler, sweep speed, hi-res and poles. The project site has an online player, a guide and a cheat sheet. The
+  releases are labelled beta, and the README says only that it has been tested.
+status: active
+authors:
+- name: Pasquale Barilla (pbarilla)
+  url: https://github.com/pbarilla
+source: https://github.com/pbarilla/smileyface
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  Stated in the README and LICENSING.md. The platform layer is Felucca's with SLOOP's changes, the wiring comes from
+  Dinghy by zvenson, and the font is SIL OFL 1.1. No JieLi SDK files are in the tree.
+homepage: https://ihavenocluewhatimdoing.com/smileyface/
+distribution: browser-installer
+install_notes: >-
+  Installer page on the project site in Chrome or Edge over USB, using Felucca's installer code; do not unplug it
+  until it finishes. The releases also attach the .fwsc package. The README gives no notes on returning to stock.
+  Installing is at your own risk.
+brick_risk: true
+tags: [acid, sequencer, synth-engine, filter, emulator, fork]
+image:
+  url: https://raw.githubusercontent.com/pbarilla/smileyface/main/site/img/steps.png
+  alt: "Smileyface STEPS screen: note C2 and tempo 126 at the top, 16 green and pink step bars with smileys beneath, four knobs (cutoff, resonance, envmod, decay) and STEPS, FLY, WALK and PLAY tabs"
+  credit: pbarilla
+  source_url: https://github.com/pbarilla/smileyface
+  first_party: true
+versions:
+- version: 0.0.4-beta
+  date: 2026-10-30
+  url: https://github.com/pbarilla/smileyface/releases/tag/v0.0.4-beta
+  notes: Latest of four beta releases published within a day; the release page has no notes beyond the changelog link.
+- version: 0.0.1-beta
+  date: 2026-10-30
+  url: https://github.com/pbarilla/smileyface/releases/tag/v0.0.1-beta
+  notes: First beta release.

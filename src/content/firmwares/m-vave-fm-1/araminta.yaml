@@ -34,6 +34,14 @@ image:
   source_url: https://github.com/Wulgaren/Araminta
   first_party: true
 versions:
+- version: '3.4'
+  date: 2026-10-29
+  url: https://github.com/Wulgaren/Araminta/releases/tag/v3.4
+  notes: LFO pages draw a live scrolling waveform and S&H's SMTH as a glide; CLOUD's reverb tail now ends in silence, and SIZE 127 freezes it.
+- version: '3.3'
+  date: 2026-10-29
+  url: https://github.com/Wulgaren/Araminta/releases/tag/v3.3
+  notes: Safer audio maths with identical output, LEDs dark during a flash erase, MAP ALL shares one scale across every track and AUTO and MELO chord keys.
 - version: '3.2'
   date: 2026-10-28
   url: https://github.com/Wulgaren/Araminta/releases/tag/v3.2

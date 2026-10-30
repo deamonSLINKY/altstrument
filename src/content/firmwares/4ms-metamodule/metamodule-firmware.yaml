@@ -24,6 +24,10 @@ video:
   credit: 4ms Company
   first_party: true
 versions:
+  - version: firmware-v2.4.1-rc1
+    date: 2026-10-29
+    url: https://github.com/4ms/metamodule/releases/tag/firmware-v2.4.1-rc1
+    notes: Release candidate. Adds per-output clip indicators, loading patch files over USB in Developer Mode, and GUI fixes.
   - version: firmware-v2.4.1-dbg01
     date: 2026-10-27
     url: https://github.com/4ms/metamodule/releases/tag/firmware-v2.4.1-dbg01

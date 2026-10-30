@@ -1,0 +1,38 @@
+device: elektron-model-cycles
+name: SPOKES
+kind: tool
+summary: >-
+  Browser hub for Model:Cycles community firmware: pick one project, build it locally from your own official OS 1.13
+  file, then save the result or send it over Web MIDI. Some projects open as the authors' own installer pages.
+description: >-
+  Lists Motor:Cycles, Model-TG, Modded Cycles, Model27, PPPCCC, Supermodel, Model Tweaks, elekloader, Model Machinedrum
+  and Plaits on Models, plus a check that restores or validates the stock file. Motor:Cycles, Model-TG, Modded Cycles,
+  Model27 and PPPCCC are vendored at pinned commits and built in the browser from the user's OS file. Supermodel, Model Tweaks,
+  elekloader and Model Machinedrum are embedded live from the authors' pages, and Plaits on Models is linked for an
+  external build. A daily workflow compares the pinned commits with upstream and prepares a review branch. The
+  validation notes say no hardware was flashed or tested, and that a Plaits integration branch and one TG/Plaits
+  build could not be verified. No Elektron firmware or built image is stored in the repository.
+status: active
+authors:
+  - name: A.V.
+    url: https://github.com/AveyCole
+source: https://github.com/AveyCole/SPOKES
+source_status: open
+license: MIT
+license_notes: >-
+  MIT for the hub (LICENSE). Vendored upstream projects keep their own notices under vendor/, mostly MIT, with
+  third-party notices alongside; embedded external installers such as elekloader keep their own licences.
+homepage: https://aveycole.github.io/SPOKES/
+distribution: browser-installer
+requires_stock: "1.13"
+install_notes: >-
+  Open the flasher in a Web MIDI browser (Chrome or Edge), choose a firmware, supply your own official Model:Cycles
+  OS 1.13 file (Modded Cycles also needs a Syntakt OS file, Model Machinedrum a Machinedrum UW 1.63 file), build, then
+  save or send. Back up projects and samples first. Recovery from the startup menu uses the physical MIDI IN, not USB.
+brick_risk: true
+tags: [flasher, editor, web, machines, midi]
+versions:
+  - version: main @ e2cd259
+    date: 2026-10-30
+    url: https://github.com/AveyCole/SPOKES/commit/e2cd2590f48bdf4a9d3fd645dc19df2274a2ac69
+    notes: No tagged releases; this is the latest commit.

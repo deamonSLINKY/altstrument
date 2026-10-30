@@ -35,6 +35,10 @@ video:
   first_party: true
   found_via: https://mdmm.dev
 versions:
+  - version: mdmm-v0.8.1
+    date: 2026-10-29
+    url: https://github.com/radekdymacz/mdmm/releases/tag/mdmm-v0.8.1
+    notes: Bug-fix release. A new Monomachine kit starts with the machine's own values, the keyboards span C-0 to B-8, and several editing and Linux text-display faults are fixed.
   - version: mdmm-v0.8.0
     date: 2026-10-20
     url: https://github.com/radekdymacz/mdmm/releases/tag/mdmm-v0.8.0

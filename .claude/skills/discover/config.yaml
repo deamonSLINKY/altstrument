@@ -835,3 +835,15 @@ ignore:
   - url: https://www.reddit.com/r/MVaveFM1/comments/1xgre3k/jexed_a_jsfx_port_of_dexed/
     reason: Jexed is a REAPER JSFX port of Dexed, a desktop plugin with no FM-1 editor or emulator role
     date: 2026-10-29
+  - url: https://github.com/ocean/fm1-site
+    reason: site code for catalogued projects (ESTAMPIE, FM-SWITCH, FM1Kit), not firmware or a tool
+    date: 2026-10-30
+  - url: https://github.com/fabioribeiroengbr-cmd/SMK37-Pro-Firmware-Recovery
+    reason: recovery notes only, no tool or download, recovery unproven
+    date: 2026-10-30
+  - url: https://github.com/narrastory/retro-music-toolkit
+    reason: desktop chiptune score renderer, not for music hardware
+    date: 2026-10-30
+  - url: https://github.com/Marcusdeks/FamiGp
+    reason: desktop Guitar Pro to chiptune converter, not for music hardware
+    date: 2026-10-30

@@ -1,0 +1,43 @@
+device: m-vave-fm-1
+name: ONE CLICK FM-1
+summary: >-
+  Song generator for the FM-1: one press creates a key, a chord progression and six matching tracks (bass, chords,
+  lead, drums, kick, loop) from seven fixed-point engines, with a step editor, recording and a browser companion app.
+description: >-
+  The on-device version of the author's ONE CLICK SYNTH generator, built on Felucca's platform layer. A press of
+  REC held makes a whole song, and the generator page sets density, variation and style, while tools redo only the
+  rhythm, notes, oscillator, filter or envelope. The engines are subtractive, acid, three-operator FM, supersaw,
+  additive, noise and drums, plus an optional set of six drum voices written from scratch after the Sonic Potions LXR
+  architecture; the README says no LXR code is used because its licence forbids commercial use. A kick track and a
+  loop track can play eight sample slots that the companion app converts to 22 kHz mono and writes over USB, about
+  11 seconds in total. There is a step editor, Euclid patterns, step and live recording with undo, 16 sounds and 4
+  songs in flash, MIDI in and a browser emulator that runs the same code. The README is in German. It says the
+  firmware is version 0.2, tested on a computer and in the emulator, and has never run on an FM-1, so how fast the
+  engines run on the unit is unknown.
+status: active
+authors:
+- name: Orbitator
+  url: https://github.com/Orbitator
+source: https://github.com/Orbitator/oneclick-fm1
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  NOTICE.md states GPL-3.0-only for the whole project; the platform layer is Felucca's (Leo Kuroshita, Hügelton
+  Instruments). The 5x7 font is public domain. The JieLi SDK files (Apache-2.0) are added at build time and are not in
+  the tree. No M-VAVE images are bundled.
+homepage: https://orbitator.github.io/oneclick-fm1/
+distribution: browser-installer
+install_notes: >-
+  Never run on an FM-1 by the author, so treat it as untested on hardware. The project's update page installs the
+  latest build in Chrome or Edge over USB, and the build is also produced as a GitHub Actions artifact or with
+  tools/build.py. The README tells you to have M-VAVE's V15 file ready before flashing and to return with M-VAVE's
+  updater or the Felucca installer's Return to official V15. It keeps Felucca's rescue paths (OCT- and OCT+ for five
+  seconds, or two crashes after power-on, enter update mode). Its data shares a flash area with Felucca's projects, so
+  switching between them loses the other's saved data. Installing is at your own risk.
+brick_risk: true
+tags: [generative, sequencer, synth-engine, drums, sampler, editor, emulator, midi, fork]
+versions:
+- version: main @ 9ae0b35
+  date: 2026-10-22
+  url: https://github.com/Orbitator/oneclick-fm1/commit/9ae0b359c7de7bae1c3184f840becceac7981bd9
+  notes: No tagged releases; this is the latest commit. The README calls this v0.2.

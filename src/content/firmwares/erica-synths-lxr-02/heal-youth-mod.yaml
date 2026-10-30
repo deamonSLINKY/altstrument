@@ -1,0 +1,37 @@
+device: erica-synths-lxr-02
+name: Heal Youth mod
+summary: Unofficial modified build of Erica Synths' open LXR-02 firmware 1.7 that adds a tempo-synced beat repeat effect, a bitcrusher, a second PERF page, a humanize setting and a CPU meter.
+description: >-
+  Based on the stock 1.7 source, according to the README, which is in Spanish. Beat repeat is a stutter effect
+  synced to the tempo, with forward, reverse and random modes, lengths from 1/4 to 1/128, a per-step probability,
+  a pitch change per repeat and a shortening option. The bitcrusher has bit depth, downsample, jitter and volume
+  controls. The PERF page gains a second tab, humanize randomises velocity by up to 31 and only changes volume, a
+  CPU meter sits on a second page of global settings, and the start-up screen reads Heal Youth mod. Voices have
+  to be sent to the FX bus on the mix page to use the effects. The repository holds the built .img, a README and a zip of about 1.5 MB with the
+  modified source tree (CMake project, STM32 drivers and a GPL-3.0 LICENSE file).
+status: active
+authors:
+  - name: Zwolle Poxi
+    url: https://github.com/z0th-mm0g
+source: https://github.com/z0th-mm0g/heal-youth-lxr02-mod
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  The README says the mod is based on Erica Synths' GPL-3.0 firmware. The modified source is published as a zip
+  in the repository, with the GPL version 3 text as its LICENSE and no "or later" statement; the STM32 HAL and
+  CMSIS drivers keep their own licences.
+distribution: download
+requires_stock: LXR-02 with the stock bootloader
+install_notes: >-
+  Copy the LXR_V2_V1.7_HY .img file to the root of a FAT32 SD card, make sure it is the only LXR*.img there, hold
+  the encoder button while switching the unit on until LXR Updater appears, wait for Update OK, then power off
+  and on again. Installing an official Erica Synths .img the same way returns to stock. The bootloader is not
+  replaced. The README says to build with the Arm GNU Toolchain 11.3, since other compilers left the bottom row of
+  the display empty. Erica Synths gives no support for modified firmware.
+brick_risk: false
+tags: [drums, fork, effects]
+versions:
+  - version: main @ 11869a9
+    date: 2026-10-25
+    url: https://github.com/z0th-mm0g/heal-youth-lxr02-mod/commit/11869a9
+    notes: No tagged releases; this is the latest commit.

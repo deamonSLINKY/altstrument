@@ -40,6 +40,14 @@ image:
   source_url: https://github.com/pjh-133/tidepool-fm1#the-scenes
   first_party: true
 versions:
+- version: 1.0.4
+  date: 2026-10-30
+  url: https://github.com/pjh-133/tidepool-fm1/releases/tag/v1.0.4
+  notes: Night Café becomes a lofi beat scene, with new loops and chords; its saved settings carry over.
+- version: 1.0.3
+  date: 2026-10-29
+  url: https://github.com/pjh-133/tidepool-fm1/releases/tag/v1.0.3
+  notes: Loops you pick wait and start together when PLAY is pressed, and a kept Blank Canvas take keeps playing so the next can be recorded over it.
 - version: 1.0.2
   date: 2026-10-29
   url: https://github.com/pjh-133/tidepool-fm1/releases/tag/v1.0.2

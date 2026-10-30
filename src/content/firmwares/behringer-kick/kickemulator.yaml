@@ -38,7 +38,7 @@ install_notes: >-
 brick_risk: false
 tags: [emulator, sampler, sequencer, open-source]
 versions:
-  - version: main @ c2077d3
-    date: 2026-10-28
-    url: https://github.com/KickEm-Tools/KickEmulator/commit/c2077d34de7b0a21e1a437dd0b2b552891e04629
+  - version: main @ 28f7d60
+    date: 2026-10-29
+    url: https://github.com/KickEm-Tools/KickEmulator/commit/28f7d604b647f26bd18f476060cb7448c0323827
     notes: No tagged releases; this is the latest commit.

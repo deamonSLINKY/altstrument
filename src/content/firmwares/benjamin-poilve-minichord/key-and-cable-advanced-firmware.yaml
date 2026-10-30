@@ -9,7 +9,8 @@ description: >-
   temperaments including 19- and 31-note divisions, preset names and settings that stay locked across presets. A
   phone deck mode follows a song sent to the minichord over USB audio. Releases from 95 on add calibrations, hover
   sensing and automatic detection for the harp plates that Key & Cable sells, and
-  release 114 adds a drum kit made from your own sound files. The firmware reports version numbers from 10 up, which
+  release 114 adds a drum kit made from your own sound files and release 121 adds circuit-bend effects and a fifth
+  harp plate, the bent board. The firmware reports version numbers from 10 up, which
   minictl and the Key & Cable minicontrol use to tell it from the stock firmware. The release notes describe it as
   unofficial and experimental and not endorsed by Benjamin Poilvé, and pull requests from the fork have been
   merged upstream.
@@ -33,6 +34,14 @@ install_notes: >-
 brick_risk: false
 tags: [fork, synth-engine, sampler, drum-machine, looper, mpe, microtonal, chords, midi, open-source, teensy]
 versions:
+  - version: firmware-122
+    date: 2026-10-29
+    url: https://github.com/keyandcableco/minichord/releases/tag/firmware-122
+    notes: Fixes the harp plate setting being reset to a previously fitted plate when a Lab game, the vocoder or the phone page hands the settings back.
+  - version: firmware-121
+    date: 2026-10-29
+    url: https://github.com/keyandcableco/minichord/releases/tag/firmware-121
+    notes: Adds circuit-bend effects (pitch drop, voltage starve, bitcrush, clock bend, stutter) on any plate, a fifth harp plate called the bent board, and new bank sets.
   - version: firmware-116
     date: 2026-10-26
     url: https://github.com/keyandcableco/minichord/releases/tag/firmware-116

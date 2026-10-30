@@ -22,11 +22,15 @@ license_notes: The repository has no LICENSE file.
 homepage: https://github.com/Synthux-Academy/TouchBloop/releases
 distribution: download
 install_notes: >-
-  Download the .bin from the latest release (TouchBloop_1.0.0.bin for 1.0.0) and
+  Download the .bin from the latest release (TouchBloop_1.0.1.bin for 1.0.1) and
   flash it with the Daisy Seed web programmer or Synthux's firmware tool, or build it with make libs and make and upload with make
   program-dfu.
 tags: [sampler, looper, granular, open-source, touch-2]
 versions:
+  - version: v1.0.1
+    date: 2026-10-29
+    url: https://github.com/Synthux-Academy/TouchBloop/releases/tag/v1.0.1
+    notes: Locks the first pass of the loop to unity speed and sets a two-second buffer.
   - version: v1.0.0
     date: 2026-10-28
     url: https://github.com/Synthux-Academy/TouchBloop/releases/tag/v1.0.0

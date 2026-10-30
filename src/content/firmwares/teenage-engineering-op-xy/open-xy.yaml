@@ -10,7 +10,9 @@ description: >-
   stock os.ldr, lets the player choose from the catalog's machines and produces
   the files to copy to the device. The OS is linked statically with a fixed
   collection, so there is no loading of arbitrary engines, and the firmware
-  reserves about 2 MiB of heap shared by the selected machines.
+  reserves about 2 MiB of heap shared by the selected machines. A build can
+  hold up to 256 machines, and the builder has an optional step for extensions
+  such as Capture.
 
   The SDK and most machines are MIT. The timestretch machine is AGPL-3.0, so
   builds that include it, as the default collection does, are distributed
@@ -43,6 +45,10 @@ install_notes: >-
 brick_risk: true
 tags: [machines, synth-engine, sdk, web, fx, sampler, patch]
 versions:
+  - version: v0.0.3
+    date: 2026-10-30
+    url: https://github.com/etcetc000/open-xy/releases/tag/v0.0.3
+    notes: A build can hold up to 256 machines, and projects reopen with the machines they were saved with. Adds a Capture extension, SDK 1.6 and new catalog machines, among them seven synths from OP-XY MNMD.
   - version: v0.0.2
     date: 2026-10-28
     url: https://github.com/etcetc000/open-xy/releases/tag/v0.0.2

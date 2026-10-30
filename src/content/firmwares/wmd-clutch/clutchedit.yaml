@@ -1,0 +1,59 @@
+device: wmd-clutch
+name: ClutchEdit
+kind: tool
+summary: Windows and macOS editor and sample manager for the WMD Clutch that edits its settings without hand-editing the HIHAT.INI file, converts dropped samples to the module's format and auditions them.
+description: >-
+  ClutchEdit edits the settings and sample files kept on the Clutch's memory card. Changes stay in memory
+  until they are saved and can be reverted while editing. Samples in a range of formats can be dropped onto
+  the editor and are converted to the format the module needs, and they can be auditioned from the computer.
+  Tool tips use the descriptions from the HIHAT.INI file, and a pattern editor covers the step settings. The
+  project page lists version 1.2.2 as current, but the repository has no tag for it. There is no Linux build.
+  The macOS build is unsigned, so the quarantine flag has to be removed by hand.
+status: active
+authors:
+  - name: Chris Roberts
+    url: https://github.com/cpr2323
+source: https://github.com/cpr2323/ClutchEdit
+source_status: open
+license: MIT
+license_notes: >-
+  LICENSE.txt is the MIT license, with the licenses of bundled third-party components in the Licenses folder.
+homepage: https://cpr2323.github.io/clutchedit/index.html
+distribution: download
+install_notes: >-
+  Download the Windows or macOS build from the project page. On macOS, run xattr -d com.apple.quarantine on the
+  downloaded app before opening it. The tool edits files on the module's memory card and does not flash
+  anything. It can also be built with CMake after initialising the JUCE and oolib submodules.
+brick_risk: false
+tags: [editor, drums, sampler, librarian, eurorack]
+video:
+  url: https://www.youtube.com/watch?v=7JJOkrgqwRc
+  title: ClutchEdit 1.2 Release Overview
+  credit: Chris Roberts
+  first_party: true
+  found_via: https://cpr2323.github.io/clutchedit/index.html
+  version: v1.2
+videos:
+  - url: https://www.youtube.com/watch?v=5qqtO-94H5c
+    title: ClutchEdit v1.0 Quick Overview
+    credit: Chris Roberts
+    first_party: true
+    found_via: https://cpr2323.github.io/clutchedit/index.html
+    version: v1.0
+versions:
+  - version: 1.2.1
+    date: 2026-09-20
+    url: https://github.com/cpr2323/ClutchEdit/tree/1.2.1
+    notes: Git tag; no GitHub release page.
+  - version: v1.2
+    date: 2026-09-20
+    url: https://github.com/cpr2323/ClutchEdit/tree/v1.2
+    notes: Git tag; no GitHub release page.
+  - version: v1.1
+    date: 2026-07-28
+    url: https://github.com/cpr2323/ClutchEdit/tree/v1.1
+    notes: Git tag; no GitHub release page.
+  - version: v1.0
+    date: 2026-04-09
+    url: https://github.com/cpr2323/ClutchEdit/tree/v1.0
+    notes: Git tag; no GitHub release page.

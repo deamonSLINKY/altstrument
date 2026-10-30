@@ -48,6 +48,14 @@ image:
   source_url: https://github.com/sd88me/mpc-vst-plugins/tree/main/tools/plugin_manager_g2
   first_party: true
 versions:
+  - version: plugin-manager-g2-v0.2.4
+    date: 2026-10-30
+    url: https://github.com/sd88me/mpc-vst-plugins/releases/tag/plugin-manager-g2-v0.2.4
+    notes: Fixes the on-screen keyboard typing every letter twice and buttons firing twice, by treating a second press within 250 ms as the same tap.
+  - version: plugin-manager-g2-v0.2.3
+    date: 2026-10-30
+    url: https://github.com/sd88me/mpc-vst-plugins/releases/tag/plugin-manager-g2-v0.2.3
+    notes: Zips in the local-plugins folder are listed and installable with no network, and an unreachable catalog shows a warning instead of an empty list.
   - version: plugin-manager-g2-v0.2.2
     date: 2026-10-29
     url: https://github.com/sd88me/mpc-vst-plugins/releases/tag/plugin-manager-g2-v0.2.2

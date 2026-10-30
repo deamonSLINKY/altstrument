@@ -11,7 +11,8 @@ description: >-
   light only while a pad is held, and K1 shows a master volume overlay. The four faders are switched off in this build
   because the author's own unit has a broken fader. Data is kept in a CLIPPER store that other firmwares do not read.
   The README says it is tested on one unit: keys, pads, wheels, TRS out, flashing and saving. A built package
-  is committed to the repository and also served by a web installer.
+  is committed to the repository and also served by a web installer. isod89 has since published its own SMK-37 line as
+  Clipper Pro, which is a separate entry whose credits do not list this port.
 status: active
 authors:
 - name: davidozz0

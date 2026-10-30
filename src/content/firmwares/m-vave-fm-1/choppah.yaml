@@ -1,0 +1,50 @@
+device: m-vave-fm-1
+name: CHOPPAH
+summary: >-
+  Breakbeat chopper for the FM-1: a recorded Amen break cut into sixteen slices on the white keys, momentary effect
+  pads on the black keys, a pattern generator, a soundboard of sound-system effects and a DJ filter.
+description: >-
+  Built on charlesvestal's fm1-base, with Felucca's board support code underneath. Seventeen breaks are selectable
+  on the ALGORITHM knob: five are played by a small drum synth and twelve are recorded two-bar Amen loops stored in the
+  firmware as ADPCM. Holding a slice loops it and the four knobs set its length, pitch, start and mode. The black-key
+  pads cover rolls, reverse, freeze, tape stop, gate, random, a filter throw and a dub delay. The generator rearranges
+  the break as it plays, the soundboard fires sixteen synthesized effects such as horns and sirens, and the FX page
+  adds ring modulator, high-pass, flanger and degrader. MIDI clock in and out and Bluetooth MIDI are included. The
+  README calls it an early 0.x release: saved patterns, a step sequencer, a looper and loading your own breaks are
+  planned. A browser emulator and a manual are published on the project site.
+status: active
+authors:
+- name: Laurens Profittlich (profikid)
+  url: https://github.com/profikid
+source: https://github.com/profikid/fm1-break-choppah
+source_status: open
+license: MPL-2.0
+license_notes: >-
+  MPL-2.0 (LICENSE). The breaks in breaks/ are Cyberworm's Amen loop collections from rhythm-lab.com, which the
+  collection's info file describes as royalty free; they are not covered by the repository licence. No M-VAVE stock
+  image is bundled.
+homepage: https://profikid.github.io/fm1-break-choppah/
+distribution: browser-installer
+requires_stock: M-VAVE stock firmware or another Felucca / fm1-base build; not FM1 Open
+install_notes: >-
+  Install page on the project site (Chrome or Edge, Web MIDI with SysEx) or build with ./build.sh and flash with
+  ./build.sh flash. An FM-1 running M-VAVE's FM1 Open only accepts M-VAVE's own packages, so put M-VAVE's stock
+  firmware back first. FLASHING.md describes holding OCT- and OCT+ for five seconds to enter update mode, a safe mode
+  after two failed starts, and says an interrupted write has no proven recovery.
+brick_risk: true
+tags: [sampler, drums, performance, fx, looper, generative, emulator, midi]
+image:
+  url: https://raw.githubusercontent.com/profikid/fm1-break-choppah/main/docs/img/screens.png
+  alt: "Six CHOPPAH screens: a splash, a start screen reading AMEN 137, and the slicer view with a waveform, sixteen slice pads and effect pad labels"
+  credit: Laurens Profittlich
+  source_url: https://github.com/profikid/fm1-break-choppah
+  first_party: true
+versions:
+- version: '0.8'
+  date: 2026-10-30
+  url: https://github.com/profikid/fm1-break-choppah/releases/tag/v0.8
+  notes: Latest of eight releases published within a few hours; every push to main is released automatically.
+- version: '0.1'
+  date: 2026-10-30
+  url: https://github.com/profikid/fm1-break-choppah/releases/tag/v0.1
+  notes: First release.

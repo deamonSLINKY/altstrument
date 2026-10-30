@@ -1,0 +1,52 @@
+device: m-vave-smk-37
+name: SLOOP Pro
+summary: >-
+  isod89's own SMK-37 build of the SLOOP groovebox: three synths and a drum machine, 12 engines, 153 sounds, 37 drum
+  kits, songs and punch-in effects, on velocity keys, RGB pads, five fader banks and a DAW mode.
+description: >-
+  SLOOP Pro is SLOOP 2.8.x on the SMK-37 Pro, Elite and MKE-P37, one package each, picked by the installer. The
+  middle 27 keys play as on the FM-1 with velocity from the unit's factory curves, and the outer ten play notes or
+  drums on the drum track. The 16 RGB pads play the drum kit, the track's sound or its steps, with a sound picker on
+  K4. Four faders in five banks set track level, filter, reverb and delay and the selected synth's envelope. Wheels
+  send pitch bend and vibrato, a pedal jack acts as sustain, and the TRS jack sends MIDI out. A DAW mode maps the
+  keyboard to your own CC assignments, edited in the SLOOP web editor's DAW MAP tab. The release notes call
+  it a beta. It credits genkigenki's fm1-to-smk37 board layer and reference SLOOP port, and it is a separate line
+  from the Snoop37 entry.
+status: active
+authors:
+- name: isod89
+  url: https://github.com/isod89
+source: https://github.com/isod89/sloop-pro
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  Stated in the README and LICENSING.md, as upstream SLOOP on Felucca's platform layer. Felucca's icon atlas and panel
+  image are separate assets, and the CC0 samples, msfa (Apache-2.0), DaisySP and Rings ports (MIT) and the Terminus
+  font (OFL) are listed in LICENSING.md. The JieLi SDK files are not in the tree. The repository holds built packages
+  in docs/firmware that are SLOOP Pro's own, not M-VAVE images.
+homepage: https://isod89.github.io/sloop-pro/
+distribution: browser-installer
+requires_stock: M-VAVE V016 (older units need M-VAVE's updater first)
+install_notes: >-
+  Installer page in Chrome or Edge with the keyboard on a USB data cable; it reads the model, writes the matching
+  package and checks the unit afterwards. On Windows, if the page stops while the unit restarts, reopen it and press
+  Install. The README asks for a full flash backup first and says the unit's calibration is never written. M-VAVE's
+  updater returns the unit to stock. Each package refuses another model before erasing anything. Installing is at
+  your own risk.
+brick_risk: true
+tags: [sequencer, synth-engine, drums, sampler, fx, performance, midi, editor, usb-audio, fork]
+versions:
+- version: 2.8.4
+  date: 2026-10-30
+  url: https://github.com/isod89/sloop-pro/releases/tag/v2.8.4
+  notes: >-
+    Bug-fix release: no distortion at the end of notes, UNISON voices start apart, PHYS strings in tune, layer buttons
+    open their pages on a firm press, and a knob on REC READY changes only its own value.
+- version: 2.8.3
+  date: 2026-10-27
+  url: https://github.com/isod89/sloop-pro/releases/tag/v2.8.3
+  notes: Adds four sample banks, drum-module style pad triggering with PAD THRESHOLD, PAD LIGHTS and PAD SCOPE, and hold-note fixes.
+- version: 2.8.1
+  date: 2026-10-24
+  url: https://github.com/isod89/sloop-pro/releases/tag/v2.8.1
+  notes: First release, a beta, with the three model packages and the DAW mode.

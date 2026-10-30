@@ -8,7 +8,8 @@ description: >-
   Side key layout that each have a Lock mode, over 27 scales. A bass part with an octaver, a nine-pattern arpeggiator
   that follows the metronome or MIDI clock, a sequencer for chords, bass, layer and drums with a song mode, REC
   that records into a new pattern, and an ordered chain of filter, drive, chorus, phaser, delay and reverb sit on
-  top of virtual-analogue and FM engines. The home screen
+  top of virtual-analogue and FM engines. A rhythm machine plays 23 ready-made drum rhythms under the chords, on six
+  drum kits of CoralFlower's own beside the older ones. The home screen
   draws a flower or a coral whose parts follow the notes played. The author says it is inspired by the
   Telepathic Instruments Orchid. It keeps ChoralRoot's and Felucca's hardware layer and update loader, and
   the web page also runs the firmware in a browser emulator.
@@ -39,6 +40,10 @@ image:
   source_url: https://github.com/FicusFicusov/CoralFlower
   first_party: true
 versions:
+- version: '0.6'
+  date: 2026-10-29
+  url: https://github.com/FicusFicusov/CoralFlower/releases/tag/v0.6
+  notes: Adds a rhythm machine with 23 ready-made drum rhythms under the chords, six new drum kits and a MIDI keyboard channel setting.
 - version: '0.5'
   date: 2026-10-22
   url: https://github.com/FicusFicusov/CoralFlower/releases/tag/v0.5

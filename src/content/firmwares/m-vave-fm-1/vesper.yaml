@@ -1,0 +1,50 @@
+device: m-vave-fm-1
+name: VESPER
+summary: >-
+  Ambient sequencer firmware with 16 scenes of four layered voices around a chosen major key, a crystal-orbit home
+  screen, a four-track mixer and a global effects chain of drive, tone, granular texture, reverb and tape echo.
+description: >-
+  Built on M-VAVE's FM1 Open V14 SDK. Each scene stacks four voices (typically an arp, a lead, a bass and a swell)
+  in a major key set on HOME, where K2 is a single SPACE control that adds grains, shimmer, reverb and echo. The keys
+  can play the focused voice live, REC writes what is played into the sequence, and EDIT has five pages per voice
+  (sound, tone, oscillator, voice and mix with pan and sends). The global chain runs DIRT, TONE, TEXTURE, then reverb
+  and delay, and the GLO page offers four colour themes. Piano, marimba and glockenspiel voices use a sample bank of
+  CC0 recordings that the updater writes with the firmware and asks before replacing existing samples. It keeps
+  M-VAVE's update loader, so the unit can go back to V15 or move to another firmware. Sixteen user slots hold
+  saved scenes. The repository also contains Chinese-language documentation and the V14 README.
+status: active
+authors:
+- name: Fat Cat Studios
+  url: https://github.com/fatcatstudios-hub
+source: https://github.com/fatcatstudios-hub/vesper-fm1
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  LICENSE.md: the application sources are GPL-3.0-only with M-VAVE's additional permission to link the FM1 binary
+  SDK, inherited from FM1 Open. The binary engine library sdk/lib/libfm1_engine.a is under M-VAVE's separate terms
+  for FM-1 devices (THIRD_PARTY.md). The repository contains M-VAVE's licensed V15 recovery image
+  sdk/firmware/FM-1_015.fwsc, Apache-2.0, git blob ce49cc1595b67347c68a3ac7463017f9fa8c19dd, the same file as in
+  m-vave/fm1_open. The sample bank is CC0 material from VSCO-2 Community Edition.
+distribution: browser-installer
+requires_stock: V15 or another open firmware
+install_notes: >-
+  Open FM1-VESPER-1.1.0-Updater.html from the release in Chrome or Edge with the FM-1 on USB; the same page installs
+  the sample bank and offers Restore original V15. A unit running a Felucca-family firmware should be returned to V15
+  with that firmware's installer first. Back up projects first, because project formats differ between firmwares.
+  Building uses a safety gate that refuses changes to start-up, display transfer, audio output and input scanning
+  code unless the build is marked as a test build. Installing is at your own risk.
+brick_risk: true
+tags: [ambient, sequencer, synth-engine, fx, granular, reverb, delay, sampler, performance, fork]
+image:
+  url: https://raw.githubusercontent.com/fatcatstudios-hub/vesper-fm1/main/docs/images/vesper-home.png
+  alt: "VESPER home screen: scene SANCTUARY, the key F inside a ring of diamonds, four voice layers listed at the right and key, space, level and tempo values below"
+  credit: Fat Cat Studios
+  source_url: https://github.com/fatcatstudios-hub/vesper-fm1
+  first_party: true
+versions:
+- version: 1.1.0
+  date: 2026-10-30
+  url: https://github.com/fatcatstudios-hub/vesper-fm1/releases/tag/vesper-1.1.0
+  notes: >-
+    First public release. The changelog lists a faster screen redraw, about 8 KB more free memory, five SEQ pages and
+    VESPER's own update identity FM-1_8837001.

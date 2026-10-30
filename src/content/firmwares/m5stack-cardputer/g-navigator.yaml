@@ -1,0 +1,37 @@
+device: m5stack-cardputer
+name: G-Navigator
+summary: >-
+  Guitar and bass reference firmware for the Cardputer family with generated chord voicings, reverse chord lookup,
+  progression tools, 56 scales, a tab sequencer with microphone capture and a tuner.
+description: >-
+  Generates chord fingerings from the current tuning instead of a fixed chord table, so every feature follows
+  custom tunings, a capo, 7-string guitars and 4 or 5-string basses. Chords can be picked or typed, played back as a
+  strum, saved to a personal library, or identified by editing a fingering. A progression workshop detects the key,
+  suggests substitutions and picks a capo position, and a key explorer shows diatonic chords. A scale viewer covers
+  56 scales. Melody Lab is a 64-step tab sequencer that can transcribe notes played on a real instrument through the
+  microphone and convert a melody to another scale. The tuner has an adjustable reference pitch from 415 to 444 Hz.
+  The README says the code was written by Claude from the author's ideas.
+status: active
+authors:
+  - name: Tokagetchi
+    url: https://github.com/oldtokage-collab
+source: https://github.com/oldtokage-collab/G-Navigator
+source_status: open
+license: CC-BY-NC-SA-4.0
+license_notes: >-
+  The LICENSE file is the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license, so commercial use is not
+  allowed. GitHub shows the license as "Other", and the README names the same license.
+distribution: download
+requires_stock: Cardputer ADV or the original Cardputer
+install_notes: >-
+  Flash it from the M5Burner web page by searching for G-Navigator, install it from Launcher on an ADV, or copy the
+  release's .bin to the root of the SD card and flash it from Launcher. To build from source, use PlatformIO, which
+  also produces a merged image for M5Burner and similar tools. A microSD card is optional and holds settings, saved
+  chords, progressions and melodies under /G-Nav; without one they are kept in internal flash.
+brick_risk: false
+tags: [tuner, chord-finder, sequencer, open-source]
+versions:
+  - version: v1.0
+    date: 2026-07-24
+    url: https://github.com/oldtokage-collab/G-Navigator/releases/tag/v1.0
+    notes: First stable release.

@@ -9,7 +9,8 @@ description: >-
   cases are fixed. From 2.0 it saves projects in the Tracker Mini format with
   16-track patterns, three synth slots and the Mini's .patch files, and 2.1 and
   2.2 complete the Mini's ACD, VAP, PERC, FAT and WTFM synth models and add live
-  resampling and stereo samples. An NES game player written for the project is
+  resampling and stereo samples. 2.2.3 adds user colour themes loaded from the
+  card and optional streaming of long samples from the SD card. An NES game player written for the project is
   no longer built in by default. Fonts and icons are open substitutes for
   Polyend's. Every built image is checked for the stock flash-security bytes and
   file name length, and the boot code looks for /Firmware/ot_restore.txt first
@@ -23,10 +24,11 @@ authors:
     url: https://github.com/sandlbn
 source: https://github.com/sandlbn/polyend-tracker-re
 source_status: open
-license: MIT
+license: Apache-2.0
 license_notes: >-
-  The README states that OpenTracker's own code is MIT and that third-party code
-  keeps its own licence; the repository has no LICENSE file.
+  The repository added an Apache-2.0 LICENSE file on 2026-10-28 (commit f977f2f);
+  the README earlier described OpenTracker's own code as MIT. Third-party code keeps
+  its own licence.
 distribution: download
 install_notes: >-
   Download Polyend's stock PolyendTracker_1.9.2.ptf yourself and keep it on the
@@ -44,6 +46,10 @@ image:
   source_url: https://github.com/sandlbn/polyend-tracker-re
   first_party: true
 versions:
+  - version: "2.2.3"
+    date: 2026-10-30
+    url: https://github.com/sandlbn/polyend-tracker-re/releases/tag/2.2.3
+    notes: Adds colour theme files read from the card with a theme export, optional streaming of long samples from the SD card, MIDI keyboard pitch bend and a stereo width setting for the synths, and steadies the MIDI clock on the DIN jack.
   - version: "2.2.2"
     date: 2026-10-26
     url: https://github.com/sandlbn/polyend-tracker-re/releases/tag/2.2.2

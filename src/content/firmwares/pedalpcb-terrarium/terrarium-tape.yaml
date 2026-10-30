@@ -21,7 +21,7 @@ install_notes: >-
 brick_risk: false
 tags: [tape, lofi, fx]
 versions:
-  - version: main @ b9a183b
-    date: 2026-10-09
-    url: https://github.com/Aalenberg/terrarium-tape/commit/b9a183b4314fe7a4023d9d2feccd9d354bba62b0
+  - version: main @ c65dd8c
+    date: 2026-10-29
+    url: https://github.com/Aalenberg/terrarium-tape/commit/c65dd8cc329a6a47a4330b5241b5ae87c544aaf0
     notes: No tagged releases; this is the latest commit.

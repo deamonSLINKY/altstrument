@@ -54,6 +54,10 @@ image:
   source_url: https://github.com/complex-ping/overtone#whats-in-it
   first_party: true
 versions:
+  - version: v1.1
+    date: 2026-10-30
+    url: https://github.com/complex-ping/overtone/releases/tag/v1.1
+    notes: Reworks GROOVE with presets, a drift control that offsets each cycle at random, random weights and arrow-key editing, and restores FUNC + TEMPO as tap tempo.
   - version: v1.0.1
     date: 2026-10-29
     url: https://github.com/complex-ping/overtone/releases/tag/v1.0.1

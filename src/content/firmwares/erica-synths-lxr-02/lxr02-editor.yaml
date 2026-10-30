@@ -1,0 +1,44 @@
+device: erica-synths-lxr-02
+name: LXR-02 kit editor
+kind: tool
+summary: Browser kit editor for the LXR-02 that sends every slider move to the unit as CC or NRPN, with a kit browser and loading and saving of .SND files for the SD card. Chrome only.
+description: >-
+  Rights warning: the repository bundles over 200 kit files for the in-page kit browser, which the README counts as
+  117 kits, including folders named for an HRTL DLC pack and an HRTL kit set next to factory kits. It does not say where the
+  HRTL kits come from or on what terms they are shared.
+
+
+  The page edits the six voices and the kit effect of an LXR-02 over Web MIDI. Changes are sent to the unit
+  as the sliders move, and .SND kit files can be loaded from and saved to the SD card format. The author's notes
+  record which parameter mappings were checked on a device with stock firmware 1.71 and which are still open.
+  It is a web page and does not change the unit's firmware.
+status: active
+authors:
+  - name: gregsadetsky
+    url: https://github.com/gregsadetsky
+source: https://github.com/gregsadetsky/lxr02-editor
+source_status: open
+license: unspecified
+license_notes: >-
+  The repository has no LICENSE file and the README gives no licence. The bundled kits under src/kits have no stated
+  origin or terms.
+homepage: https://lxr02.greg.technology
+distribution: browser-installer
+requires_stock: Tested against stock firmware 1.71
+install_notes: >-
+  Open the hosted page in Chrome and allow MIDI access; the README says other browsers are not supported. Connect
+  the LXR-02 over USB MIDI. To run it locally, install the dependencies with npm and start the Vite dev server. The
+  tool sends parameter messages only and does not flash anything.
+brick_risk: false
+tags: [editor, web, midi, drums, patch]
+image:
+  url: https://raw.githubusercontent.com/gregsadetsky/lxr02-editor/main/public/og.png
+  alt: Split image, on the left a close-up of the black LXR-02 panel with its display, knobs and lit buttons, on the right the editor's dark sliders for the snare and clap voices in orange
+  credit: gregsadetsky
+  source_url: https://github.com/gregsadetsky/lxr02-editor
+  first_party: true
+versions:
+  - version: main @ 558c4cd
+    date: 2026-08-16
+    url: https://github.com/gregsadetsky/lxr02-editor/commit/558c4cdc0026f4b21f7d293f49126bf7dde12eff
+    notes: No tagged releases; this is the latest commit.

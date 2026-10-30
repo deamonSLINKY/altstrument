@@ -27,10 +27,15 @@ distribution: browser-installer
 install_notes: >-
   Use the web installer in Chrome or Edge with the FM-1 on USB, or run the X0X fm1_install.py script on a
   .fwsc package. docs/fm1-recovery.md describes putting the stock firmware back, including the OCT- and OCT+
-  hold for the chip's update mode. Inherits X0X's brick risk.
+  hold for the chip's update mode. The .fwsc holds only the firmware; the PCM waves and the FOUNDATIONS bank are
+  written by the web installer or by pcm_store_upload.py sync. Inherits X0X's brick risk.
 brick_risk: true
 tags: [synth-engine, wavetable, sequencer, fx, platform]
 versions:
+- version: 0.9.6
+  date: 2026-10-29
+  url: https://github.com/OwenKirby/carnac-os/releases/tag/v0.9.6
+  notes: The start-up screen warns when the PCM waves or the FOUNDATIONS bank are missing or from another version.
 - version: 0.9.5
   date: 2026-10-27
   url: https://github.com/OwenKirby/carnac-os/releases/tag/v0.9.5

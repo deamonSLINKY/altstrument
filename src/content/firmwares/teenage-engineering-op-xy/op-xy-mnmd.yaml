@@ -12,7 +12,7 @@ description: >-
   The E12 and DPRO engines need samples and waves captured from the user's own Elektron ROMs, and build silent
   without them. Putting the engines on a device means building a firmware with the project's fork of Open-XY and
   installing the result from the device's boot menu. The README calls it experimental and says CPU use has not yet
-  been profiled on the device. Seven of the synth engines have been submitted to the Open-XY machine catalog.
+  been profiled on the device. Seven of the synth engines are in the Open-XY machine catalog.
 status: active
 authors:
   - name: mmockett
@@ -45,6 +45,10 @@ image:
   source_url: https://github.com/mmockett/OP-XY-MNMD#readme
   first_party: true
 versions:
+  - version: v1.1.5
+    date: 2026-10-30
+    url: https://github.com/mmockett/OP-XY-MNMD/tree/v1.1.5
+    notes: Git tag; no GitHub release page. Ships the named presets of the seven published synths with the machines.
   - version: v1.1.4
     date: 2026-10-29
     url: https://github.com/mmockett/OP-XY-MNMD/tree/v1.1.4

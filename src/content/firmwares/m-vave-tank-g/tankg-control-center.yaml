@@ -10,8 +10,8 @@ description: >-
   An independent replacement for M-VAVE's M-EFCS editor, based on a reverse-engineered protocol. It reads
   and writes the 36 presets with a read-back check, saves a backup of the whole bank before each write, and
   edits every control from a panel laid out like the pedal. It also covers preset and bank names, LED
-  colour, import and export of presets and banks, a library of ready-made banks, live audition and
-  Bluetooth connection on the v2. Optional features generate presets with an AI service using the user's own
+  colour, import and export of presets and banks, a library of ready-made banks, setlists with a full-screen
+  stage mode, live audition and Bluetooth connection on the v2. Optional features generate presets with an AI service using the user's own
   account or API key, upload amp models in M-VAVE's .am4data format over Bluetooth, and keep presets in the
   user's Google Drive. A command-line mode lists, backs up, exports, imports, copies and resets presets.
   Firmware updates, IR import and the global settings are not implemented. The app updates itself, and the
@@ -44,6 +44,14 @@ image:
   source_url: https://github.com/CamiloFerreira/tankg-control-center
   first_party: true
 versions:
+- version: v1.10.2
+  date: 2026-10-30
+  url: https://github.com/CamiloFerreira/tankg-control-center/releases/tag/v1.10.2
+  notes: Shows a Bluetooth pedal as connected only when it answers, and lets the editor open from the last backup without a pedal.
+- version: v1.10.0
+  date: 2026-10-30
+  url: https://github.com/CamiloFerreira/tankg-control-center/releases/tag/v1.10.0
+  notes: Adds setlists with a full-screen stage mode and an optional reordering of presets to follow the song order; the preset lists are redrawn as cards.
 - version: v1.9.1
   date: 2026-10-28
   url: https://github.com/CamiloFerreira/tankg-control-center/releases/tag/v1.9.1

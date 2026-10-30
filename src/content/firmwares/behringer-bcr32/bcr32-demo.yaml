@@ -1,0 +1,44 @@
+device: behringer-bcr32
+name: BCR32 demo firmware
+summary: Music Tribe's bare-metal demo firmware for the Behringer BCR32, with a small example for each on-board peripheral, plus the schematic and MCU interface notes.
+description: >-
+  The repository is published by the Music Tribe Open Source organisation. Its
+  demo project is a C firmware for the GD32F405 with no RTOS. It shows button
+  and encoder events on the OLED, sets the CV and gate outputs from knobs and
+  buttons, tests the sync jacks with a loopback cable, passes DIN MIDI through
+  and echoes USB MIDI. It also flashes the activity LEDs, runs DMA self tests
+  of the external and internal flash, and hands over to the bootloader on a
+  SysEx message or a four-button hold. It has a Keil MDK project and a CMake
+  build for the GNU Arm toolchain. The docs folder has the schematic (PDF), the
+  MCU pin assignments and the bootloader hand-over protocol. The demo does not
+  include the sequencer or controller features of the stock firmware, and
+  installing it replaces them. No build or flash was attempted for this entry.
+status: active
+authors:
+  - name: Music Tribe
+    url: https://github.com/MusicTribeOpenSource
+source: https://github.com/MusicTribeOpenSource/0715-AAW
+source_status: open
+license: AGPL-3.0-or-later
+license_notes: >-
+  The root LICENSE file is the AGPL-3.0 text, and the README lists the demo and
+  docs folders as AGPL-3.0-or-later. GigaDevice peripheral and USB libraries,
+  CMSIS and the SSD1306 driver keep their original licenses. The Behringer and
+  BCR32 names and logos are excluded. The repository also holds update tools
+  for Windows and macOS as prebuilt binaries; they are not stock firmware.
+distribution: source-only
+install_notes: >-
+  Build with Keil MDK 5 and Arm Compiler 5 on Windows, or with CMake, Ninja and
+  the GNU Arm Embedded toolchain. The build writes a firmware update file, which
+  the bundled update tool sends to the unit over USB MIDI. The tool starts the
+  bootloader by itself, so no key press is needed. The demo only writes the
+  application area and leaves the bootloader alone, and the bootloader starts
+  by itself when no valid application is present. The repository includes no
+  stock image, so keep the original update file if you want to go back.
+brick_risk: false
+tags: [official, open-source, sdk, examples, usb-midi, cv-gate]
+versions:
+  - version: main @ 1af9f0a
+    date: 2026-10-30
+    url: https://github.com/MusicTribeOpenSource/0715-AAW/commit/1af9f0a
+    notes: No tagged releases; this is the latest commit.

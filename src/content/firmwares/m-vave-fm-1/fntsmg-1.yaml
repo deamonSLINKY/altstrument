@@ -39,7 +39,7 @@ install_notes: >-
 brick_risk: true
 tags: [groovebox, sequencer, drums, synth-engine, fx, arpeggiator, usb-audio, midi, emulator]
 versions:
-- version: main @ 3b40067
+- version: main @ 8062f21
   date: 2026-10-29
-  url: https://github.com/fantasmogenesis/fntsmg-1/commit/3b40067811574d0f3f31010e4bbbfa9f9d0be5d7
-  notes: No tagged releases; this is the latest commit, labelled FNTSMG-1 0.8.6.
+  url: https://github.com/fantasmogenesis/fntsmg-1/commit/8062f217d5ae5fd3ea545e8811327d88195bc4b4
+  notes: No tagged releases; this is the latest commit, labelled FNTSMG-1 0.8.7.

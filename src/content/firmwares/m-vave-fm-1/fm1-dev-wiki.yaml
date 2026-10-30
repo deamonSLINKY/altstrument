@@ -31,7 +31,7 @@ image:
   source_url: https://github.com/sbegueria/fm1-dev-wiki
   first_party: true
 versions:
-- version: master @ 0d5b5c5
-  date: 2026-10-26
-  url: https://github.com/sbegueria/fm1-dev-wiki/commit/0d5b5c53e560006b153e79281b0b566edcab7423
+- version: master @ 9c12508
+  date: 2026-10-29
+  url: https://github.com/sbegueria/fm1-dev-wiki/commit/9c125086797b749932acdd37fa7bea597de5b286
   notes: No tagged releases; this is the latest commit.

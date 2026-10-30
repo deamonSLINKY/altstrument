@@ -8,16 +8,19 @@ description: >-
   builds are offered. The firmware build turns track 8 into a four-voice FM synth that
   plays one to four notes per pad or step, also from MIDI on track 8's channel.
   Sixteen sounds are chosen in the Sample view or per step, and eight macros set
-  tune, the envelope, FM depth, cutoff and resonance. Earlier 0.1.x releases had
+  feedback, the envelope, FM depth, cutoff and resonance, with tune on the synth page, and a step can
+  hold a chord of up to four notes. Earlier 0.1.x releases had
   a fixed saw sound instead. It also adds ten scales on tracks 1 to 7 and a
-  loader for small programs on the microSD card.
+  loader for small programs on the microSD card. The 0.2.1 release ships ten
+  example modules as card files, among them Euclidean rhythms, Game of Life,
+  snake and a puzzle.
   The devkit build adds a DSP load meter and module tools and has no synth. Both
   fix parameter locks so that a step without a lock returns to the knob's value,
   and limit how long the unit waits for the sound processor before flagging a
-  fault with the Rec button. The 0.2 release notes say the synth's processing time
-  has not been measured on the unit, that the final 0.2 image has not been run on
-  hardware (a development build with the same synth code has), and that the fault
-  handling and the devkit build are untested on hardware. The DSP voice source is
+  fault with the Rec button. The 0.2.1 release notes say the synth's processing time
+  has not been measured on the unit and that the conversion of projects saved by
+  0.2.0 and most modules were checked only in emulation; the 0.2.0 notes add that
+  the fault handling and the devkit build are untested on hardware. The DSP voice source is
   now published, so the image rebuilds from the repository. Novation Components cannot restore stock; the
   installer has a Back to stock option.
 status: active
@@ -44,6 +47,10 @@ install_notes: >-
 brick_risk: true
 tags: [synth, chords, scales, sequencer, parameter-locks, modules]
 versions:
+  - version: v0.2.1
+    date: 2026-10-30
+    url: https://github.com/llcoolkm/arrhythmia/releases/tag/v0.2.1
+    notes: Macro 1 on track 8 now sets FM feedback and tune moves to the synth page; adds chords of up to four notes per step, a startup pulse on the pads and a Modules folder on the card with ten example modules. Projects saved by 0.2.1 do not load in 0.2.0.
   - version: v0.2.0
     date: 2026-10-27
     url: https://github.com/llcoolkm/arrhythmia/releases/tag/v0.2.0

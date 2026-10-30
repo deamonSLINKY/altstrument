@@ -7,7 +7,8 @@ description: >-
   and tempo, keeps a searchable local copy of the 256 slots, imports and exports .prst files and plays and
   adjusts the pedal's drum patterns. It also assigns the three knobs and CTRL 1 to 4, each of which can
   drive several blocks. Saving reads the slot back and compares it with what was sent before confirming. An
-  offline mode lets the interface be explored without a pedal. The project version is 1.0.1; no APK is
+  offline mode lets the interface be explored without a pedal. It also keeps favourite effects, lets user IR and SnapTone slots be named and
+  saved to another slot, and syncs the library on the first connection of each day. The project version is 1.0.5; no APK is
   published, so the app has to be built with Gradle on JDK 21. Parts of the preset and protocol code are
   adapted from Preset Forge, and the pedal artwork comes from GP200 Studio. The author notes that the CTRL
   assignment tests passed on a real pedal without recording its model or firmware. Not affiliated with
@@ -37,7 +38,7 @@ image:
   source_url: https://github.com/marcosepifanio/gp200-android-editor
   first_party: true
 versions:
-- version: main @ 9403ba0
-  date: 2026-10-28
-  url: https://github.com/marcosepifanio/gp200-android-editor/commit/9403ba0
+- version: main @ 23e3883
+  date: 2026-10-30
+  url: https://github.com/marcosepifanio/gp200-android-editor/commit/23e3883087adfa51ded484d8ed8bd33556200656
   notes: No tagged releases; this is the latest commit.

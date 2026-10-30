@@ -1,0 +1,33 @@
+name: Count to 5
+manufacturer: Montreal Assembly
+category: pedal
+tagline: Compact delay and sampler pedal with three modes
+description: >-
+  The Count to 5 (CT5) is a compact digital delay and sampler pedal from
+  Montreal Assembly. Its three modes cover pitch-shifted delays, random
+  sampling and layered looping, set with four knobs, three toggle switches and
+  two footswitches. It runs on 9 V DC at up to 150 mA and is true bypass.
+platform: STM32 microcontroller (model not published), USB DFU
+stock_firmware: Montreal Assembly CT5 firmware (closed source)
+links:
+  manufacturer: https://mtlasm.com/product/count-to-5/
+  community:
+    - label: Count to 5 firmware and installation page
+      url: https://mtlasm.blogspot.com/p/count.html
+    - label: Count to 5 megathread on ilovefuzz
+      url: https://ilovefuzz.com/viewtopic.php?f=206&t=43246
+notes: >-
+  No custom or third-party firmware is known. Montreal Assembly publishes its
+  own firmware updates as .dfu files for specific board revisions (h/i, j and
+  k/l, printed on the circuit board), flashed over USB with ST's DfuSe tool or
+  dfu-util; a file for one revision does not work on another.
+image:
+  src: /images/devices/montreal-assembly-count-to-5.webp
+  style: photo
+  alt: Top view of a grey Count to 5 pedal with four white knobs labelled MIX, DIR 1, LEN B / LEN S / DIR 2 and FBK / RAND / DIR 3, three toggle switches marked M, Q and E, an LED and two footswitches
+  width: 576
+  height: 768
+  credit: Montreal Assembly
+  license: manufacturer product image
+  source_url: https://mtlasm.com/product/count-to-5/
+  original_url: https://mtlasm.com/wp-content/uploads/2026/06/greyf-Medium.jpg

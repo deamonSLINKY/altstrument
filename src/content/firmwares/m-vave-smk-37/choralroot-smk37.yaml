@@ -45,6 +45,10 @@ image:
   source_url: https://genkigenki.github.io/smk37/
   first_party: true
 versions:
+- version: 0.27-smk37.1
+  date: 2026-10-30
+  url: https://github.com/Quixotic7/ChoralRootFM1/releases/tag/v0.27-smk37.1
+  notes: Pre-release. Community test build with one package per model (Pro, Elite, MKE-P37) and a "1core" twin of each; the notes name no changes beyond 0.27-smk37.
 - version: 0.27-smk37
   date: 2026-10-26
   url: https://github.com/Quixotic7/ChoralRootFM1/releases/tag/v0.27-smk37

@@ -1,0 +1,42 @@
+device: m-vave-fm-1
+name: Jam Playground
+summary: >-
+  Generative groovebox that starts playing a new song at power-on: five engines, four synth keys plus eleven drums,
+  70 sounds, 104 variations, a recorder for the last 16 bars and a page of effects played on the keys.
+description: >-
+  A fork of RedtailWorks' HYP-1, itself a fork of Charles Vestal's AMB-1. A new boot is a new song, and changes
+  land at the start of the next bar. Five engines (pad, bass, acid, air, drums) supply 70 sounds, some of them sampled
+  (FM piano, vibes, kalimba, harp, upright bass, flute, tenor sax, muted trumpet, harmonica). PRESETS changes the vibe,
+  ALGORITHM the scale, and four knobs set ring, wah, phaser and filter effects. Buttons mutate the song or start a
+  new one, and PLAY switches the automatic song mode on and off. The GLO page plays the keys by hand, records the
+  last 16 bars and loops them back, or opens an effects page with the white and black keys, and SEQ shows every
+  track's steps to edit. The README says the 1.0.0 package still shows the name IAMM-1. The repository also keeps
+  the earlier HYP-1 documentation images and sub-projects from its parent.
+status: active
+authors:
+- name: BunnyOrchard
+  url: https://github.com/BunnyOrchard
+source: https://github.com/BunnyOrchard/jam-playground
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  Stated in the README and LICENSING.md, inherited from HYP-1 and AMB-1 on Felucca's platform layer. The fonts are
+  SIL OFL 1.1, and no JieLi SDK files are in the tree. The default branch is iamm-1. The release packages are
+  Jam Playground's own builds, not M-VAVE images.
+distribution: browser-installer
+install_notes: >-
+  A download page with a browser installer (Chrome or Edge over USB) is built from the repository with
+  tools/iamm_pages.py and is committed as download/index.html; the same package installs with
+  tools/fm1_install.py. The docs describe going back to M-VAVE's V15 with M-UPGRADE or the Felucca installer's
+  stock option, and a rescue script for a unit that no longer starts. Songs stored on the unit can be lost when
+  changing firmware. Installing is at your own risk.
+brick_risk: true
+tags: [generative, sequencer, drums, synth-engine, fx, performance, looper, fork]
+versions:
+- version: 1.2.0
+  date: 2026-10-29
+  url: https://github.com/BunnyOrchard/jam-playground/releases/tag/jam-1.2.0
+  notes: >-
+    Sequence screen: knob 2 leans each hit up or down the scale, knob 3 sets the level, and white keys turn steps on
+    and off. The GLO effects page knobs are Repeat, Move, Tone and Crowd. The crash skips Hypno, House, Acid, Hard and
+    808. A second release, v1.2.0, carries the same package.

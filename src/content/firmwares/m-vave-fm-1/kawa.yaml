@@ -36,7 +36,7 @@ image:
   source_url: https://github.com/Guizmoh/Kawa-Tracker-Fm1
   first_party: true
 versions:
-- version: main @ e00406e
-  date: 2026-10-28
-  url: https://github.com/Guizmoh/Kawa-Tracker-Fm1/commit/e00406e1f5b19f5f7e8147a976f0f2f58bd37cbc
+- version: main @ 958901e
+  date: 2026-10-30
+  url: https://github.com/Guizmoh/Kawa-Tracker-Fm1/commit/958901e138aee804f7258864085dd700c67f8394
   notes: No tagged releases; this is the latest commit. The repository holds the 0.6 beta package.

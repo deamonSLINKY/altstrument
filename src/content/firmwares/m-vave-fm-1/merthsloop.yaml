@@ -7,8 +7,8 @@ description: >-
   Keeps SLOOP's engines and groovebox structure and builds on it for playing and editing without a phone: 24
   drum grooves, 27 chord and bass starters with rhythm shaping, per-note ties and sustains, chord voicing and
   latch, scale lights on the keys, live vibrato, tremolo, wah and pan gestures, extra delay and lo-fi
-  characters, A/B sound morphing, drones and slow drift, and three more visualizers. A companion Android app
-  (MerthSloop Mobile, C# and .NET) does touch performance, a piano roll, FM6 sound editing, sampling and
+  characters, a reverse delay, drum-triggered ducking of chosen synth tracks, A/B sound morphing, drones and
+  slow drift, and three more visualizers. A companion Android app (MerthSloop Mobile, C# and .NET) does touch performance, a piano roll, FM6 sound editing, sampling and
   chopping, MIDI file import and an FM-1 song library over USB. The fork tracks upstream SLOOP releases and keeps
   the upstream song, sample and settings formats as its baseline, so upstream's own installer installs
   upstream SLOOP, not this build. The project's pages host an installer and editor for the fork. The README
@@ -40,7 +40,7 @@ image:
   source_url: https://github.com/merthsoft/sloop-fm1
   first_party: true
 versions:
-- version: merthsloop @ e3b6e4b
-  date: 2026-10-28
-  url: https://github.com/merthsoft/sloop-fm1/commit/e3b6e4b5afcdeb641d40cf5588fc7f5d0604f781
-  notes: No tagged releases; this is the latest commit.
+- version: merthsloop @ d969fc0
+  date: 2026-10-30
+  url: https://github.com/merthsoft/sloop-fm1/commit/d969fc08c8d3e3b725246d033f624ee7b16b3f62
+  notes: No tagged releases; this is the latest commit, labelled 2.8.0.102.

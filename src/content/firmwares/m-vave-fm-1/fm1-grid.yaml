@@ -12,7 +12,7 @@ description: >-
   clickable FM-1 front panel that follows the selected pane. A MIDI graph routes system ports, running panes and
   connected units, and a metronome sends 24 PPQN clock with start and stop to every pane. The other packages come from
   The FM-1 Firmware Hub (SLOOP, Felucca, ChoralRoot and others), M-VAVE's open firmware and a few authors' own sites, and
-  a Library tab lists them and downloads more from the Hub. A pane can be pinned so its flash contents survive power-off.
+  a Library tab lists them and downloads more from the Hub and from fm1-editor.com's firmware page, and a settings tab picks a colour theme. A pane can be pinned so its flash contents survive power-off.
   For live units, the app probes FM-1-named MIDI ports with the M-UPGRADE handshake, shows which firmware is running,
   switches their clock and flashes a chosen package. The repository also builds fm1-tty, a terminal version of the
   library, flashing, keyboard and metronome. The emulated panes accept MIDI in only. The author calls it a local tool,
@@ -44,7 +44,7 @@ image:
   source_url: https://github.com/jasonbot/fm1-grid
   first_party: true
 versions:
-- version: main @ 9dd68c0
-  date: 2026-10-28
-  url: https://github.com/jasonbot/fm1-grid/commit/9dd68c0bd848bd13fc9a1593483638af8e396cab
+- version: main @ 907ba9d
+  date: 2026-10-30
+  url: https://github.com/jasonbot/fm1-grid/commit/907ba9d7e4e6bb9faa2b127a3aaddecc7557ff33
   notes: No tagged releases; this is the latest commit.

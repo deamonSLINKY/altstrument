@@ -47,7 +47,7 @@ image:
   source_url: https://gadlele.github.io/COSMOS/
   first_party: true
 versions:
-- version: main @ 966ff87
-  date: 2026-10-28
-  url: https://github.com/Gadlele/COSMOS/commit/966ff8761e361178f1c1e4f342c56142362b8b94
+- version: main @ 1fbabe1
+  date: 2026-10-30
+  url: https://github.com/Gadlele/COSMOS/commit/1fbabe1bc3323ba482a88206ce08c155ca2d59ce
   notes: No tagged releases; this is the latest commit.

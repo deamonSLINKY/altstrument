@@ -1,0 +1,39 @@
+device: behringer-kick
+name: 0700-AAM fork (KickEm-Tools)
+summary: Fork of Music Tribe's KICK source that builds as published on macOS, Linux and Linux arm64 and merges about 20 fixes and features from rbdone, including working pad modifiers, note recording, metronome, timing correct and a POSIX serial link.
+description: >-
+  A fork of MusicTribeOpenSource/0700-AAM whose main branch is about 78 commits ahead of the upstream. It restores
+  the pieces the public release lacks so the Kick application configures and builds without Music Tribe's internal
+  server, and adds CI that builds it on macOS and Linux and builds the unit's arm64 binary. Application changes
+  merged from the author's own pull requests cover pad level and pan, pad modifiers (full and half level, 16
+  levels, note repeat, latch, erase), recording and overdubbing of pad hits, the metronome, tap tempo, timing
+  correct, sequence switching, relative sample paths, Q-Link knobs, the SHIFT state and a hardware-tab clock setting.
+  It also adds a POSIX serial port implementation written from scratch, and opt-in test hooks that are inactive on
+  the unit. A build guide for the three platforms is in docs/DEVELOPMENT.md. The fork's README is still the
+  upstream text. It is the firmware that the KickEmulator tool builds by default.
+status: active
+authors:
+  - name: rbdone
+    url: https://github.com/rbdone
+source: https://github.com/KickEm-Tools/0700-AAM
+source_status: open
+license: AGPL-3.0-or-later
+license_notes: >-
+  Inherited from the upstream repository: the Kick application, AudIO and ComProtocol are AGPL-3.0-or-later according
+  to the README, whose license table the fork keeps, and the root LICENSE file is the AGPL-3.0 text. The Buildroot
+  tree is GPL-2.0 and bundled third-party code keeps its own licenses. Behringer and KICK names and logos are
+  excluded.
+distribution: source-only
+requires_stock: Not stated; the upstream source has no documented install procedure
+install_notes: >-
+  Build from source following docs/DEVELOPMENT.md, which needs CMake, a C++17 compiler and a one-time download of
+  JUCE. For the unit itself the guide describes building with the Buildroot SDK and installing the result as
+  /usr/bin/KT_Kick; no flashing steps are given. The Linux image of the upstream source is a development build with
+  a passwordless root account and SSH enabled. No build or flash was attempted for this entry.
+brick_risk: false
+tags: [fork, open-source, sampler, sequencer, os]
+versions:
+  - version: main @ 4f8853e
+    date: 2026-10-29
+    url: https://github.com/KickEm-Tools/0700-AAM/commit/4f8853e9fd22e4b625916dc7b821feaba90decb9
+    notes: No tagged releases; this is the latest commit.

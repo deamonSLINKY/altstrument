@@ -4,10 +4,10 @@ summary: >-
   Monomachine-style synth firmware for the FM-1: six tracks each with one mono machine, a 64-step sequencer with
   parameter locks and a lofi effects bus, on a 1-bit screen; also runs in the browser.
 description: >-
-  Each track has one of nine machines (sine and noise, 8-bit SID-style, two FM, two wave, a digital wave machine and
-  a vocal machine) written without floating point, with amplitude, filter, effects, distortion and
+  Each track has one machine (among them sine and noise, 8-bit SID-style, FM, wave, digital wave and vocal
+  machines) written without floating point, with amplitude, filter, effects, distortion and
   three LFOs per track. The sequencer has 64 steps per track with accents, slides, parameter locks, trig
-  conditions, ratchets, swing and live recording; a Grids drum-pattern generator can fill tracks, and PERFORM has two banks of live effects. The bus adds a reverb, beat repeat, tape wobble and ADPCM
+  conditions, ratchets, swing and live recording; a Grids drum-pattern generator can fill tracks, and PERFORM has two banks of live effects. Each track can loop at its own length, and the sound library holds 96 sounds. The bus adds a reverb, beat repeat and ADPCM
   crunch, and MIDI uses Monomachine-style channels and CC numbers. The core also runs in a browser emulator and in
   a desktop test harness. The README gives the FM-1 build as released since 1.0, installed from the project's
   installer page or the FM-1 Firmware Hub, and keeps one project of 64 patterns in its own storage area.
@@ -23,13 +23,21 @@ license_notes: >-
 homepage: https://inigohernandez.github.io/mono2k/
 distribution: download
 install_notes: >-
-  Download mono2k-1.4.fwsc (identity FM-1_980) from the releases page, or install it from the project's installer
+  Download mono2k-1.5.fwsc (identity FM-1_980) from the releases page, or install it from the project's installer
   page or the FM-1 Firmware Hub over USB in Chrome or Edge. Back up what the FM-1 holds first. Installing another
   firmware replaces it, and holding OCT- while switching on reaches the updater. The repository also holds the
   sound and sequencer core, a browser emulator (web/build.sh) and a host harness.
 brick_risk: true
 tags: [sequencer, synth-engine, fx, lfo, emulator, midi]
 versions:
+- version: '1.5'
+  date: 2026-10-30
+  url: https://github.com/InigoHernandez/mono2k/releases/tag/v1.5
+  notes: Redraws every page on a 4 px grid with a pixel font, lets each track loop at its own length, adds a library of 96 sounds, and merges the bus into one page with the tape, hiss and random glitch effects removed. Patterns that use track lengths open only on 1.5 or later.
+- version: 1.4.2
+  date: 2026-10-29
+  url: https://github.com/InigoHernandez/mono2k/releases/tag/v1.4.2
+  notes: Calmer screen with no flashing on actions, a reworked FILT page, and an even split of the tracks between the two processors; the sound is unchanged.
 - version: '1.4'
   date: 2026-10-28
   url: https://github.com/InigoHernandez/mono2k/releases/tag/v1.4

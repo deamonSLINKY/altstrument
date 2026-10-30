@@ -1,0 +1,44 @@
+device: m-vave-fm-1
+name: LUXR
+summary: >-
+  Eight-voice drum machine in the style of the Sonic Potions LXR, with a sample layer of 44 transients per voice,
+  parameter locks, probability and step conditions, patterns, a song mode, MIDI clock and CC learn. Not yet run on a unit.
+description: >-
+  Rights warning: the sample layer can use the twelve original transient samples from the Sonic Potions LXR firmware,
+  which the repository does not contain; the build fetches them from the LXR source, and that licence allows
+  non-commercial use only, so a package built with them is not pure GPL. The other sound sources are synthesized.
+  The eight voices (kick, snare, clap, closed and open hat, tom, rim and cymbal) each combine a synth layer with a
+  sample layer, two LFOs, sends and a mixer with compressor and limiter. The sequencer has 64 steps per track, a
+  speed per track, nudge, fills, Euclid, note repeat, undo, snapshots, 16 patterns with chaining and a 32-row song.
+  It grew out of the author's ONE CLICK FM-1 repository (catalogued as ONE CLICK FM-1) and uses Felucca's platform layer. The README is in German
+  and says the firmware has been tested only on a computer and has never run on an FM-1. The only GitHub release is
+  an unsigned iPad build of the emulator, installable with SideStore or AltStore.
+status: active
+authors:
+- name: Orbitator
+  url: https://github.com/Orbitator
+source: https://github.com/Orbitator/LUXR
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  LICENSE is GPL-3.0 and the NOTICE file says GPL-3.0-only for the code, which includes Felucca's platform layer.
+  The README states that the original LXR transient samples are not under the GPL: they come from the Sonic Potions
+  LXR firmware (Copyright 2013 Julian Schmidt), whose licence forbids commercial use. A package built with them is
+  for personal, non-commercial use and must not be sold or passed on as GPL-only; the project's update page offers it
+  free of charge with the full source. Without the sample layer the firmware would be GPL only. The JieLi SDK files
+  (Apache-2.0) are added at build time and are not in the tree.
+homepage: https://orbitator.github.io/LUXR/
+distribution: browser-installer
+install_notes: >-
+  The project's update page installs the latest build in Chrome or Edge over USB; the build is also produced as a
+  GitHub Actions artifact (luxr.fwsc) on every push to main, or you can build it with tools/build.py. The platform keeps
+  Felucca's update loader and rescue mode (OCT- and OCT+ for five seconds). It shares ONE CLICK's flash area, so
+  switching between the two loses the other's saved data. Not tested on hardware by the author. Installing is at
+  your own risk.
+brick_risk: true
+tags: [drums, sequencer, synth-engine, sampler, fx, midi, emulator, fork]
+versions:
+- version: main @ ecb5373
+  date: 2026-10-25
+  url: https://github.com/Orbitator/LUXR/commit/ecb5373f858be5f656b090096f749005b50dc34f
+  notes: No tagged releases; this is the latest commit.

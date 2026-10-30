@@ -26,7 +26,7 @@ install_notes: >-
   Field appears over USB as an MTP device.
 tags: [research, converter, editor, librarian, web]
 versions:
-  - version: master @ cc73d1b
-    date: 2026-10-19
-    url: https://github.com/jstnfst/te-op1/commit/cc73d1b
+  - version: master @ 24ac03e
+    date: 2026-10-29
+    url: https://github.com/jstnfst/te-op1/commit/24ac03e2de2f37c43272417d732ffd1f4e69636d
     notes: No tagged releases; this is the latest commit.
