@@ -16,7 +16,7 @@ install_notes: Browser WebMIDI installer, or flash the prebuilt .fwsc image.
 brick_risk: true
 tags: [synth-engine, wavetable, sequencer, ui]
 image:
-  url: https://raw.githubusercontent.com/SikkenWorks/ETCH/main/SW-ETCH.png
+  url: https://raw.githubusercontent.com/SikkenWorks/ETCH/main/SW-ETCH1.png
   alt: "Three ETCH screens: the morph page drawing two waveforms, the play page with a wave grid and its morph, depth, cutoff and space values, and the sound page"
   credit: "SikkenWorks"
   source_url: https://github.com/SikkenWorks/ETCH
