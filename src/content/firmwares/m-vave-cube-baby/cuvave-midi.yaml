@@ -1,0 +1,38 @@
+device: m-vave-cube-baby
+name: cuvave-midi
+kind: tool
+summary: Rust library and two example programs that parse the Cube Baby's SysEx messages, spy on traffic between its app and the pedal, and dump its memory over USB-MIDI.
+description: >-
+  A small Rust crate with a parser for the pedal's SysEx messages, built with the nom library. It decodes
+  and encodes the 7-bit packing, and turns frames into message types for memory read, write and content,
+  name and version query, acknowledgement, erase and a few unidentified ones. It also names the
+  knob parameters, the A, B and C presets and the layout of the settings block. Two examples are included.
+  capture opens virtual MIDI ports to show decoded messages passing between the vendor app and the pedal,
+  and mem_dump reads a chosen memory range from the pedal into a file. The README has a partial memory map
+  with the settings, USB loopback flag and IR data regions in RAM and ROM. Memory dumps can contain the
+  pedal's factory IRs, which belong to M-VAVE, but none are in the repository. The README does not say which
+  Cube Baby variant it was tested on.
+status: dormant
+authors:
+- name: pferreir
+  url: https://github.com/pferreir
+source: https://github.com/pferreir/cuvave-midi
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  The licence file is the full GPL version 3 text. No source file carries a licence header and Cargo.toml has
+  no licence field, so there is no "or any later version" notice for this program, only the standard text
+  of the licence itself.
+distribution: source-only
+install_notes: >-
+  Build with cargo from a clone of the repository; the examples use an unstable Rust feature, so a nightly
+  toolchain is needed. The capture example uses virtual MIDI ports, which midir supports on Unix systems
+  only. The mem_dump example only reads memory. Check any write or erase message you build yourself against
+  the parser before sending it to the pedal.
+brick_risk: false
+tags: [research, sysex, usb-midi, midi, rust, cli]
+versions:
+- version: main @ 1ec0428
+  date: 2023-11-13
+  url: https://github.com/pferreir/cuvave-midi/commit/1ec042829751a9f32e3692612ef7b734531e2e0c
+  notes: No tagged releases; this is the latest commit.

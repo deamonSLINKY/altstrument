@@ -42,6 +42,10 @@ install_notes: >-
   builds, send another build or Elektron's Digitone_II_OS1.12.syx with Transfer.
 tags: [fx, lfo, arpeggiator, compressor, delay, patcher, research]
 versions:
+  - version: v0.2.1
+    date: 2026-10-30
+    url: https://github.com/naturarum/dn2-cfw/releases/tag/v0.2.1
+    notes: Withdraws the six spring reverb builds and drops the spring tile from the patcher; the eight remaining builds are byte for byte the same as in 0.2.0.
   - version: v0.2.0
     date: 2026-10-29
     url: https://github.com/naturarum/dn2-cfw/releases/tag/v0.2.0

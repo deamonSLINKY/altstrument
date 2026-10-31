@@ -33,6 +33,19 @@ install_notes: >-
 brick_risk: false
 tags: [platform, synth-engine, fx, ui, chords, scales, tape, web]
 versions:
+  - version: 2.0-beta.3.2
+    date: 2026-10-30
+    url: https://github.com/LizardMan245/opus/releases/tag/v2.0-beta.3.2
+    notes: >-
+      Pre-release. Adds crash logs that the OP-1 writes to a crash folder on its USB disk, a log reader in the plugin kit,
+      and a fix for bridged op1r and Hundekraft effects that stopped the OP-1 when their page showed. Includes
+      beta 3.1, which lifts the start-up limit of 100 own synth presets to 300.
+  - version: 2.0-beta.3
+    date: 2026-10-30
+    url: https://github.com/LizardMan245/opus/releases/tag/v2.0-beta.3
+    notes: >-
+      Pre-release. Adds a trigger guard plugin for worn keys, sampling for plugin engines, no fixed limit on the number
+      of plugins, messages when a plugin was not installed, and a start-up progress bar.
   - version: 2.0-beta.2
     date: 2026-10-29
     url: https://github.com/LizardMan245/opus/releases/tag/v2.0-beta.2

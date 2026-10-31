@@ -33,7 +33,7 @@ install_notes: >-
 brick_risk: true
 tags: [synth-engine, fork, ui, midi, platform, emulator, editor]
 versions:
-- version: main @ c543e24
-  date: 2026-10-29
-  url: https://github.com/kmplngj/Felucca/commit/c543e246e7c51b89d4ffe84a05e7c4afaf4dc465
+- version: main @ 41b1d28
+  date: 2026-10-30
+  url: https://github.com/kmplngj/Felucca/commit/41b1d2829c82c3ac7b0cfa9cb2d0983c21401031
   notes: No tagged releases; this is the latest commit.

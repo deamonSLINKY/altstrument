@@ -7,7 +7,7 @@ description: >-
   Up to eight drone voices have three layers each: detuned saws, drifting additive partials and tuned noise. They
   feed an eight-line reverb with shimmer and a freeze control. A second voice, GLINT, plays two-operator FM bells
   by hand, through an arpeggiator that follows MIDI clock or through a 32-step sequencer, and a BASS voice holds a
-  deep note under the drones. There are twelve scales, chords built in the scale, three LFOs, sixteen scene slots
+  deep note under the drones. There are twelve scales, chords built in the scale, three LFOs, a master filter, lofi tape and master EQ (from 2.5), sixteen scene slots
   with eight factory scenes, and MIDI over USB and TRS that sends incoming notes through the harmony. The drones'
   notes are the ones you latch and do not change by themselves. It is built on fm1-base and felucca-bsp.
 status: active
@@ -20,10 +20,10 @@ license: MPL-2.0
 license_notes: >-
   Every source file carries an MPL-2.0 header (LICENSING.md). The FRASIL name and logo are copyright of the
   author and may be redistributed unchanged with the source and packages; the screen fonts are SIL OFL 1.1.
-distribution: download
+distribution: browser-installer
 install_notes: >-
-  Download frasil-1.0.fwsc from the releases page and install it with base/tools/fm1_install.py from a recursive
-  clone. The README says the FM-1 Firmware Hub will offer a browser install once FRASIL is listed there. To build
+  Install it from FRASIL's page on The FM-1 Firmware Hub in Chrome or Edge, or download a frasil-X.Y.fwsc from the
+  releases page and install it with base/tools/fm1_install.py from a recursive clone. To build
   it yourself, run ./build.sh (Docker and the JieLi toolchain and AC79 SDK are needed). To go back, install
   M-VAVE's V15; if the unit does not start, hold OCT- while switching it on for update mode.
 brick_risk: true
@@ -35,6 +35,18 @@ image:
   source_url: https://github.com/styvesgoupil/frasil
   first_party: true
 versions:
+- version: '2.6'
+  date: 2026-10-31
+  url: https://github.com/styvesgoupil/frasil/releases/tag/v2.6
+  notes: Adds a SOFT page that rounds off the choir's wave, draws the choir's wave on screen and adds the DREAM view to the PERFORM web page.
+- version: 2.5.1
+  date: 2026-10-31
+  url: https://github.com/styvesgoupil/frasil/releases/tag/v2.5.1
+  notes: Stops a new chord glitching on heavy scenes while the last one rings out.
+- version: '2.5'
+  date: 2026-10-30
+  url: https://github.com/styvesgoupil/frasil/releases/tag/v2.5
+  notes: Adds a master filter, LOFI TAPE and a master EQ with routing, per-track pan, PLAY and CUT gestures, a speaker and jack switch that keeps USB audio running, and the PERFORM web page. Fixes crackle when recording over USB.
 - version: 2.0.1
   date: 2026-10-25
   url: https://github.com/styvesgoupil/frasil/releases/tag/v2.0.1

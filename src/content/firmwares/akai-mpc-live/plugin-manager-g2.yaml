@@ -48,6 +48,10 @@ image:
   source_url: https://github.com/sd88me/mpc-vst-plugins/tree/main/tools/plugin_manager_g2
   first_party: true
 versions:
+  - version: plugin-manager-g2-v0.2.5
+    date: 2026-10-31
+    url: https://github.com/sd88me/mpc-vst-plugins/releases/tag/plugin-manager-g2-v0.2.5
+    notes: Tapping the storage readout opens an install-to menu that lists each drive's free space and remembers the choice. The zip safety checks now run on the MPC, and reinstalling over a plugin from an older installer updates it in place.
   - version: plugin-manager-g2-v0.2.4
     date: 2026-10-30
     url: https://github.com/sd88me/mpc-vst-plugins/releases/tag/plugin-manager-g2-v0.2.4

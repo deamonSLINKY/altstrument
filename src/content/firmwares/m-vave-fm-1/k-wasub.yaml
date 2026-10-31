@@ -42,7 +42,7 @@ image:
   source_url: https://github.com/Guizmoh/K-WASUB_Firmware_for_FM1
   first_party: true
 versions:
-- version: main @ f7b0ae7
+- version: main @ d7fa87d
   date: 2026-10-30
-  url: https://github.com/Guizmoh/K-WASUB_Firmware_for_FM1/commit/f7b0ae7ddddcff2530485b949e09ee4a703e0c9f
+  url: https://github.com/Guizmoh/K-WASUB_Firmware_for_FM1/commit/d7fa87d4d73f67ef54b2bc60aaa5d3c2dfc49231
   notes: No tagged releases; this is the latest commit, which carries package 1.0.46.

@@ -1,0 +1,50 @@
+device: m-vave-fm-1
+name: MOONDAW
+summary: >-
+  Tracker firmware: 8 tracks, up to four notes and three named effects per step, chip, sample and sung-syllable
+  voices, and songs stored as plain-text .trk files that can be sent over USB. Beta, in daily use on an FM-1.
+description: >-
+  The arrangement has three levels: SONG lists phrases, SECTION shows what each track plays in a phrase, and PATTERN
+  holds the steps. Voices are PULSE, NOISE and WAVE chip voices, SMPL for your own samples, VOX, which sings the
+  syllables written into a step, and DRUM, which reuses Felucca's drum voices, followed by an envelope, a filter,
+  reverb and delay sends and a master limiter. The device holds 31 songs and a mixer page sets volume, pan and
+  sends per track. REC records played notes over a count-in, a MIDI keyboard on the TRS jack (or forwarded by a
+  script from a computer) plays the instrument under the cursor, and on-device HELP has a page per screen and effect.
+  Python tools send and fetch songs, convert WAV files into the sample bank and drive the device remotely. The
+  project site has a browser build of the same firmware and a manual. This is not a fork of Felucca: it takes
+  Felucca's hardware layer, drivers, update loader and build tools, and UPSTREAM.md lists each file and what was
+  changed. The repository's own README describes the web installer page as living in web/installer, which has to be
+  served from a build of the package; the project site links only the emulator and manual, and no package is
+  released yet, so the firmware has to be built from source.
+status: active
+authors:
+- name: Jaeger
+  url: https://github.com/jaeggerr
+source: https://github.com/jaeggerr/moondaw-fm1
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  LICENSING.md states GPL-3.0-only. Parts taken from Felucca keep GPL-3.0-only, the drum DSP helpers are MIT, the
+  second-core code from felucca-bsp is MPL-2.0 and the band-limited step table from blip_buf is LGPL-2.1-or-later.
+  The fonts are SIL OFL 1.1, and three JieLi AC79 SDK files (Apache-2.0) are read from your SDK checkout at build time.
+  The name MOONDAW is reserved by the author; forks are asked to use another name.
+homepage: https://moondaw.com/
+distribution: source-only
+install_notes: >-
+  Build with ./build.sh (Docker is used if the JieLi toolchain is not installed), then install build/moondaw.fwsc
+  with tools/fm1_install.py. The README warns that installing is at your own risk, says to back up the stock flash
+  first and keep FM-1-transporter ready to restore it, and points to docs/ARRIVEE.md for a rescue path that needs no
+  extra hardware.
+brick_risk: true
+tags: [tracker, sequencer, synth-engine, sampler, voice, fx, reverb, delay, midi, emulator]
+image:
+  url: https://raw.githubusercontent.com/jaeggerr/moondaw-fm1/main/docs/readme/song.png
+  alt: MOONDAW SONG screen showing a grid of two-digit phrase numbers, one row per phrase and six track columns, with one row highlighted in green
+  credit: Jaeger
+  source_url: https://github.com/jaeggerr/moondaw-fm1
+  first_party: true
+versions:
+- version: main @ 355ccf2
+  date: 2026-10-31
+  url: https://github.com/jaeggerr/moondaw-fm1/commit/355ccf2beb979626def0941eea95d87cb4f88f73
+  notes: No tagged releases; this is the latest commit.

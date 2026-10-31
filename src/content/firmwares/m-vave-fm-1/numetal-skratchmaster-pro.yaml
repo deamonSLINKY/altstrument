@@ -10,8 +10,10 @@ description: >-
   routines, a hamster switch, crossfader curve and motor torque settings. Rap mode alternates four bars of rhyming
   verse with four bars of hook in a growled voice, over ten grooves. The PRO edition adds a tempo-locked LFO with
   seven shapes and six destinations, a tone-play mode where the keys are a pitch fader, a mixer page and a
-  larger sound chain with reverb, compressor and limiter. It installs over the earlier 1.0 release, which uses
-  the same identity, FM-1_926. The README says 2.0 runs on the FM-1.
+  larger sound chain with reverb, compressor and limiter. Version 2.1 makes the TRS MIDI input play the kit from an
+  e-kit, sends every drum and the deck's scratch, crossfader and platter angle out over USB-MIDI for visuals, and
+  replaces the drums and guitar with an 808 kit and a drop-B guitar rendered as 16-bit samples. It installs over the
+  earlier 1.0 release, which uses the same identity, FM-1_926. The README says 2.1 runs on the FM-1.
 status: active
 authors:
 - name: Mark Hellar (mhellar)
@@ -26,9 +28,9 @@ homepage: https://mhellar.github.io/numetal-skratchmaster-pro-fm1/
 distribution: browser-installer
 requires_stock: V15
 install_notes: >-
-  Web installer on the project's page in Chrome or Edge over USB, or numetal-pro-2.0.fwsc from the repository
+  Web installer on the project's page in Chrome or Edge over USB, or numetal-pro-2.1.fwsc from the repository
   with tools/fm1_install.py. Holding OCT- at power-on enters a rescue mode with only the updater. The
-  first start of 2.0 resets saved settings to defaults.
+  first start of 2.0 resets saved settings to defaults, and 2.1 keeps 2.0's settings.
 brick_risk: true
 tags: [fork, synth-engine, voice, sequencer, drums, lfo, fx, performance]
 image:
@@ -38,7 +40,7 @@ image:
   source_url: https://github.com/mhellar/numetal-skratchmaster-pro-fm1
   first_party: true
 versions:
-- version: main @ 5ab68a4
-  date: 2026-10-26
-  url: https://github.com/mhellar/numetal-skratchmaster-pro-fm1/commit/5ab68a4c81320f27d48b6e4f2ae9d9c42bf90a2c
-  notes: No tagged releases; this is the latest commit.
+- version: main @ 5488d08
+  date: 2026-10-30
+  url: https://github.com/mhellar/numetal-skratchmaster-pro-fm1/commit/5488d085ce9519436aab6ff0eedebff7af9e9756
+  notes: No tagged releases; this is the latest commit, titled 2.1.

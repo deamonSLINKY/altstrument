@@ -1,0 +1,59 @@
+device: akai-mpc-sample
+name: SampQOL OS
+summary: Free closed-source mod for MPC Sample 1.3.0 that starts from the SD card and adds up to 16 drum tracks, a step sequencer, a mixer with inserts, a pad EQ, 128-slice chop, stem export and undo counter.
+description: >-
+  Licence note: SampQOL OS is closed-source freeware with all rights reserved;
+  its licence forbids sharing the files or a modified version, and the source is
+  not published. A module and autorun scripts that load alongside the stock 1.3.0 app when a
+  prepared microSD card is in the slot, so nothing is flashed; without the card
+  the MPC starts as stock. It adds a Pad View and a Track View for step editing,
+  up to 16 drum tracks with eight banks each, recorded pad and track mutes,
+  automated fades, and a mixer with inserts on pads, tracks, eight submixes and
+  the master. Each pad gets a three-band kill EQ with a spectrum display. Chop
+  Mode gains 128 slices and an Extract that makes no new WAV files. Other
+  additions are mixdown and stem export, pad resampling, a Looper and To Seq in
+  Sample Record, a keyboard mode for a MIDI controller, an undo counter, a
+  settings page and a safety net that keeps samples the stock app would delete
+  when a project fails to load. A watchdog restarts the mod after a crash, and
+  a second crash falls back to stock. The author says it is beta, tested only
+  on MPC Sample 1.3.0 and not yet on the MPC One, Live or X, and that a
+  failed project load can still delete samples. The source is not published;
+  the author says it will be reconsidered when Akai shares its open firmware
+  plans.
+status: active
+authors:
+  - name: Snare Bes
+    url: https://github.com/snarebes
+source_status: binary-only
+license: proprietary
+license_notes: >-
+  Freeware with all rights reserved. The licence allows use, study and
+  modification for your own use, and forbids uploading, hosting or sharing the
+  files or a modified version without written permission; sharing a link to
+  the official download is allowed. It covers only the mod and contains no
+  Akai or inMusic code.
+homepage: https://github.com/snarebes/SampQOL-OS
+distribution: download
+requires_stock: MPC Sample 1.3.0
+install_notes: >-
+  Check that the unit shows v1.3.0 under MIDI Config, unzip the release, copy
+  the autorun folder to the root of an exFAT microSD card and restart the MPC
+  with the card in. To return to stock, start without the card or rename the
+  autorun folder. If the MPC hangs at start-up, hold the power button until it
+  switches off and remove the card. Back up projects first. Download only from
+  the project's releases page.
+brick_risk: false
+tags: [sampler, sequencer, mixer, fx, ui, performance]
+versions:
+  - version: v0.1.4.9
+    date: 2026-10-31
+    url: https://github.com/snarebes/SampQOL-OS/releases/tag/v0.1.4.9
+    notes: Starts automatically when the card is in, which fixes a start-up screen that stopped at 0.0 percent, and fixes full-level velocity from the pads.
+  - version: v0.1.4.8
+    date: 2026-10-31
+    url: https://github.com/snarebes/SampQOL-OS/releases/tag/v0.1.4.8
+    notes: Fixes SD cards with a name other than MPC showing as missing, and stops the channel and pad mixer screens flickering.
+  - version: v0.1.4.7
+    date: 2026-10-30
+    url: https://github.com/snarebes/SampQOL-OS/releases/tag/v0.1.4.7
+    notes: First release in the GitHub list, with the sequencer, mixer, pad EQ, 128-slice chop and stem export.

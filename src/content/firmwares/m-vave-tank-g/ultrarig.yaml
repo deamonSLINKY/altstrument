@@ -2,13 +2,13 @@ device: m-vave-tank-g
 name: UltraRig
 summary: >-
   Alternative firmware for the Tank-G v1 and v2 that runs NAM A2-Lite amp captures on the pedal, with an
-  editable effects chain, user IR cabinets, presets with snapshots and a browser or Android editor.
+  editable effects chain, user IR cabinets, presets with scenes and a browser or Android editor.
 description: >-
   Rights warning: the Windows installer bundles wl82loader.bin, a JieLi second-stage loader taken from
   jl-uboot-tool that has no explicit licence; it runs only in the pedal's RAM during installation.
   UltraRig is written from scratch on JieLi's public AC79 SDK and replaces the Tank-G's application
   firmware. It holds up to 15 NAM A2-Lite captures and eight user cabinet IRs, and its preset chain can
-  use parallel branches and up to 16 of its 32 effect blocks. Presets have four snapshots each, the
+  use parallel branches and up to 16 of its 32 effect blocks. Presets have four scenes each (called snapshots before alpha 4), the
   footswitches have separate tap, double-tap and hold actions, and tap tempo and a tuner are built in.
   The pedal's knobs do nothing yet: everything is set from a web control page in Chrome or Edge over USB,
   or an Android app over Bluetooth. It is an early alpha, and the author advises against relying on it
@@ -28,18 +28,26 @@ license_notes: >-
   MIT-licensed jl-uboot-tool and JieLi's unlicensed wl82loader.bin loader.
 homepage: https://ultrarig.app/
 distribution: download
-requires_stock: Tank-G factory firmware 96 or 97; firmware 98 and 53 or older are refused
+requires_stock: Tank-G factory firmware 97 or 98; 96 and older need M-UPGRADE first
 install_notes: >-
   Windows 10 or 11 only, with a USB data cable straight to the computer and M-EFCS closed. Run the
   read-only UltraRig Check from the check1 release first. Download the package for your board (v1 or
   v2), run UltraRig-Installer.exe (as administrator on the v1) and click Cancel if Windows offers to
   format a disk. The installer reads the full 1 MiB flash twice as a backup, leaves the bootloader alone
   and writes only the application area. Keep the backup_<date> folder in Documents\tankg_installer and
-  never share it: restoring it is the only way back to the factory firmware. Do not update the pedal to
-  firmware 98 before installing.
+  never share it: restoring it is the only way back to the factory firmware. Alpha 6 accepts factory firmware 98; to move a pedal already on UltraRig to 98, go
+  back to the factory firmware first, update with M-UPGRADE and install again, and keep both backups.
 brick_risk: true
 tags: [fx, amp-sim, nam, ir, editor, android]
 versions:
+- version: alpha6
+  date: 2026-10-31
+  url: https://github.com/manuaguirre9/ultrarig/releases/tag/alpha6
+  notes: Firmware M5.17. Supports Tank-G factory firmware 98, tested on the author's v2 but not yet on a v1, turns on act-on-press for the footswitches by default and makes the return to the factory firmware safer when interrupted. Alpha 5, not listed separately, added error reports from the page, app and installer and a clearer demo.
+- version: alpha4
+  date: 2026-10-30
+  url: https://github.com/manuaguirre9/ultrarig/releases/tag/alpha4
+  notes: Firmware M5.16. Shows what each effect costs in CPU and memory before it is added, lets big reverbs use memory in pieces, restores footswitch timing and renames snapshots to scenes.
 - version: alpha3
   date: 2026-10-28
   url: https://github.com/manuaguirre9/ultrarig/releases/tag/alpha3

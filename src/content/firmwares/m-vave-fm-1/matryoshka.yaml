@@ -35,6 +35,10 @@ install_notes: >-
 brick_risk: true
 tags: [synth-engine, modular, editor, emulator, patch, sequencer, arpeggiator, fork]
 versions:
+- version: 1.7.0
+  date: 2026-10-30
+  url: https://github.com/glvno/matryoshka/releases/tag/v1.7.0
+  notes: Gives every FM-1 engine five hand-written presets and removes clipping from the factory sounds. An update now also refreshes factory patches you have not edited, with no factory reset; slots you saved stay as they are. Patches from 1.6 still play.
 - version: 1.6.0
   date: 2026-10-29
   url: https://github.com/glvno/matryoshka/releases/tag/v1.6.0

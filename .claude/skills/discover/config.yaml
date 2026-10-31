@@ -847,3 +847,15 @@ ignore:
   - url: https://github.com/Marcusdeks/FamiGp
     reason: desktop Guitar Pro to chiptune converter, not for music hardware
     date: 2026-10-30
+  - url: https://github.com/hugelton/Felucca-WebApp
+    reason: Felucca's own installer and editor pages, covered by the felucca entry's homepage
+    date: 2026-10-31
+  - url: https://github.com/DedrichVonDorn/wt2-fm1-firmware
+    reason: commits an unmodified copy of M-VAVE's FM-1 V16 image (official/FM-1.fwsc, blob 4758b798), which is not licensed for redistribution; recheck only if it is removed
+    date: 2026-10-31
+  - url: https://github.com/SeeLog/gb-player
+    reason: desktop Game Boy music player that emulates the sound hardware on the computer, no Game Boy hardware target
+    date: 2026-10-31
+  - url: https://github.com/Turtle-PB/RemixMii
+    reason: browser web app for Suno music, DJ and games; Web MIDI control of a Numark controller only, no firmware or device tool
+    date: 2026-10-31

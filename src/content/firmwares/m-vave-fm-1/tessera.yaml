@@ -12,7 +12,7 @@ description: >-
   Tweak pages mutate phrases and build sections, and a modulation matrix routes any source to any destination.
   Version 2.0 played three engines (FM6, TRIO and DRUM), dropping the SID, PHYS, CZ-1 and Prophet engines and their
   sound banks; projects saved by 1.x do not load. Version 3.0 adds ORACLE, a polyphonic analogue-style voice with
-  sounds of its own, and draws every screen in one ink on black with its own 5 x 7 font and nine colours. The README calls it experimental. A browser
+  sounds of its own, and draws every screen in one ink on black with its own 5 x 7 font and nine colours. Version 3.1 adds a USB host mode for one USB-MIDI device, a fixed MIDI CC map and NRPN control of every parameter, untested on a device at release. The README calls it experimental. A browser
   simulator, installer and editor are included.
 status: active
 authors:
@@ -41,6 +41,10 @@ image:
   source_url: https://github.com/Rastapopolix/tessera
   first_party: true
 versions:
+- version: '3.1'
+  date: 2026-10-31
+  url: https://github.com/Rastapopolix/tessera/releases/tag/v3.1
+  notes: Adds a USB host mode that lets the FM-1 host one USB-MIDI device, and a fixed MIDI CC map with NRPN access to every parameter. The release says neither has been tried on a device yet. Projects, presets and settings from 2.x and 3.0 carry over.
 - version: '3.0'
   date: 2026-10-30
   url: https://github.com/Rastapopolix/tessera/releases/tag/v3.0

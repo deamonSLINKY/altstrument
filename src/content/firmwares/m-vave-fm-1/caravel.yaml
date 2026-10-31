@@ -6,7 +6,7 @@ summary: >-
 description: >-
   Carries on from the last Felucca release after its author stepped back from development. It keeps Felucca's
   storage formats, so projects and presets saved by Felucca open in Caravel; projects that use Caravel-only
-  parameters need Caravel to open, and projects saved by 0.3.0 or later do not open on 0.2.0 or earlier. Added
+  parameters need Caravel to open, and projects saved by 0.3.0 or later do not open on 0.2.0 or earlier, and projects saved by 0.7.1 or later do not open on 0.7.0. Added
   features include a latch for held keys, a button to clear the step under the cursor, per-track voice reservations
   and a MORE page for spread and morph; 0.6.0 adds a STASIS hold with ADD and BLEND, and leaves out ROOM, SPRING
   and the SLICE engine. DRUM-X, MORPH and the BYTE and FLOAT waves in LOFI are adapted from the
@@ -40,6 +40,21 @@ video:
   first_party: true
   found_via: https://github.com/bonszaimusic/caravel#readme
 versions:
+- version: 0.7.2
+  date: 2026-10-31
+  url: https://github.com/bonszaimusic/caravel/releases/tag/v0.7.2
+  notes: >-
+    A candidate fix for Update Failed -5 when returning to official V15: the installer now checks that the package's boot
+    area is valid instead of requiring its first 16 KiB to match the unit's flash head, and still refuses a damaged one
+    before anything is erased. Not yet confirmed on a unit that showed -5. Also fixes a divide by zero at BPM 0 and
+    imported FM6 voices with AMS going silent or full scale.
+- version: 0.7.1
+  date: 2026-10-30
+  url: https://github.com/bonszaimusic/caravel/releases/tag/v0.7.1
+  notes: >-
+    Random Morph's four S1-S4 snapshots now travel with projects, RESTORE LAST and USB backups. The new 7,200-byte project
+    format needs 0.7.1 or later; 0.7.0 cannot read it, and older projects load with empty slots. The installer checks
+    package size, SHA-256, product, layout and CRCs before installing.
 - version: 0.7.0
   date: 2026-10-29
   url: https://github.com/bonszaimusic/caravel/releases/tag/v0.7.0

@@ -9,8 +9,9 @@ description: >-
   cover drum voices, oscillators and synths ported from Mutable Instruments code and other open DSP projects,
   reverbs, delays, filters, speech, noise, MIDI tools and sequencers, and the module can take MIDI over
   USB or a TR1 expander. Engines are small separately compiled apps whose sources are in the repository.
-  The TR707 and RZ-1 drum engines read ROM dumps that the user supplies and the project
-  does not ship them. The module needs its Teensy 3.2 swapped for a Teensy 4.0, a drop-in change, or
+  The TR-707 and RZ-1 drum kits read ROM dumps that the user supplies and the project
+  does not ship them; per the 2026-10-31 notes, the DMX and Linn kits use the original EPROMs and the
+  TR-909 hi-hats, crash and ride need the 909 ROMs, all installed from the web app's Module page. The module needs its Teensy 3.2 swapped for a Teensy 4.0, a drop-in change, or
   the Teensy 4.1 based O_C T41 board.
 status: active
 authors:
@@ -43,10 +44,10 @@ video:
   first_party: true
   found_via: https://github.com/eh2k/squares-and-circles#readme
 versions:
-  - version: main @ 410eddc
-    date: 2026-05-04
-    url: https://github.com/eh2k/squares-and-circles/commit/410eddc485f8017be145283893ab2afe70bb337d
-    notes: Latest commit, newer than the last release; the changelog adds the DRUMS/RZ-1 engine for it.
+  - version: '2026-10-31'
+    date: 2026-10-31
+    url: https://github.com/eh2k/squares-and-circles/releases/tag/2026-10-31
+    notes: Summarises over 600 commits. Adds a DRUMKITS category, Plaits models in one synth engine, compressor, drive, ducker and tuner engines, multi-page parameters, MIDI polyphony and USB audio on the Teensy 4.0 module, and fixes MIDI clock timing, levels and calibration. Existing setups may need more level and a fresh CV calibration.
   - version: '2026-04-08'
     date: 2026-04-14
     url: https://github.com/eh2k/squares-and-circles/releases/tag/2026-04-08

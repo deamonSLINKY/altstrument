@@ -4,8 +4,9 @@ summary: >-
   Machinedrum- and Monomachine-style drum kits and synth engines, written from scratch as fixed-point C++ machines on
   the Open-XY SDK and linked into a modified copy of your own OP-XY OS 1.2.0.
 description: >-
-  The repository has four drum kits modelled on Machinedrum machine families (TRX, EFM, P-I and E12), each playing
-  24 keys that can each hold a different machine with eight controls, choke groups and parameter locks, and fourteen
+  The repository has two Machinedrum drum kits, MD KIT (33 machines from the TRX, EFM, P-I and GND families) and MD
+  E12 (the E12's 16 machines), each playing 24 keys that can each hold a different machine with eight controls, choke
+  groups and parameter locks, and fourteen
   Monomachine-style synth engines (SWAVE, SID-6581, FM, VO-6, GND, DPRO) played chromatically with two pages of four
   encoders. The sounds were fitted by ear and by measurement against the original machines running in an emulator,
   and each engine has its own screen drawing. A browser bench on the computer plays every engine without a device.
@@ -45,6 +46,10 @@ image:
   source_url: https://github.com/mmockett/OP-XY-MNMD#readme
   first_party: true
 versions:
+  - version: v1.1.8
+    date: 2026-10-31
+    url: https://github.com/mmockett/OP-XY-MNMD/releases/tag/v1.1.8
+    notes: GitHub release with no notes. The merged work adds the MD KIT and MD E12 drum kits with a drawing for every machine, sound fixes against the emulator and lighter sample loops.
   - version: v1.1.5
     date: 2026-10-30
     url: https://github.com/mmockett/OP-XY-MNMD/tree/v1.1.5

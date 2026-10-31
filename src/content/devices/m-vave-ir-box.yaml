@@ -1,0 +1,32 @@
+name: IR Box
+manufacturer: M-VAVE
+category: pedal
+tagline: Compact cabinet simulator pedal with 32 factory cab presets and loadable IRs
+description: >-
+  The IR Box is a small cabinet simulator pedal from M-VAVE. It has 32 factory cab presets, 25 for electric
+  guitar and 7 for bass, and each preset carries its own impulse response and EQ. It samples at 44.1 kHz
+  and 24 bit, and a custom IR is a mono WAV file of 2048 samples. The front has volume, low cut and high
+  cut knobs, a small display, bypass and plus and minus buttons. There are an XLR balanced output and a
+  3.5 mm headphone output, and power comes from USB-C or a 9 V DC supply. M-VAVE's CubeSuite software and
+  phone app load IRs and edit presets.
+links:
+  manufacturer: https://www.cuvave.com/product?id=ir-box
+  community:
+  - label: M-VAVE software and firmware downloads
+    url: https://www.m-vave.com/download
+notes: >-
+  No custom firmware exists for this pedal. According to the mvave-irbox-tools docs, as of 2026-10-08
+  M-VAVE's download page offers CubeSuite and the SincoOTA updater for the IR Box but no firmware package,
+  and the author's unit reported the name IR-BOX_010. The projects listed here are host-side tools that
+  speak the pedal's own USB-MIDI protocol, and none of them replaces its firmware.
+related: [m-vave-cube-baby]
+image:
+  src: /images/devices/m-vave-ir-box.webp
+  style: photo
+  alt: "M-VAVE IR Box, a black pedal with Low Cut, Vol and Hi Cut knobs, a small display, a Bypass label with minus and plus buttons, and a white panther-and-skull print above the IR BOX logo"
+  width: 1000
+  height: 1000
+  credit: M-VAVE
+  license: manufacturer product image
+  source_url: https://www.cuvave.com/product?id=ir-box
+  original_url: https://www.m-vave.com/images/products/ir-box-nobg.webp

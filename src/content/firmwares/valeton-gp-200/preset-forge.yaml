@@ -36,7 +36,7 @@ install_notes: >-
 brick_risk: false
 tags: [editor, web-midi, web, presets, sysex, midi, usb-midi, research, librarian]
 versions:
-- version: master @ 80f7046
-  date: 2026-10-22
-  url: https://github.com/phash/gp200editor/commit/80f7046
+- version: master @ bd8b524
+  date: 2026-10-31
+  url: https://github.com/phash/gp200editor/commit/bd8b524452f81f796fab73651c4646afd50f9983
   notes: No tagged releases; this is the latest commit.

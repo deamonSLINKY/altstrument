@@ -1,0 +1,41 @@
+name: LXR Drum Module
+manufacturer: Erica Synths
+category: eurorack
+tagline: Six-voice digital drum synthesizer module built on the LXR-02 engine
+description: >-
+  The LXR Drum Module is a Eurorack percussion synthesizer that uses the sound
+  engine of the LXR-02 drum machine and keeps its interface, adding assignable
+  CV control of parameters. It has six drum voices with over 30 parameters each,
+  four assignable outputs, seven trigger inputs, five CV inputs, and an SD card
+  for kits and firmware updates. Three of the voices can play bass lines through
+  1 V/oct tuning. In October 2026 Erica Synths published the module's firmware
+  source under the GPL.
+platform: STM32F765 (Cortex-M7, 216 MHz)
+stock_firmware: 1.5 (2023-11-10)
+links:
+  manufacturer: https://www.ericasynths.lv/lxr-drum-module-2388/
+  community:
+    - label: LXR Eurorack open-source announcement
+      url: https://www.ericasynths.lv/news/post/lxropenmod/
+    - label: LXR Eurorack firmware source
+      url: https://github.com/erica-synths/lxr-eurorack-app
+notes: >-
+  Firmware updates are LXRE*.img files copied to the top folder of a FAT32 SD
+  card and installed by holding the encoder button while switching the module
+  on. The updater is not changed by an update, so an interrupted update can be
+  repeated; only replacing the bootloader needs an ST-Link debug probe. Erica
+  Synths offers no support for self-built or modified firmware. The module's
+  updater ignores the LXR*.img files of the LXR-02 desktop unit, so the two
+  builds are not interchangeable.
+related: [erica-synths-lxr-02]
+pinned: [lxr-eurorack-firmware]
+image:
+  src: /images/devices/erica-synths-lxr-drum-module.webp
+  style: photo
+  alt: Black LXR Drum Module front panel with seven trigger jacks, four outputs, six accent jacks and five CV jacks across the top, a red text display, a data knob, four knobs and a row of eight lit buttons
+  width: 1200
+  height: 1200
+  credit: Erica Synths
+  license: manufacturer product image
+  source_url: https://www.ericasynths.lv/lxr-drum-module-2388/
+  original_url: https://www.ericasynths.lv/media/catalog/product/L/X/LXR_Module_1_wbg_3.png

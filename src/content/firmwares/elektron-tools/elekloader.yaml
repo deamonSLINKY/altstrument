@@ -5,7 +5,8 @@ summary: Mod loader for Elektron firmware. Pick .elemod mods, supply your own st
 description: >-
   Supported: Digitakt mk1 1.53/1.54, Digitone mk1 and Keys 1.43/1.44, Octatrack
   MKI/MKII 1.40C (whole builds; linkable mods boot on an MKII, not yet run on an
-  MKI). Digitakt II 1.17 is experimental. Mods can only change the main OS, and
+  MKI), Model:Cycles and Model:Samples 1.13, and Analog Rytm MKII 1.74. Digitakt
+  II 1.17, Digitone II 1.12 and Analog Four MKII 1.56 are experimental. Mods can only change the main OS, and
   each output is re-read and verified before being written, so the stock file
   always recovers the device. The ecosystem of Digitakt and Digitone mods in this
   catalog builds on it.
@@ -20,6 +21,10 @@ homepage: https://elekloader.github.io/elekloader/
 distribution: browser-installer
 tags: [loader, flasher, sdk]
 versions:
+  - version: v0.9.0
+    date: 2026-10-30
+    url: https://github.com/elekloader/elekloader/releases/tag/v0.9.0
+    notes: First full release since 0.4.0 (0.8.0 was only a draft kit). Cores for the Octatrack, Analog Rytm MKII, Analog Four MKII, Model:Cycles and Model:Samples, and an experimental Digitone II. No macOS app in this release because its signing secrets need renewing; the Windows app and the kit are attached.
   - version: kit v0.7.0
     date: 2026-10-22
     url: https://github.com/elekloader/elekloader/releases/tag/kit-v0.7.0

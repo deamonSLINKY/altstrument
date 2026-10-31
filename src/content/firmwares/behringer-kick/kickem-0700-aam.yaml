@@ -33,7 +33,7 @@ install_notes: >-
 brick_risk: false
 tags: [fork, open-source, sampler, sequencer, os]
 versions:
-  - version: main @ 4f8853e
-    date: 2026-10-29
-    url: https://github.com/KickEm-Tools/0700-AAM/commit/4f8853e9fd22e4b625916dc7b821feaba90decb9
+  - version: main @ 6dd85ea
+    date: 2026-10-30
+    url: https://github.com/KickEm-Tools/0700-AAM/commit/6dd85eaedc1d2f859b5f749937ac91412932a94f
     notes: No tagged releases; this is the latest commit.

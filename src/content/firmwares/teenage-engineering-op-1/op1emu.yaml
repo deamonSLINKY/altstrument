@@ -13,7 +13,7 @@ homepage: https://op1emu.github.io/op1emu/
 install_notes: Build with CMake; it runs a firmware image (te-boot.ldr) and NAND image you supply.
 tags: [emulator, research]
 versions:
-  - version: main @ a76e466
-    date: 2026-10-30
-    url: https://github.com/op1emu/op1emu/commit/a76e466febbdc9db6e46583cc2d9e38f5c5d80b8
+  - version: main @ a2ff78e
+    date: 2026-10-31
+    url: https://github.com/op1emu/op1emu/commit/a2ff78e3ec866384225545caa0e77343d754f199
     notes: No tagged releases; this is the latest commit.

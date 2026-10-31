@@ -1,0 +1,50 @@
+device: akai-mpc-live
+name: ChronoStretch
+summary: Native VST2 cue sampler for MPC OS 3.x that analyses a loaded sample, chops it across 64 pads in four banks, and plays the chops in time and in key with per-pad FX and drum separation.
+description: >-
+  A plugin that loads on an MPC plugin track and shows its own touchscreen pages. It browses the internal
+  drive, SSD and USB drives with sample preview, then finds the tempo, beat grid, key and hits of the sample.
+  Chops come from transients, equal slices, beat divisions, manual pad taps or random placement, and can be
+  moved and nudged down to a single sample, with zero-crossing snap and ten undo steps. Playback follows the
+  project tempo and can be transposed by semitones with tempo kept. Each pad has level, filter, envelope,
+  pitch, speed, reverse, play mode, choke and layer groups, and up to four of 16 effect presets. A two-pass
+  separation can remove or solo the drums. A keyboard can play all 64 chops from C1. It is built with the
+  VST2 wrapper and skin tools of mpc-vst-plugins and was tested on an MPC Live II by its author; the release
+  zip is an ARMv7 build.
+status: active
+authors:
+  - name: Milliano
+    url: https://github.com/guerrillamilliano
+source: https://github.com/guerrillamilliano/ChronoStretch
+source_status: open
+license: MIT
+license_notes: >-
+  The LICENSE file is MIT, copyright Milliano, though its last paragraph refers to another plugin, Cinematic
+  Noir, which looks like a leftover from a sibling project. PFFFT (BSD-style FFTPACK licence) and two
+  modified mpc-vst-plugins wrapper files (MIT) are covered by THIRD-PARTY-NOTICES.md and toolkit/LICENSE.
+distribution: download
+requires_stock: MPC OS 3.x
+install_notes: >-
+  Download the release zip, unpack it on the MPC or on a computer that can reach its drive, and run
+  install.sh, which stops and restarts MPC. Then add ChronoStretch to a plugin track. Installing plugins
+  this way is unofficial, and a plugin crash takes MPC down with it. The release names only the Live II as
+  tested.
+brick_risk: false
+tags: [sampler, fx, utility, ui, platform]
+versions:
+  - version: 1.0.31
+    date: 2026-10-31
+    url: https://github.com/guerrillamilliano/ChronoStretch/releases/tag/v1.0.31
+    notes: 32-bit float output, two-pass drum separation, and SYNC, 1/2 SPEED and PADS/KEYS switches on the main page.
+  - version: 1.0.26
+    date: 2026-10-30
+    url: https://github.com/guerrillamilliano/ChronoStretch/releases/tag/v1.0.26
+    notes: MIDI KEYS starts on ALL 64, so a keyboard plays every chop from any bank.
+  - version: 1.0.24
+    date: 2026-10-30
+    url: https://github.com/guerrillamilliano/ChronoStretch/releases/tag/v1.0.24
+    notes: Stackable FX layers on a pad and faded display of the other banks' chops.
+  - version: 1.0.21
+    date: 2026-10-30
+    url: https://github.com/guerrillamilliano/ChronoStretch/releases/tag/v1.0.21
+    notes: First release.

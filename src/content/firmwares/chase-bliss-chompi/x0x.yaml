@@ -11,7 +11,10 @@ description: >-
   play and recording, with quantize, roll and erase on the drums. It sends and
   receives MIDI over DIN and USB, can lead a DAW's transport, and exports each
   pattern as a MIDI file and imports files from the card at power-on. Mutes, a
-  write-protect mode and undo of a clear are included. The README says the drum
+  write-protect mode and undo of a clear are included. Bass and drums each have a
+  step scale of 1/16, 1/16 triplets or 1/8 triplets, so the two sides can cross,
+  and steps take ratchets of up to four hits, microtiming, copying and pattern
+  shift. A metronome can be switched on. The README says the drum
   side has had the least time on hardware. Cheat sheets are published as PDF
   and PNG.
 status: active
@@ -30,6 +33,14 @@ install_notes: >-
 brick_risk: false
 tags: [synth-engine, drums, sequencer, midi, performance, emulator]
 versions:
+  - version: v1.3.2
+    date: 2026-10-30
+    url: https://github.com/theotherson/chompi-x0x/releases/tag/v1.3.2
+    notes: Moves the step-scale choice to D#4 with the purple knob and adds a marker for where a shifted pattern starts. Versions 1.3.1 (separate scales for bass and drums, per-step microtiming, pattern shift and a metronome) and 1.3.0 landed the same day.
+  - version: v1.3.0
+    date: 2026-10-30
+    url: https://github.com/theotherson/chompi-x0x/releases/tag/v1.3.0
+    notes: Adds triplet step scales, ratchets of one to four hits in a step and copying one step to another.
   - version: v1.2.0
     date: 2026-10-25
     url: https://github.com/theotherson/chompi-x0x/releases/tag/v1.2.0

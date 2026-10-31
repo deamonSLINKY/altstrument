@@ -4,7 +4,8 @@ summary: Patch for the KeyStep Pro's 2.5.20 firmware that adds a bass generator,
 description: >-
   KSCON (KeyStep Con) modifies Arturia's 2.5.20 firmware with hand-written Thumb-2 hooks. The patched firmware, which
   reports itself as 2.5.99, adds a Make bass button combination with five styles, drum lanes and scale chords played from the step
-  buttons, a root-chord mode, key lights for pad notes, 16-character project names and a changed startup screen. A
+  buttons that can also drive the arpeggiator, a root-chord mode, key and step lights for pad notes, note and chord names on the screen, a
+  mod strip lock, 16-character project names and a changed startup screen. A
   single HTML page edits the 16 projects over Web MIDI SysEx in place of MIDI Control Center, with piano-roll and
   drum-grid editors, MIDI file import and export, backups, 158 global settings and a simulated, playable KeyStep Pro
   that serves as a manual. A separate browser installer applies the patch to the user's own copy of Arturia's update
@@ -39,7 +40,7 @@ image:
   source_url: https://github.com/canadianblaken/keystep-con
   first_party: true
 versions:
-  - version: main @ 2213071
-    date: 2026-10-29
-    url: https://github.com/canadianblaken/keystep-con/commit/2213071cce1badcea78d02d8b986d3b3542269bc
+  - version: main @ 8bbbf16
+    date: 2026-10-30
+    url: https://github.com/canadianblaken/keystep-con/commit/8bbbf16ac75e6b0ed246710a66707ec73fcba36c
     notes: No tagged releases; this is the latest commit.

@@ -1,0 +1,37 @@
+device: akai-mpc-sample
+kind: tool
+name: mpc-sample-kit
+summary: Generates drum patterns and plays them to the MPC Sample over USB-MIDI from a Node.js CLI or a Web MIDI browser page, with Euclidean rhythms, swing, humanising, fills, MIDI clock and optional record arming.
+description: >-
+  An early framework for driving the MPC Sample from a computer. Patterns are step strings or generated from
+  styles such as boom bap, garage, techno and jazz, then varied over many bars with drift, fills, ratchets and
+  locked tracks. Velocities follow metric position, timing can be swung and humanised, and the same notes can
+  be sent with MIDI clock and transport. The Node tools use a small CoreMIDI utility, and the browser page uses
+  Web MIDI in Chromium. With no MPC attached the page plays a General MIDI kit through a built-in synth or a
+  bundled SoundFont. Record to MPC arms the unit over MMC and plays the phrase in real time. Pads are assumed
+  to be MIDI notes 36 to 51, and the role-to-pad map is the author's convention, not read from the device. The
+  repository has no tagged releases.
+status: active
+authors:
+  - name: Mick Grierson
+    url: https://github.com/micknoise
+source: https://github.com/micknoise/mpc-sample-kit
+source_status: open
+license: MIT
+license_notes: >-
+  The repository is MIT. It vendors the SpessaSynth player (Apache-2.0) and the GeneralUser GS SoundFont by
+  S. Christian Collins, which keep their own licences (web/vendor/README.md).
+homepage: https://micknoise.github.io/mpc-sample-kit/web/
+distribution: source-only
+install_notes: >-
+  Needs Node.js. On the MPC Sample set SHIFT + pad 8 (MIDI CONFIG) to MIDI Port USB first. The CLI helper in
+  tools/midi is built with make and needs macOS CoreMIDI. The browser page needs a Chromium browser with Web
+  MIDI, or MIDIWeb Browser on an iPhone. Record to MPC needs Receive MMC switched on in the unit's MIDI/Sync
+  settings.
+brick_risk: false
+tags: [sequencer, drums, generative, midi, usb-midi, web, utility]
+versions:
+  - version: main @ f98f6ab
+    date: 2026-08-08
+    url: https://github.com/micknoise/mpc-sample-kit/commit/f98f6ab
+    notes: No tagged releases; this is the latest commit.

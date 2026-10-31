@@ -1,0 +1,53 @@
+device: polyend-tracker
+name: OpenTracker syamajala fork
+summary: Fork of OpenTracker for the original Polyend Tracker that adds a DX7 FM synth model, Performance scenes with a crossfader and master FX, song repeat counts and scene ramps, a MIDI instrument LFO, chord entry and a piano pad layout.
+description: >-
+  Follows upstream OpenTracker's 2.x line (2.2.1 at the time of writing) and keeps
+  the extra data in separate files next to project.mt, so stock firmware and
+  upstream OpenTracker still open the projects. The DX7 model is a sixth synth
+  engine that plays Yamaha DX7 voices from .syx banks, built on Google's msfa
+  core, with panel controls for brightness, feedback, envelope rates and
+  detune. Performance mode gets a bank of 16 scenes with an A/B crossfader, a
+  DJ filter and a tape stop on the master mix. The Song list adds a repeat count
+  per slot, a scene per slot and ramps between scenes, and song exports can
+  render them. Smaller additions are a tempo-locked LFO for MIDI instruments,
+  sharps or flats note names, a piano layout for the pads, chord step entry and
+  a USB remote-control mode with a desktop simulator for testing. The built-in
+  games are off by default to free memory. The README says the synth sound is
+  close to the Tracker Mini's but not identical, and that projects saved by 2.x
+  read as tracks 1 to 8 only on stock firmware, not yet confirmed on a stock unit.
+  Documentation is on a separate site.
+status: active
+authors:
+  - name: syamajala
+    url: https://github.com/syamajala
+source: https://github.com/syamajala/polyend-tracker-re
+source_status: open
+license: Apache-2.0
+license_notes: >-
+  The repository's LICENSE file is Apache-2.0, as in upstream OpenTracker. The DX7
+  core is a port of Google's msfa, also Apache-2.0.
+homepage: https://syamajala.github.io/polyend-tracker-re/
+distribution: source-only
+requires_stock: Polyend stock 1.9.2 kept on the card as the way back
+install_notes: >-
+  Build with make VERSION=<x.y.z> and the Arm GNU toolchain, or use an image from
+  the fork's Releases page once one is published (none was listed at the time of
+  writing). Copy the .ptf into /Firmware on the SD card and install it from
+  Config, Firmware update. Keep Polyend's stock PolyendTracker_1.9.2.ptf on the
+  card too, and keep only one other image there, because the rear reset button
+  installs a random .ptf from the folder. To go back, install the stock file the
+  same way or write its name into /Firmware/ot_restore.txt and power-cycle.
+brick_risk: true
+tags: [sequencer, sampler, synth-engine, fm, fx, fork]
+image:
+  url: https://raw.githubusercontent.com/syamajala/polyend-tracker-re/main/screenshots/fork/performance.png
+  alt: "Performance FX screen in the desktop simulator: columns from DJ filter and Tape stop to Delay send and Volume LFO, row values such as -60 and +50, an A and B crossfader marker on top"
+  credit: syamajala
+  source_url: https://github.com/syamajala/polyend-tracker-re
+  first_party: true
+versions:
+  - version: main @ 10714d2
+    date: 2026-10-31
+    url: https://github.com/syamajala/polyend-tracker-re/commit/10714d29237fb066b26a36f1ce35699f718c8fee
+    notes: No tagged releases; this is the latest commit.

@@ -11,7 +11,10 @@ description: >-
   loads single voices or whole kits from other projects. It also lowers CPU load
   by about 10 percent, fixes a number of stock bugs in MIDI, the sequencer, SD
   card handling and memory use, and writes a project save into a new folder so
-  an interrupted save cannot lose the saved project. Since 0.1 it renames the
+  an interrupted save cannot lose the saved project. Release 1.1 keeps audio and
+  the sequencer running while knobs, menus, kit loading and SD card saves are in
+  use, and release 1.2 adds a DJ filter with resonance on the performance page.
+  Since 0.1 it renames the
   unit on the start-up screen and as the USB-MIDI device, which means DAW
   mappings that use the old port name need to be set up again. Kits, patterns,
   projects and the MIDI implementation stay compatible with the stock firmware,
@@ -32,7 +35,7 @@ license_notes: >-
 distribution: download
 requires_stock: LXR-02 with the stock bootloader
 install_notes: >-
-  Copy LXR_OpenElixir-02_V1.0.img from the release to the top folder of the SD
+  Copy LXR_OpenElixir-02_V1.2.img from the release to the top folder of the SD
   card, delete any other LXR*.img files, then hold the encoder button while
   switching the unit on until LXR Updater appears. The bootloader is not
   touched, so an interrupted update can be repeated. Installing an official
@@ -43,6 +46,14 @@ install_notes: >-
 brick_risk: false
 tags: [drums, fork, open-source]
 versions:
+  - version: "1.2"
+    date: 2026-10-31
+    url: https://github.com/tunefish777/openelixir-02/releases/tag/v1.2
+    notes: Adds a DJ filter on the performance page, with low-pass and high-pass sweeps and a resonance control, applied after the effects and before the limiter.
+  - version: "1.1"
+    date: 2026-10-31
+    url: https://github.com/tunefish777/openelixir-02/releases/tag/v1.1
+    notes: Keeps audio running while knobs, menus, kit loading and SD card saves are in use, with the DACs fed continuously by hardware.
   - version: "1.0"
     date: 2026-10-26
     url: https://github.com/tunefish777/openelixir-02/releases/tag/v1.0

@@ -1,0 +1,32 @@
+name: Tank Mini
+manufacturer: M-VAVE
+category: pedal
+tagline: Compact battery-powered guitar and bass multi-effects pedal with 21 presets and IR cabinets
+description: >-
+  The Tank Mini is a small three-footswitch multi-effects pedal for guitar and bass from M-VAVE. The 21
+  presets sit in seven banks of three, selected with the A, B and C switches. Each preset chains six
+  modules: noise gate, boost or compressor, amp, modulation, delay and reverb, plus a cabinet block. The
+  stock firmware has 20 amp models and 20 IR cabinet slots, seven modulation types, five delays and six
+  reverbs. It runs from a built-in rechargeable battery, charges over USB-C and works as a USB audio
+  interface, and a Bluetooth link lets M-VAVE's app edit presets and import IR and amp files.
+stock_firmware: V09
+links:
+  manufacturer: https://www.cuvave.com/product?id=tank-mini
+  community:
+  - label: M-VAVE software and firmware downloads
+    url: https://www.m-vave.com/download
+notes: >-
+  No custom firmware exists for this pedal. Firmware updates are official only, from M-VAVE's download
+  page, which lists V09 dated 2026-01-31. The projects listed here are host-side tools that speak the
+  pedal's own USB-MIDI or Bluetooth protocol to edit presets, and none of them replaces its firmware.
+related: [m-vave-tank-g]
+image:
+  src: /images/devices/m-vave-tank-mini.webp
+  style: photo
+  alt: "M-VAVE Tank Mini, a pink aluminium pedal with three footswitches ringed in green LEDs, labelled A, B and C, a BANK- and BANK+ marking and a tank outline on the front panel"
+  width: 800
+  height: 800
+  credit: M-VAVE
+  license: manufacturer product image
+  source_url: https://www.cuvave.com/product?id=tank-mini
+  original_url: https://www.m-vave.com/images/products/tank-mini-nobg.webp

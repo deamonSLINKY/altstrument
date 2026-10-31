@@ -33,12 +33,17 @@ install_notes: >-
   later. Clone the repository and run ./kickem run --ref integration/standalone,
   which fetches and builds the firmware (about two minutes for the first build,
   plus a one-time JUCE download of about 170 MB) and opens the panel and the
-  Kick screen. Point --firmware and --ref at your own fork to test it. Nothing
+  Kick screen. Point --firmware and --ref at your own fork to test it. A prebuilt panel is on the release page for driving a serial port
+  without building. Nothing
   is flashed to a device.
 brick_risk: false
 tags: [emulator, sampler, sequencer, open-source]
 versions:
-  - version: main @ 28f7d60
-    date: 2026-10-29
-    url: https://github.com/KickEm-Tools/KickEmulator/commit/28f7d604b647f26bd18f476060cb7448c0323827
+  - version: panel-v1.0.0
+    date: 2026-10-30
+    url: https://github.com/KickEm-Tools/KickEmulator/releases/tag/panel-v1.0.0
+    notes: Prebuilt emulated front panel only, for macOS on Apple Silicon and Linux x86_64 and arm64, built from commit 00098c1. For driving a unit's or a VM's serial port without building; the firmware is still built from source.
+  - version: main @ 00098c1
+    date: 2026-10-30
+    url: https://github.com/KickEm-Tools/KickEmulator/commit/00098c119fe7a69d204c34ce30c4f95649fe7606
     notes: No tagged releases; this is the latest commit.

@@ -40,6 +40,10 @@ image:
   source_url: https://github.com/FicusFicusov/CoralFlower
   first_party: true
 versions:
+- version: 0.6.1
+  date: 2026-10-30
+  url: https://github.com/FicusFicusov/CoralFlower/releases/tag/v0.6.1
+  notes: Adds a one-bar count-in when you press REC on the rhythm machine, and makes a chord pressed with REC always land in the take.
 - version: '0.6'
   date: 2026-10-29
   url: https://github.com/FicusFicusov/CoralFlower/releases/tag/v0.6

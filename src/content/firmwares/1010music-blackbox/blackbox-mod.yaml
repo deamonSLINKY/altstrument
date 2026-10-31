@@ -1,13 +1,17 @@
 device: 1010music-blackbox
 name: blackbox-mod (JOEBOX)
-summary: Patcher that adds per-pad insert effects, extra LFOs, master FX, new delay types, a pad solo, chords and live input to your own copy of Blackbox 3.1.9, along with USB audio on the power jack.
+summary: Patcher that adds per-pad insert effects, extra LFOs, master FX, new delay types, a ChopShop pad mode, time-stretch models, chords and live input to your own copy of Blackbox 3.1.9, along with USB audio on the power jack.
 description: >-
   Source and patch definitions for an unofficial feature mod of the original
-  Blackbox, released under the name JOEBOX 1. It adds an insert effect and a
+  Blackbox, released as JOEBOX 2. It adds an insert effect and a
   live audio input per pad, two more LFOs per pad, envelope and key tracking as
   modulation sources, a master effect slot, further delay types, a three-band
   compressor and master clipper, record pre-roll, chords on the Keys screen,
-  trig-style note conditions and a solo mode. On units where the power jack's
+  trig-style note conditions and a solo mode. JOEBOX 2 adds ChopShop, a pad mode
+  that chops a sample on the beat grid, four time-stretch models for synced
+  clips, tempo detection, a transient shaper and TapeScam as insert and master
+  effects, note repeat, groove timing, colour themes, mixer meters and a lower
+  CPU load. On units where the power jack's
   USB data lines work, the Blackbox then shows up as a USB MIDI and six-channel
   audio device. New code is compiled and appended to the stock image, with a
   second part installed into spare flash from a separate file. A load readout
@@ -30,13 +34,14 @@ install_notes: >-
   accepts 3.1.9. Copy both output files, BLACKBOX.bin and BBEXTRA.BIN, to the
   root of the microSD card and install as for any official update (hold BACK and
   INFO at power-on). The unit restarts once on first boot while the second file
-  installs. Keep the stock file to go back. Early JOEBOX 1 builds left some
-  units restarting at the logo; the 2026-10-17 build fixes that, and the author
+  installs. Keep the stock file to go back. Coming from JOEBOX 1, copy both
+  files, because the second one changed. Early JOEBOX 1 builds left some
+  units restarting at the logo; the 2026-10-17 build fixed that, and the author
   says it was tested on few units.
 brick_risk: false
 tags: [fx, sampler, performance, midi, usb-audio, python]
 versions:
-  - version: main @ 66329ad
-    date: 2026-10-17
-    url: https://github.com/j3threejay/blackbox-mod/commit/66329adc3ed1da8fc0fef2729e63cbd7788c414b
-    notes: No tagged releases; this is the latest commit, which carries JOEBOX 1 (rc4).
+  - version: main @ da84b1b
+    date: 2026-10-30
+    url: https://github.com/j3threejay/blackbox-mod/commit/da84b1bfcfcf289aa1eb97cf5a894e5ffad6d3e7
+    notes: No tagged releases; this is the latest commit, which carries the JOEBOX 2 release patch.

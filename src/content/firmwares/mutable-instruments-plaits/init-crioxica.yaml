@@ -1,0 +1,42 @@
+device: mutable-instruments-plaits
+name: iNit-Crioxica Plaits firmware
+summary: Ready-made Plaits firmware built with Plaits Palette, with 28 models on 32 slots including four custom 6-operator FM banks and a wave terrain bank. Offered as wav, SysEx and hex files on the Internet Archive.
+description: >-
+  Rights warning: the upload does not say where the 128 FM presets or the
+  wave terrain bank come from, so their rights are not known. The item is a
+  finished build rather than a tool. Its saved Palette configuration shows the
+  model layout: stock, Braids-ported and alternate models together with four
+  custom 6-operator FM banks of 32 presets each and an 11-terrain wave terrain
+  bank. The files are an update wav, four SysEx bank dumps, a hex image and the
+  Palette configuration, which can be loaded back into Plaits Palette to change
+  the layout. The uploader describes the FM banks as a selection from about
+  3,500 auditioned presets. There is no source repository.
+status: unknown
+authors:
+  - name: iNit-Crioxica
+    url: https://archive.org/details/i-nit-crioxica-plaits-firmware
+source_status: binary-only
+license: unspecified
+license_notes: >-
+  The Internet Archive item is marked with the Public Domain Mark 1.0, which is
+  not a licence. The build comes from Plaits Palette, which is based on the MIT
+  licensed Plaits source, and the item names no licence of its own.
+homepage: https://archive.org/details/i-nit-crioxica-plaits-firmware
+distribution: download
+install_notes: >-
+  Use the wav with the normal Plaits audio update procedure, or flash the hex
+  with a programmer. The item points to Plaits Palette for making changes. Back
+  to stock by installing the official Plaits firmware wav.
+brick_risk: true
+tags: [synth-engine, fm, wavetable, presets, fork]
+image:
+  url: https://archive.org/download/i-nit-crioxica-plaits-firmware/THis.png
+  alt: Plaits Palette model layout with four colour groups of eight slots, listing models such as Bytebeat, Wave Terrain, Dual Sync, four custom 6-Op FM banks named iNit Crioxica 1 to 4, Speech and Brass
+  credit: iNit-Crioxica
+  source_url: https://archive.org/details/i-nit-crioxica-plaits-firmware
+  first_party: true
+versions:
+  - version: 2026-08-27 upload
+    date: 2026-08-27
+    url: https://archive.org/details/i-nit-crioxica-plaits-firmware
+    notes: Date the item was published on the Internet Archive; the item has no version number.

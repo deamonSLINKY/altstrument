@@ -32,7 +32,7 @@ install_notes: >-
 brick_risk: true
 tags: [flasher, editor, web, machines, midi]
 versions:
-  - version: main @ e2cd259
+  - version: main @ 0c460aa
     date: 2026-10-30
-    url: https://github.com/AveyCole/SPOKES/commit/e2cd2590f48bdf4a9d3fd645dc19df2274a2ac69
+    url: https://github.com/AveyCole/SPOKES/commit/0c460aa4fcef8f2d535b805d01882d2506b17dc3
     notes: No tagged releases; this is the latest commit.

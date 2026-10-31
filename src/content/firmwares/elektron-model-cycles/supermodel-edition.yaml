@@ -23,7 +23,8 @@ license: unspecified
 license_notes: >-
   The fork has no LICENSE file at its root (the upstream Modded Cycles repository
   has an MIT one). Bundled components carry their own MIT notices, such as
-  LICENSE-Model909.txt.
+  LICENSE-Punch.txt, which is the file GitHub reports as the repository's
+  licence.
 homepage: https://aveycole.github.io/Supermodel/flasher-supermodel-909/
 distribution: browser-installer
 requires_stock: "1.13"
@@ -35,7 +36,7 @@ install_notes: >-
   returns to stock.
 tags: [machines, drums, sampler, sequencer, lfo, midi, fx]
 versions:
-  - version: main @ 188f741
-    date: 2026-10-29
-    url: https://github.com/AveyCole/Supermodel/commit/188f74102459462de4ff7ef3e5ea20a3b5457931
+  - version: main @ a080073
+    date: 2026-10-31
+    url: https://github.com/AveyCole/Supermodel/commit/a08007326c5023cb533b5d032b2e93caa91f7050
     notes: No tagged releases; this is the latest commit.

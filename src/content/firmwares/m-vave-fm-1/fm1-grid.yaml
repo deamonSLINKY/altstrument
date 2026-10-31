@@ -5,13 +5,13 @@ summary: >-
   Desktop app (Rust) that runs up to four emulated FM-1s side by side with any community firmware, shares a MIDI
   clock and keyboard between them, and also detects and flashes real FM-1 units over USB.
 description: >-
-  Rights warning: the build downloads 19 firmware packages into a git-ignored folder, including M-VAVE's stock FM-1
-  V16 package from M-VAVE's file server and Baud Girl's proprietary FM-1+VA from baudgirl.com; the repository holds none
+  Rights warning: the build downloads six firmware packages into a git-ignored folder, including M-VAVE's stock FM-1
+  V16 package from M-VAVE's file server and Baud Girl's proprietary FM-1+VA 102 from baudgirl.com; the repository holds none
   of the files. V16 is not the V15 file this catalogue lists as licensed for redistribution. Each pane runs the fm1-emu
   CPU and display model with its own firmware and screen, mixes the four audio streams into one output, and shows a
   clickable FM-1 front panel that follows the selected pane. A MIDI graph routes system ports, running panes and
-  connected units, and a metronome sends 24 PPQN clock with start and stop to every pane. The other packages come from
-  The FM-1 Firmware Hub (SLOOP, Felucca, ChoralRoot and others), M-VAVE's open firmware and a few authors' own sites, and
+  connected units, and a metronome sends 24 PPQN clock with start and stop to every pane. The other four packages are SLOOP, Felucca and
+  ChoralRoot from The FM-1 Firmware Hub and M-VAVE's open firmware V14, and
   a Library tab lists them and downloads more from the Hub and from fm1-editor.com's firmware page, and a settings tab picks a colour theme. A pane can be pinned so its flash contents survive power-off.
   For live units, the app probes FM-1-named MIDI ports with the M-UPGRADE handshake, shows which firmware is running,
   switches their clock and flashes a chosen package. The repository also builds fm1-tty, a terminal version of the
@@ -32,7 +32,7 @@ license_notes: >-
 distribution: source-only
 install_notes: >-
   Build with Rust 1.91 or newer using cargo run --release; Linux needs ALSA and X11 or Wayland development
-  packages. The first build downloads any missing firmware packages listed in firmware/firmwares.json and checks
+  packages. The first build downloads any missing firmware packages listed in fm1-performer/firmware/firmwares.json and checks
   their hashes; scripts/firmware.sh edits the list. Flashing a connected unit uses the same update path as other
   installers, so back up first and follow the brick-risk notes on the FM-1 device page.
 brick_risk: false
@@ -44,7 +44,7 @@ image:
   source_url: https://github.com/jasonbot/fm1-grid
   first_party: true
 versions:
-- version: main @ 907ba9d
+- version: main @ 981b103
   date: 2026-10-30
-  url: https://github.com/jasonbot/fm1-grid/commit/907ba9d7e4e6bb9faa2b127a3aaddecc7557ff33
+  url: https://github.com/jasonbot/fm1-grid/commit/981b103730ed96a237d7106401b01fde1d16b22f
   notes: No tagged releases; this is the latest commit.

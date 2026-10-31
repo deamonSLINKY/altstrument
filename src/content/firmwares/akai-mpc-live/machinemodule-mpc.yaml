@@ -8,8 +8,11 @@ description: >-
   has pages for synth, amp and effects, routing and LFO per track, a kit
   library and a voice budget to keep CPU use in check. Two companion plugins
   put individual tracks or the reverb and delay sends on their own MPC tracks.
-  The Machinedrum master effects and the RAM, input and MIDI machines are not
-  included. Nothing from Elektron is in the repository or its releases: the
+  The Gen2 download has the Machinedrum master effects (reverb, delay, EQ and
+  dynamix), a 16-track mixer page with mute and solo, and the CTR control
+  machines; a first-generation build leaves the master effects out and sends the
+  reverb and delay sends to the companion plugin instead. The RAM, input and
+  MIDI machines are not included. Nothing from Elektron is in the repository or its releases: the
   build needs the Machinedrum OS 1.63 file and, for the ROM sample machines and
   factory kits, a flash image from your own unit. Developed on a Force and
   tested on MPC OS 3.9.1. The same engine is also released as a desktop
@@ -39,6 +42,10 @@ install_notes: >-
   needs a modded unit.
 tags: [synth-engine, drums, emulator, platform]
 versions:
+  - version: v1.0.0
+    date: 2026-10-31
+    url: https://github.com/sd88me/mpc-vst-machinedrum/releases/tag/v1.0.0
+    notes: Adds a mixer page with mute, solo and meters, mute groups, the master effects, the CTR control machines and machine descriptions in the picker. The installer keeps the machinedrum folder on upgrade.
   - version: v0.5.2
     date: 2026-10-27
     url: https://github.com/sd88me/mpc-vst-machinedrum/releases/tag/v0.5.2

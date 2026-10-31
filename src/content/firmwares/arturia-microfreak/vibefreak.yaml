@@ -1,0 +1,43 @@
+device: arturia-microfreak
+name: VibeFreak
+kind: tool
+summary: Rust emulator that boots Arturia's own MicroFreak update package on emulated STM32 processors with a browser front panel, audio output, an SWD-style debug console and an MCP server for coding agents.
+description: >-
+  VibeFreak reads the official MicroFreak firmware update (.mff) that the user supplies, directly in memory, and runs
+  the main STM32F446 processor and the three STM32F0 coprocessors for the display, panel matrix and keybed, together with
+  the audio codec, the QSPI flash and a model of the analog filter. A web page on port 8081 shows the panel, display, knobs,
+  keys, CV outputs and a debug console with halt, step, register and memory commands, and the audio plays through the
+  computer's default output. User presets persist in a flash image file. It also has a headless boot test, an MCP server
+  that lets coding agents press keys, turn controls and debug the emulated processor, and a switch to load loose firmware
+  binaries from a directory. The README says the code is written from scratch and the repository holds no Arturia firmware,
+  wavetables or sample banks. It is a desktop tool and does not touch the synth.
+status: active
+authors:
+  - name: mikkovihonen
+    url: https://github.com/mikkovihonen
+source: https://github.com/mikkovihonen/vibefreak
+source_status: open
+license: GPL-3.0-or-later
+license_notes: >-
+  The LICENSE file is the GPL version 3 text and the README names the licence as GPL-3.0-or-later. It covers the
+  emulator only; the firmware it runs belongs to Arturia and is supplied by the user.
+distribution: source-only
+requires_stock: 5.0.0.2084 (the README's example; any official MicroFreak update .mff)
+install_notes: >-
+  Needs Rust. Build and install with cargo install --path crates/vibefreak-cli, download an official MicroFreak
+  firmware update .mff from Arturia, and run vibefreak with the file path, or place it in the working directory or
+  ~/.config/vibefreak/. Then open http://localhost:8081. The emulator runs only on the computer and does not write to
+  an instrument.
+brick_risk: false
+tags: [emulator, research, rust, mcp, debugging]
+image:
+  url: https://raw.githubusercontent.com/mikkovihonen/vibefreak/main/screenshot.png
+  alt: VibeFreak browser front panel with a modulation matrix, a display showing Preset 1 Convergence Brass, knobs, a keyboard along the bottom, CV monitors and a debug console on the right
+  credit: mikkovihonen
+  source_url: https://github.com/mikkovihonen/vibefreak
+  first_party: true
+versions:
+  - version: main @ 8e0f382
+    date: 2026-10-30
+    url: https://github.com/mikkovihonen/vibefreak/commit/8e0f382ebb58e0ba2380cc6ace3e728acb68fec9
+    notes: No tagged releases; this is the latest commit.

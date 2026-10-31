@@ -1,0 +1,44 @@
+device: erica-synths-lxr-drum-module
+name: LXR Eurorack firmware (official source)
+summary: Erica Synths' own firmware for the LXR Drum Module, published as GPL source in October 2026; it builds the SD card update image from the drum voice, effects, sequencer, CV, MIDI and interface code.
+description: >-
+  The repository holds the firmware of the Eurorack module for the STM32F765:
+  the drum voices, the effects bus, trigger and CV inputs, MIDI, kit storage on
+  the SD card and the display and encoder interface. It is the Eurorack branch
+  of the LXR-02 code, with its own build target and update file naming. The
+  build writes an LXRE_V2_V<version>.img update; the source sets version 1.51,
+  while the newest download on the product page is 1.5. A build option also
+  writes a full flash image with the Eurorack bootloader for blank devices.
+  Erica Synths gives no support for self-built or modified firmware, modified
+  builds must show on the start-up screen that they are modified, and the
+  Erica Synths and LXR names may not be used to suggest an official build.
+status: active
+authors:
+  - name: Erica Synths
+    url: https://github.com/erica-synths
+source: https://github.com/erica-synths/lxr-eurorack-app
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  NOTICE.md names the licence as GPL-3.0-only and adds section 7 terms: permission
+  to combine the code with STMicroelectronics libraries under ST's own licence,
+  trademark limits on the Erica Synths, LXR and LXR-02 names, and a rule that
+  modified versions are marked on the start-up screen. Third-party components
+  keep their own licences.
+homepage: https://www.ericasynths.lv/news/post/lxropenmod/
+distribution: source-only
+install_notes: >-
+  Build with CMake, Ninja, Python 3 and the Arm GNU Toolchain, copy the .img to
+  the top folder of a FAT32 SD card (removing older LXRE*.img files), then hold
+  the encoder button while switching on until LXR Updater appears. The
+  bootloader is left alone, so an interrupted update can be repeated. Only the
+  flash_full target, which also writes the bootloader through a debug probe, can
+  leave the module unable to update from the card. Do not use the desktop LXR-02
+  files on this module.
+brick_risk: false
+tags: [official, drums, fx, open-source]
+versions:
+  - version: main @ e752339
+    date: 2026-10-29
+    url: https://github.com/erica-synths/lxr-eurorack-app/commit/e7523396af31add278cfaf5ecb34767ebeb4ca56
+    notes: No tagged releases; this is the latest commit. The source builds firmware version 1.51.

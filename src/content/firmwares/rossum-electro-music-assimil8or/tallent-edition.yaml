@@ -1,12 +1,14 @@
 device: rossum-electro-music-assimil8or
 name: Assimil8or Tallent Edition
-summary: Browser patcher that adds per-channel EQ and multimode filter, a grain mode, Time Lock pitch shifting, resampling and a documented MIDI editor protocol to Rossum's Assimil8or software 3.04.
+summary: Browser patcher that adds per-channel EQ and multimode filter, a grain mode, Time Lock pitch shifting, resampling, mix effects and a documented MIDI editor protocol to Rossum's Assimil8or software 3.04.
 description: >-
   The patch adds a three-band EQ with high-pass filter to every channel and zone,
   a multimode filter with 12 and 24 dB slopes, notch and band-stop types, a grain
   mode that plays a sample as up to eight overlapping grains, Time Lock for
   changing a loop's pitch while keeping its timing, and a resample function that
-  records a channel's output into one of its zones. Most settings take CV control.
+  records a channel's output into one of its zones. Version 1.2.0 adds mix effects: a compressor on each
+  channel and the mix outputs with sidechain, reverb, gated reverb and chorus modeled on the Roland DEP-5, and a
+  tempo-synced ping-pong delay. Most settings take CV control.
   The new pages sit behind a second press of existing buttons, presets keep the new
   settings in files that Rossum's software still opens, and the original software
   can be loaded again at any time. With a Locutus module the firmware can be
@@ -40,6 +42,14 @@ install_notes: >-
 brick_risk: false
 tags: [sampler, eq, filter, granular, resampling, patcher, editor, sysex, eurorack]
 versions:
+  - version: 1.2.1
+    date: 2026-10-30
+    url: https://github.com/brandon-tallent/assimil8or-extended-firmware/releases/tag/v1.2.1
+    notes: Loading a folder of samples is much faster; a folder of 449 WAV files loads in under 2 seconds instead of nearly 50.
+  - version: 1.2.0
+    date: 2026-10-30
+    url: https://github.com/brandon-tallent/assimil8or-extended-firmware/releases/tag/v1.2.0
+    notes: Adds mix effects (press Pan/Mix twice) with a compressor, Roland DEP-5-style reverb, gated reverb and chorus, and a tempo-synced ping-pong delay, with CV control. Presets store them as MixFX lines that 1.1.0 and Rossum's software ignore.
   - version: 1.1.0
     date: 2026-10-28
     url: https://github.com/brandon-tallent/assimil8or-extended-firmware/releases/tag/v1.1.0

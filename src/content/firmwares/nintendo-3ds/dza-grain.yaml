@@ -1,0 +1,37 @@
+device: nintendo-3ds
+name: DZA.grain (3DS)
+summary: Paid granular sampler for the Nintendo 3DS by Light Reft, with grain controls, microphone sampling, touch-screen operation, its own effects and a morph automation slider.
+description: >-
+  DZA.grain is a granular sampler engine adapted to the 3DS's hardware. It has grain speed and density controls, shows
+  the active grains on the waveforms, and takes samples by import or by recording through the built-in microphones. It
+  uses both screens, the stylus and the circle pad. Compared with the PSP version it adds its own effects and a slider
+  for morph automation. It is independent homebrew by the artist DZA, the Light Reft project and the HOW2MAKE RECORDS
+  label, and is not affiliated with Nintendo. The 3DS version was added to the same Bandcamp release as the PSP version
+  and is a free download for people who already have that version. Synth Anatomy names only the 3DS, and the Bandcamp page does not
+  say whether the 2DS family or the New models are required or supported. No source is published and the page states
+  all rights reserved.
+status: active
+authors:
+  - name: Light Reft
+    url: https://www.lightreft.jp/
+homepage: https://how2make.bandcamp.com/album/dza-grain-psp-x-3ds
+source_status: binary-only
+license: proprietary
+license_notes: The Bandcamp page states "all rights reserved" and sells the sampler as part of a paid album.
+distribution: commercial
+install_notes: >-
+  Buy or redeem the Bandcamp release and download it. The sampler file arrives as a .txt file that you rename to
+  DZA.grain.zip and extract, then follow the README for the 3DS version. The page does not state the system software
+  or custom firmware it needs.
+brick_risk: false
+tags: [commercial, granular, sampler, touch, homebrew]
+image:
+  url: https://f4.bcbits.com/img/a3293394285_10.jpg
+  alt: Release artwork on a dark grey background with the orange pixel-style title DZA.grain, the words granular sampler and sound anywhere, and the address www.lightreft.jp
+  credit: DZA
+  source_url: https://how2make.bandcamp.com/album/dza-grain-psp-x-3ds
+  first_party: true
+versions:
+  - version: Bandcamp release
+    url: https://how2make.bandcamp.com/album/dza-grain-psp-x-3ds
+    notes: The 3DS build was added to the PSP release after its first publication; the date of the addition is not confirmed.

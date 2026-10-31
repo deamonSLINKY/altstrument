@@ -34,7 +34,7 @@ install_notes: >-
 brick_risk: true
 tags: [flasher, loader, usb-midi, sysex, python, utility]
 versions:
-- version: main @ cdfedc2
-  date: 2026-10-30
-  url: https://github.com/jedgarpark/FM-1_Flasher/commit/cdfedc24249f625ecd48ccb9e40c915212d3f069
+- version: main @ 82a98a4
+  date: 2026-10-31
+  url: https://github.com/jedgarpark/FM-1_Flasher/commit/82a98a4c3eb500206347cb373733c1d45b6c5e28
   notes: No tagged releases; this is the latest commit.

@@ -36,6 +36,10 @@ video:
   credit: friendkerrek
   first_party: false
 versions:
+  - version: 2.1.0
+    date: 2026-10-30
+    url: https://github.com/MatthewCallis/super-pads/releases/tag/2.1.0
+    notes: Adds bulk updating of pad fields.
   - version: v2.0.0
     date: 2026-10-05
     url: https://github.com/MatthewCallis/super-pads/releases/tag/v2.0.0

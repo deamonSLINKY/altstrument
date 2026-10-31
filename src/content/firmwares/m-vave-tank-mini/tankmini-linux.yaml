@@ -1,0 +1,48 @@
+device: m-vave-tank-mini
+name: tankmini-linux
+kind: tool
+summary: Native Linux app and command-line tool for the Tank Mini that edits and backs up presets over a reverse-engineered USB-MIDI protocol, with a tuner and a protocol write-up.
+description: >-
+  Rights warning: the repository's assets folder holds factory-table.bin, a byte-exact dump of the pedal's
+  stock factory presets, which the app uses for its factory reset. M-VAVE has not licensed that data for
+  redistribution.
+
+  A Rust workspace with a shared protocol crate, a GTK4 and libadwaita desktop app and a command-line tool.
+  It reads and writes the 21 presets over USB-MIDI, shows each preset as a signal chain with every
+  parameter of the six effect blocks, and edits live through the pedal's edit buffer so flash is written
+  only on request. It backs up the preset table before each write and reads it back to verify, and also
+  does preset export and import, local preset names, a sound library with setlists, a tuner that reads the
+  pedal's USB audio input and a PipeWire script for playing along with computer audio. The author tested
+  it on firmware TANK MINI_004 and marks each protocol finding in docs/protocol as verified on hardware,
+  read from the official app, or inferred. IR and amp upload, remote tuning and Bluetooth are not done.
+  The pedal's firmware is never touched. The interface and screenshots are in Brazilian Portuguese.
+status: active
+authors:
+- name: viniciusapl97
+  url: https://github.com/viniciusapl97
+source: https://github.com/viniciusapl97/tankmini-linux
+source_status: open
+license: MIT
+license_notes: >-
+  The licence file is the standard MIT text, copyrighted to "tankmini-linux contributors". The factory-table.bin
+  preset dump is M-VAVE's data and is not covered by it.
+distribution: source-only
+install_notes: >-
+  Needs GTK 4.14 and libadwaita 1.5 or newer and Rust 1.75 or newer. Clone the repository and run
+  install.sh, which builds and installs the tankmini command and the tankmini-gui app under ~/.local. Your
+  user needs access to the ALSA raw MIDI devices, usually through the audio group. The app writes preset
+  flash, with a backup and read-back check on every write. It never sends the ERASE command and leaves
+  firmware updates to M-VAVE's own tools.
+brick_risk: false
+tags: [editor, usb-midi, midi, sysex, presets, librarian, research, rust, cli, linux]
+image:
+  url: https://raw.githubusercontent.com/viniciusapl97/tankmini-linux/master/docs/screenshots/02-editar.png
+  alt: tankmini-linux Editar screen in Portuguese, with preset banks at left and a pedalboard of six effect cards (Boost, amp, Chorus, Analog delay, Hall reverb, cabinet) with their knobs
+  credit: viniciusapl97
+  source_url: https://github.com/viniciusapl97/tankmini-linux
+  first_party: true
+versions:
+- version: master @ d19741c
+  date: 2026-10-23
+  url: https://github.com/viniciusapl97/tankmini-linux/commit/d19741c61dff7b5f937ee66dc8d27839acd65433
+  notes: No tagged releases; this is the latest commit.

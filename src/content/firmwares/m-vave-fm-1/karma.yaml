@@ -1,0 +1,48 @@
+device: m-vave-fm-1
+name: KARMA
+summary: >-
+  Four-track groovebox firmware grown from SLOOP: acid or Juno track, Elements and Plaits engines, LXR-02 drum voices, 64-step sequencer, chord generators, granular send, six-stem USB audio, web installer and editor.
+description: >-
+  KARMA started as a fork of SLOOP and keeps the Felucca hardware layer under it. Track 1 is a TB-303 style
+  acid voice (from X0X) or a Juno-106 style polysynth (from FM-106), track 2 runs Mutable Instruments
+  Elements code, track 3 offers 24 synthesis models from Plaits, and the drum track plays voices ported from
+  Erica Synths' open-source LXR-02 firmware. The sequencer has 64 steps per track, chords, ratchets, slides,
+  chance and a song arranger, and generators write parts for the synth tracks from one key and chord
+  progression. Other features are a Clouds-based granular send, reverb and delay, USB audio with a stereo or
+  six-stem mode, USB MIDI in and out with DAW clock sync, dual-core rendering and pixel-art screens with a
+  character per track. A browser simulator and a web editor are on the project site. KARMA reads projects
+  saved by SLOOP up to 2.6 but not those of newer SLOOP releases, and after SLOOP 2.8 it starts with an empty
+  project. Its firmware identity is FM-1_926.
+status: active
+authors:
+  - name: Ariel Muchnik
+    url: https://github.com/eatyourgreensstudio-dotcom
+source: https://github.com/eatyourgreensstudio-dotcom/karma-fm1
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  Code is GPL-3.0-only (LICENSE, LICENSING.md). Plaits, Elements and Clouds code from Mutable Instruments
+  stays MIT. The drum voices and transient samples taken from Erica Synths' LXR-02 firmware are GPL-3.0-only
+  with that project's extra terms, which include a trademark clause for the LXR names (LICENSES/LXR-NOTICE.md).
+  Other parts keep their own licences listed in LICENSING.md, including msfa (Apache-2.0) and CC0 samples.
+homepage: https://eatyourgreensstudio-dotcom.github.io/karma-fm1/
+distribution: browser-installer
+install_notes: >-
+  Web installer in Chrome or Edge over USB. Back up projects from the editor first when coming from another
+  firmware, because each FM-1 firmware reads its own flash layout and may overwrite the others' data. The
+  installer page can return to stock V15, but it asks you to select your own unmodified M-VAVE FM-1 V15
+  file, which it checks by hash; it does not bundle it. Holding OCT- while switching on starts the USB
+  rescue if an install was interrupted.
+brick_risk: true
+tags: [groovebox, sequencer, synth-engine, drums, fx, generative, physical-modeling, usb-audio, midi, editor, fork]
+image:
+  url: https://raw.githubusercontent.com/eatyourgreensstudio-dotcom/karma-fm1/main/docs/img/acid.png
+  alt: KARMA's ACID track screen on a black background, showing a purple sumo-wrestler character, the note C4, TB ACID 303, 120 BPM, and WAVE, CUT, RES and ENV readouts above four track buttons
+  credit: Ariel Muchnik
+  source_url: https://github.com/eatyourgreensstudio-dotcom/karma-fm1#readme
+  first_party: true
+versions:
+  - version: '3.0'
+    date: 2026-10-30
+    url: https://github.com/eatyourgreensstudio-dotcom/karma-fm1/releases/tag/v3.0
+    notes: First tagged release. Four tracks (ACID or JUNO, ELEMENTS, PLAITS, HEX drums), song mode, generators, both cores, USB audio and MIDI with DAW sync.

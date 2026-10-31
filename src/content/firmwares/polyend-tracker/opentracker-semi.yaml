@@ -42,6 +42,10 @@ image:
   source_url: https://github.com/semierendonmez-commits/polyend-tracker-re-semi
   first_party: true
 versions:
+  - version: 2.2.3-semi.4
+    date: 2026-10-30
+    url: https://github.com/semierendonmez-commits/polyend-tracker-re-semi/releases/tag/2.2.3-semi.4
+    notes: Adds a Turing Machine pattern generator with its own Perform FX columns and fixes a Paulstretch freeze.
   - version: 2.2.3-semi.3
     date: 2026-10-30
     url: https://github.com/semierendonmez-commits/polyend-tracker-re-semi/releases/tag/2.2.3-semi.3

@@ -1,7 +1,7 @@
 device: elektron-tools
 name: digikit
 kind: tool
-summary: Emulator that runs the real Digitakt II and Digitone II OS (ColdFire control CPU and SHARC+ DSP) with front panel and display, plus analysis tools and a patch toolchain that adds machines and effects to your own .syx. Aimed at new machines and sounds.
+summary: Patch toolchain and run-time module system that add machines and effects to your own Digitakt II or Digitone II .syx, loaded from the card without reflashing, plus an emulator that runs the real OS (ColdFire control CPU and SHARC+ DSP) with front panel and display.
 status: active
 authors:
   - name: m-dwyer
@@ -14,11 +14,13 @@ distribution: source-only
 requires_stock: Digitakt II 1.17 and Digitone II 1.12 for patching; the emulator also runs 1.16 and 1.11
 install_notes: >-
   Build with mise and uv, and supply your own Elektron .syx files; none are in
-  the repository. The README says no patched image has been installed on a
-  device yet and that device recovery has not been tested on hardware.
+  the repository. The README lists the runtime and the PLUCK machine as running
+  on a Digitakt II (OS 1.17); Digitone II patches are emulator-tested only, and
+  the docs say the recovery menu with a broken OS was shown in the emulator, not
+  on hardware.
 tags: [emulator, research]
 versions:
-  - version: main @ 862bc73
-    date: 2026-10-30
-    url: https://github.com/ElekLabs/digikit/commit/862bc732c83e154f9f3df7fc1d2baa49fd433d5c
+  - version: main @ 283bb90
+    date: 2026-10-31
+    url: https://github.com/ElekLabs/digikit/commit/283bb90659332bf9f9e67347f4c6a1809c114ac4
     notes: No tagged releases; this is the latest commit.

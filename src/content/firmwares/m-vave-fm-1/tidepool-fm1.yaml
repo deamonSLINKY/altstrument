@@ -1,13 +1,13 @@
 device: m-vave-fm-1
 name: Tidepool
 summary: >-
-  Ambient loop instrument with twelve synthesised scenes of sixteen loops each, an autoplay mode and a Blank Canvas
+  Ambient loop instrument with thirteen synthesised scenes of sixteen loops each, an autoplay mode and a Blank Canvas
   bank for recording your own loops on 36 instruments.
 description: >-
   Each scene is a bank of sixteen loops (drones, melodies, beats and textures) that the white keys switch on and off
   in time and in key. The knobs set volume, attack, decay, reverb, echo and pan per row, a held PLAY with knob 1
   swaps the chord progression, and SEQ hands the mix to an autoplay mode that brings loops in and out every four
-  bars. The thirteenth bank, the Blank Canvas, records loops of one, two or four bars with velocity-sensitive keys,
+  bars. The fourteenth bank, the Blank Canvas, records loops of one, two or four bars with velocity-sensitive keys,
   snapping and layering over several passes, on 36 instruments including a drum kit and hand drums. Everything is
   synthesised on the device with no samples, and tempo, bank, loop settings and recorded loops are saved. The first
   five scenes are ported from the author's Tidepool browser app. It is built on fm1-base and felucca-bsp, has a
@@ -40,6 +40,10 @@ image:
   source_url: https://github.com/pjh-133/tidepool-fm1#the-scenes
   first_party: true
 versions:
+- version: 1.0.5
+  date: 2026-10-31
+  url: https://github.com/pjh-133/tidepool-fm1/releases/tag/v1.0.5
+  notes: Adds a Cyberpunk scene, a rainy megacity in E minor with brass, street, memory and pulse rows. The Blank Canvas moves to the end as bank 14; saved settings and recorded loops are kept.
 - version: 1.0.4
   date: 2026-10-30
   url: https://github.com/pjh-133/tidepool-fm1/releases/tag/v1.0.4

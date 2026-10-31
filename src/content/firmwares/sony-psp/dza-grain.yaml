@@ -1,0 +1,37 @@
+device: sony-psp
+name: DZA.grain (PSP)
+summary: Paid granular sampler for the PSP by Light Reft, sold on Bandcamp with an EP, with grain speed and density controls, a live grain display and sample import or recording.
+description: >-
+  DZA.grain is a granular sampler engine adapted to the PSP's hardware. It has the usual granular controls such as grain
+  speed and density, shows the active grains on the waveform, and takes samples either by import or by recording through
+  the console's microphone. It is independent homebrew by the artist DZA, the Light Reft project and the HOW2MAKE RECORDS
+  label, and is not affiliated with Sony. It is sold as a digital album with three tracks, and the first track was made
+  on a PSP with the sampler. The download holds both the PSP and the Nintendo 3DS sampler with a README for each. The
+  3DS version has different features and has its own entry. No source is published, the page states all rights
+  reserved, and it does not say which PSP models or system software the sampler needs.
+status: active
+authors:
+  - name: Light Reft
+    url: https://www.lightreft.jp/
+homepage: https://how2make.bandcamp.com/album/dza-grain-psp-x-3ds
+source_status: binary-only
+license: proprietary
+license_notes: The Bandcamp page states "all rights reserved" and sells the sampler as part of a paid album.
+distribution: commercial
+install_notes: >-
+  Buy or redeem the Bandcamp release and download it. The sampler file arrives as a .txt file that you rename to
+  DZA.grain.zip and extract, then follow the README for the PSP version. The page does not state the system software
+  or custom firmware it needs.
+brick_risk: false
+tags: [commercial, granular, sampler, homebrew]
+image:
+  url: https://f4.bcbits.com/img/a3293394285_10.jpg
+  alt: Release artwork on a dark grey background with the orange pixel-style title DZA.grain, the words granular sampler and sound anywhere, and the address www.lightreft.jp
+  credit: DZA
+  source_url: https://how2make.bandcamp.com/album/dza-grain-psp-x-3ds
+  first_party: true
+versions:
+  - version: Bandcamp release
+    date: 2026-10-09
+    url: https://how2make.bandcamp.com/album/dza-grain-psp-x-3ds
+    notes: Release date from the Bandcamp page; the page gives no version number.

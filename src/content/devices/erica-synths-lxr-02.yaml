@@ -27,7 +27,7 @@ notes: >-
   debug probe. Erica Synths offers no support for self-built or modified
   firmware. Its sound engine and sequencer have been ported to the M-VAVE FM-1 as
   Elixir, which is listed under that device.
-related: [m-vave-fm-1]
+related: [m-vave-fm-1, erica-synths-lxr-drum-module]
 image:
   src: /images/devices/erica-synths-lxr-02.webp
   style: photo

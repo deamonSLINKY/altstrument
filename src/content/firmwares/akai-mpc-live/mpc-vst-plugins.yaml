@@ -37,6 +37,10 @@ install_notes: >-
   skin in the older format. A plugin crash takes MPC down with it.
 tags: [sdk, platform, loader, web]
 versions:
+  - version: desktop-v1.1.2
+    date: 2026-10-31
+    url: https://github.com/sd88me/mpc-vst-plugins/releases/tag/desktop-v1.1.2
+    notes: Installer app pre-release. The SSH stick's password and key settings now take effect on the Force. 1.1.1, earlier the same day, fixed key mode on the Force and restarted sshd for password mode.
   - version: desktop-v1.1.0
     date: 2026-10-29
     url: https://github.com/sd88me/mpc-vst-plugins/releases/tag/desktop-v1.1.0

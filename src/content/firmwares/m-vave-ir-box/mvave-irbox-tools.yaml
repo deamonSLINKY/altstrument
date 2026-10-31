@@ -1,0 +1,42 @@
+device: m-vave-ir-box
+name: mvave-irbox-tools
+kind: tool
+summary: Python command-line editor for the IR Box over USB-MIDI that backs up and restores slots, converts and uploads IRs, edits EQ and volume, with protocol and hardware write-ups.
+description: >-
+  A Python toolkit and set of reverse-engineered notes for the IR Box. The command-line tool lists MIDI
+  ports, reads the device name and slot names, dumps a preset as JSON, raw binary and an IR WAV, and backs
+  up or restores all 32 slots, with a manifest and per-slot checksums. It also makes live edits to the
+  working copy (slot, volume, cab and EQ on or off, nine EQ bands, loading an IR) and persistent ones
+  (save, rename, upload an IR to a slot), each of which needs --yes and writes a backup first. An IR
+  converter turns PCM or float WAV files at any sample rate into the pedal's 44.1 kHz, 2048-sample,
+  24-bit format. A Bluetooth transport is written from the Android app's code and is untested. The
+  protocol was checked on one unit running IR-BOX_010 under Windows. The docs cover the framing,
+  address map, preset layout, the official app's IR converter bugs, a firmware search that found no
+  public IR Box image, and a probing log. The tool refuses the erase command and never touches
+  firmware updates. The repository ships no vendor files; its five example voice-effect IRs are
+  the author's own designs. M-VAVE's factory preset image and any backup of the unit's factory IRs
+  stay with the user, and the README says not to publish backups.
+status: active
+authors:
+- name: Marco Jardim
+  url: https://github.com/marco-jardim
+source: https://github.com/marco-jardim/mvave-irbox-tools
+source_status: open
+license: MIT
+license_notes: >-
+  The licence file is the standard MIT text, copyrighted to Marco Jardim. The example IRs are stated to be
+  original designs under the same licence. M-VAVE's factory presets and IRs are not covered and are not
+  included.
+distribution: source-only
+install_notes: >-
+  Needs Python 3.11 or newer and uv; run uv sync in a clone of the repository. Tested on Windows only. Close
+  other MIDI programs first, because a Windows MIDI port can be open in one process at a time. The persistent
+  commands write the pedal's flash and take a backup first. Keep backups, since they hold your unit's factory
+  content.
+brick_risk: false
+tags: [editor, usb-midi, midi, sysex, presets, librarian, converter, research, python, cli]
+versions:
+- version: main @ d57b61b
+  date: 2026-10-09
+  url: https://github.com/marco-jardim/mvave-irbox-tools/commit/d57b61b9edbef5d55c4c8d0a429eda7da63115bf
+  notes: No tagged releases; this is the latest commit.

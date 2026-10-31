@@ -36,7 +36,7 @@ install_notes: >-
 brick_risk: false
 tags: [patch, delay, fx, midi, open-source]
 versions:
-  - version: main @ d9c827c
-    date: 2026-10-25
-    url: https://github.com/guildfordia/zen-delay-mod/commit/d9c827c0f74aa8c28b6ff2a89edf3a7bbd81e231
+  - version: main @ 4f3692c
+    date: 2026-10-30
+    url: https://github.com/guildfordia/zen-delay-mod/commit/4f3692ca06b058b4b05f6941f150618df9b4bfa4
     notes: No tagged releases; this is the latest commit.

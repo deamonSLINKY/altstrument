@@ -7,7 +7,7 @@ description: >-
   The player is a port of ft2-clone's replay logic, with a ProTracker mode that models Amiga panning and the A500
   and LED filters. The pattern editor uses one knob per field and shows 4 or 8 channels. Other pages cover the order
   list, instruments with volume and panning envelopes, loops and finetune, a mixer with mute and solo, and on-screen
-  help for each XM effect. Up to 32 songs fit in 608 KB of flash, and two example songs are built in. Over USB the
+  help for each XM effect. Up to 32 songs fit in 604 KB of flash, and two example songs are built in. Over USB the
   unit sends MIDI clock and start and stop, accepts transport and notes, and works as an audio input. A web song
   manager and a browser simulator are published on the project site. Songs live in an area that other firmwares
   overwrite, so the README advises backing up before switching, and it says XMOD is untested on V16.
@@ -40,6 +40,14 @@ image:
   source_url: https://github.com/KotMorderca/XMOD
   first_party: true
 versions:
+- version: 1.2.0
+  date: 2026-10-30
+  url: https://github.com/KotMorderca/XMOD/releases/tag/v1.2.0
+  notes: >-
+    The built-in xmod-theme plays on the first start after an install, and later starts load the last song, stopped.
+    Held keys now play chords on the song's free channels, and MIDI in is polyphonic. Fixes songs with a row break past
+    row 63 looping in one pattern and a BAD SONG IMAGE message after another firmware left songs in flash. Song space is
+    604 KB, down from 608 KB, so the last 4 KB can keep the last played song.
 - version: 1.1.0
   date: 2026-10-29
   url: https://github.com/KotMorderca/XMOD/releases/tag/v1.1.0

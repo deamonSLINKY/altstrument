@@ -34,6 +34,9 @@ image:
   source_url: https://github.com/ruppert/fmini-1
   first_party: true
 versions:
+- version: 1.14.3
+  date: 2026-10-31
+  url: https://github.com/ruppert/fmini-1/releases/tag/v1.14.3
 - version: 1.8.0
   date: 2026-10-21
   url: https://github.com/ruppert/fmini-1/releases/tag/v1.8.0

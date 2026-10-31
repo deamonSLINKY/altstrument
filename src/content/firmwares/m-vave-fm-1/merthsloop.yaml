@@ -40,7 +40,7 @@ image:
   source_url: https://github.com/merthsoft/sloop-fm1
   first_party: true
 versions:
-- version: merthsloop @ d969fc0
-  date: 2026-10-30
-  url: https://github.com/merthsoft/sloop-fm1/commit/d969fc08c8d3e3b725246d033f624ee7b16b3f62
-  notes: No tagged releases; this is the latest commit, labelled 2.8.0.102.
+- version: merthsloop @ d06cf0f
+  date: 2026-10-31
+  url: https://github.com/merthsoft/sloop-fm1/commit/d06cf0f24dcbf9046599a3ee96033f12d21dca65
+  notes: No tagged releases; this is the latest commit, whose title says build 109.

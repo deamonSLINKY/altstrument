@@ -1,0 +1,48 @@
+device: m-vave-fm-1
+name: AISLING
+summary: >-
+  Generative Irish ambient instrument, a fork of NACHTFAHRT: wire-strung harps and a breathy flute over a held
+  drone, in Irish modes, in eight self-playing pieces, with a browser installer and emulator.
+description: >-
+  A fork of NACHTFAHRT, which is a fork of DUB-1 and AMB-1, keeping NACHTFAHRT's five layers, long arc, drifting
+  filters, lead that remembers and answers, effects grid, emulator and site. The changes are the sound and the music.
+  The sequence voice is restrung as a long-ringing harp that also plays the second sequence an octave down, and
+  the lead is a flute with breath and a chiff on each note. The scales are major, Mixolydian, Dorian, minor and two
+  six-note gapped scales, in D, G, A, E and B. Chords swing between two tonics, the harps run in jig-style groups
+  of 12 and 9 steps with every third step accented, and eight pieces are named for places in the west of Ireland
+  and for the harper Turlough O'Carolan. Three of the black-key effects are renamed Ceo, Macalla and Fras, and
+  there is a green triskele launch screen. A separate one-file browser visualiser reads the FM-1's MIDI out and
+  paints it as a landscape. AISLING saves its eight pieces in the same flash location as NACHTFAHRT, DUB-1 and
+  AMB-1, so installing one of them can overwrite another's saves.
+status: active
+authors:
+- name: Stephen Cummins
+  url: https://github.com/stephencummins
+source: https://github.com/stephencummins/fm1-aisling
+source_status: open
+license: GPL-3.0-only
+license_notes: >-
+  LICENSING.md: inherits GPL-3.0-only from NACHTFAHRT, DUB-1, AMB-1 and Felucca. The Barlow Semi Condensed and
+  Terminus fonts are SIL OFL 1.1, the harp's string follows MIT-licensed code from M-VAVE's fm1_open, and the JieLi
+  AC79 SDK files are read from your SDK checkout at build time.
+homepage: https://stephencummins.github.io/fm1-aisling/
+distribution: browser-installer
+requires_stock: V15, V16 or NACHTFAHRT
+install_notes: >-
+  Web installer in Chrome or Edge over USB (also Chrome on Android or a Chromebook), or tools/fm1_install.py with
+  aisling-0.1.fwsc from the release. The release notes report installs on a real FM-1 from V15, V16 and NACHTFAHRT
+  0.9.5, and a return to stock with M-VAVE's M-UPGRADE, which shows AISLING as v14. They also say an install
+  interrupted by pulling the cable carries on when it is reconnected. Installing is at your own risk.
+brick_risk: true
+tags: [generative, ambient, sequencer, synth-engine, fx, reverb, delay, fork, emulator]
+image:
+  url: https://raw.githubusercontent.com/stephencummins/fm1-aisling/main/docs/card.png
+  alt: A gold pixel-art harp on a flat green background
+  credit: Stephen Cummins
+  source_url: https://github.com/stephencummins/fm1-aisling
+  first_party: true
+versions:
+- version: "0.1"
+  date: 2026-10-30
+  url: https://github.com/stephencummins/fm1-aisling/releases/tag/v0.1
+  notes: First test version; eight pieces, harp and flute voices, Irish modes and a package for FM-1 V15 and V16.

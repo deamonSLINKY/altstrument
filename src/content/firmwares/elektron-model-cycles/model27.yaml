@@ -5,9 +5,13 @@ description: >-
   The author describes a smaller, curated take on Modded Cycles, with mods that
   declare what they touch so that compatible combinations can be worked out
   rather than listed by hand. The web flasher builds the OS in your browser from
-  your own official file and sends it over USB. It currently offers one card,
+  your own official file and sends it over USB. It currently offers six cards:
   the SAMPLE machine from the author's Cycles One-Shot, a one-shot sampler for
-  samples on the +Drive. Control All Config is included, and every other
+  samples on the +Drive, Control All Config, two delay effects (Digital Delay
+  and POTS), trig conditions that put A:B before the percentages, and
+  drumkilla's trig preview. The README says up to six added machines can be
+  combined and that each card is marked Experimental until it has been played
+  on a Model:Cycles. Every other
   Modded Cycles 1.55 mod stays buildable with the command-line tools until the
   author decides which to offer. The Modded Cycles startup animation is left out
   of the flasher as that project's branding. A separate draft standard for mods
@@ -38,7 +42,7 @@ install_notes: >-
   machines. The README describes recovery from the startup menu through MIDI IN.
 tags: [machines, sampler, fork, flasher, usb-audio]
 versions:
-  - version: main @ 5badf6a
-    date: 2026-10-29
-    url: https://github.com/durchgemacht/model27/commit/5badf6ad27d956e86d32ff331c480a84ef74db92
+  - version: main @ d3a616b
+    date: 2026-10-31
+    url: https://github.com/durchgemacht/model27/commit/d3a616b3c5d01793ff3a9d4d54e6f45c9d9f1026
     notes: No tagged releases; this is the latest commit.

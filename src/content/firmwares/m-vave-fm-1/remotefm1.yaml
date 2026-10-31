@@ -1,16 +1,21 @@
 device: m-vave-fm-1
 name: RemoteFM1
 summary: >-
-  Firmware that turns the FM-1 into a remote panel: keys, buttons, encoders and screen are streamed over USB so an
-  FM-1 firmware built as an emulator core runs on a computer, with the unit as its panel.
+  FM-1 firmware that is a standalone DX7-style instrument with a looper and MIDI controller modes, and also a remote panel:
+  a host program on a computer can run an FM-1 firmware core and use the unit's keys, encoders and screen over USB.
 description: >-
-  The device sends its input as plain MIDI and draws the screen from tiles sent back over USB SysEx or a vendor bulk
-  interface. A host program on macOS runs a firmware core such as ChoralRoot, Felucca or Melodee, using FM1VST's engine,
-  and the sound plays on the computer. The stock firmware cannot run this way. Since 0.2 it is built on fm1-base and
-  felucca-bsp, adds Bluetooth MIDI as a third transport beside USB SysEx and the vendor bulk interface, and plays the
-  computer's audio through the FM-1's speaker or headphones over USB. It answers installers as itself
-  (FM-1_52XXYYZZ); 0.1 and 0.1.1 were built on TransitFM1, which comes from Dinghy, and answered as V15. Any
-  Felucca-family installer can write the next firmware over it.
+  Rights warning: since 0.3 the firmware has Yamaha's eight DX7 ROM cartridges (256 voices) compiled in; the rights stay
+  with Yamaha, and LICENSING.md says only the compiled firmware carries the data.
+  Without a host, 0.3 plays on its own: an eight-voice DX7 engine (saadet's FM6) with the ROM cartridges and your own
+  cartridges sent over SysEx (16 user slots in 0.3.1), velocity keys, scales, latch, an arpeggiator, a 16-loop looper,
+  and a MIDI controller that sends notes and CCs over USB and Bluetooth, with MIDI in from USB, Bluetooth and the TRS jack.
+  A host session still takes the unit over as its panel. In that mode the device sends its input as plain MIDI and draws
+  the screen from tiles sent back over USB SysEx, a vendor bulk interface or Bluetooth MIDI. A host program on macOS runs
+  a firmware core such as ChoralRoot, Felucca or Melodee, using FM1VST's engine, and the sound plays on the computer. The
+  stock firmware cannot run this way. Since 0.2 it is built on fm1-base and felucca-bsp and plays the computer's audio
+  through the FM-1's speaker or headphones over USB. It answers installers as itself (FM-1_52XXYYZZ); 0.1 and 0.1.1 were
+  built on TransitFM1, which comes from Dinghy, and answered as V15. Any Felucca-family installer can write the next
+  firmware over it.
 status: active
 authors:
 - name: Quixotic7
@@ -20,7 +25,7 @@ source_status: open
 license: MPL-2.0
 license_notes: >-
   LICENSING.md puts the firmware (firmware/) under MPL-2.0 from 0.2, on fm1-base and felucca-bsp (MPL-2.0); the site,
-  host library, tools and documents stay GPL-3.0-only. The 0.1 and 0.1.1 firmware, built on TransitFM1 with parts from
+  host library, tools and documents stay GPL-3.0-only. The standalone DX7's voice data, the Yamaha ROM cartridges, is Yamaha's and is not licensed by the project. The 0.1 and 0.1.1 firmware, built on TransitFM1 with parts from
   Felucca and SLOOP through Dinghy, stays GPL-3.0-only. The fonts are SIL OFL 1.1, and JieLi SDK files, including the
   Bluetooth libraries (Apache-2.0), are read from the user's own SDK checkout at build time.
 homepage: https://quixotic7.github.io/RemoteFM1/
@@ -28,12 +33,21 @@ distribution: browser-installer
 install_notes: >-
   Installer page in Chrome or Edge over USB, or tools/fm1_install.py with the .fwsc; releases carry a USB plus
   Bluetooth package and a USB-only package. 0.2 answers as FM-1_52XXYYZZ, so an installer that does not know it
-  yet may refuse it; any Felucca-family installer can replace it. The host program is built with CMake on macOS
+  yet may refuse it; any Felucca-family installer can replace it. 0.3.1 saves in the flash area where ChoralRoot and
+  FIZZ keep their saves, so back those up first. The host program is built with CMake on macOS
   and expects an FM1VST checkout. The README keeps the FM-1 Transporter and
   MvaveFM1Unbricker at hand for recovery.
 brick_risk: true
-tags: [platform, emulator, usb-midi, research]
+tags: [platform, emulator, usb-midi, research, synth-engine, looper, arpeggiator, midi]
 versions:
+- version: 0.3.1
+  date: 2026-10-31
+  url: https://github.com/Quixotic7/RemoteFM1/releases/tag/v0.3.1
+  notes: Raises the user DX7 cartridges from 3 to 16, saves the 16 loops on the unit, adds a VELOCITY on/off setting and passes key velocity and pressure to hosts. Saves now sit where ChoralRoot and FIZZ keep theirs, so restore their backup when going back to them.
+- version: 0.3.0
+  date: 2026-10-30
+  url: https://github.com/Quixotic7/RemoteFM1/releases/tag/v0.3.0
+  notes: Makes the FM-1 an instrument of its own without a host, with a DX7 engine, a 16-loop looper, an arpeggiator, scales and a MIDI controller over USB, Bluetooth and TRS; a host session still takes it over as a panel.
 - version: 0.2.3
   date: 2026-10-29
   url: https://github.com/Quixotic7/RemoteFM1/releases/tag/v0.2.3

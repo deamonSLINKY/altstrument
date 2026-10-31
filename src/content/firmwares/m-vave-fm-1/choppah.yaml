@@ -40,10 +40,14 @@ image:
   source_url: https://github.com/profikid/fm1-break-choppah
   first_party: true
 versions:
+- version: '0.12'
+  date: 2026-10-31
+  url: https://github.com/profikid/fm1-break-choppah/releases/tag/v0.12
+  notes: Latest of twelve releases published within about a day; every push to main is released automatically.
 - version: '0.8'
   date: 2026-10-30
   url: https://github.com/profikid/fm1-break-choppah/releases/tag/v0.8
-  notes: Latest of eight releases published within a few hours; every push to main is released automatically.
+  notes: Eighth of the releases published on the first day; every push to main is released automatically.
 - version: '0.1'
   date: 2026-10-30
   url: https://github.com/profikid/fm1-break-choppah/releases/tag/v0.1

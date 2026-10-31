@@ -6,7 +6,8 @@ summary: >-
 description: >-
   Started from a SLOOP v2.3 snapshot rather than a fork, with later SLOOP changes merged in. Releases
   carry only the firmware file, installed with a script from the source; there is no browser installer.
-  Extracted OP-1 tables and factory data are noted separately in LICENSING.md. From 0.8.0 the source tree also
+  From 0.9.0 a MIDI controller mode turns the panel into a MIDI controller, and 0.9.B is a separate package with
+  Bluetooth MIDI that swaps the melodic samples for FM voices. Extracted OP-1 tables and factory data are noted separately in LICENSING.md. From 0.8.0 the source tree also
   builds for the SMK-37 Pro, SMK-37 Elite and MKE-P37; the published binaries are for the FM-1 only.
 status: active
 authors:
@@ -31,6 +32,14 @@ image:
   source_url: https://github.com/dspaudio/orbit
   first_party: true
 versions:
+- version: 0.9.B
+  date: 2026-10-30
+  url: https://github.com/dspaudio/orbit/releases/tag/v0.9.B
+  notes: A separate package, orbit-ble.fwsc, with Bluetooth MIDI that is off until MENU > SYSTEM > BLUETOOTH turns it on. To make room it replaces the melodic built-in samples with light FM voices and halves the delay line. Bluetooth pairing and external clock sync were confirmed on an FM-1; radio latency and worst-case audio load were not measured.
+- version: 0.9.0
+  date: 2026-10-30
+  url: https://github.com/dspaudio/orbit/releases/tag/v0.9.0
+  notes: Adds a MIDI controller mode (hold ENV and LFO for 2 seconds) that sends the keys and knobs as MIDI, plus fixes ported from SLOOP 2.8.4. The release says it was installed on an FM-1.
 - version: 0.8.2
   date: 2026-10-29
   url: https://github.com/dspaudio/orbit/releases/tag/v0.8.2

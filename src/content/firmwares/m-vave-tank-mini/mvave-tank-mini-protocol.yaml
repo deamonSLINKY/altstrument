@@ -1,0 +1,35 @@
+device: m-vave-tank-mini
+name: mvave-tank-mini-protocol
+kind: tool
+summary: Portuguese-language specification of the Tank Mini's Bluetooth LE and USB-MIDI protocol, with packet formats, checksums, block and model maps and the 92-byte preset layout.
+description: >-
+  A single README that documents the pedal's wire protocol for people writing their own editors or
+  controllers. It gives the Bluetooth LE service and characteristic UUIDs, which carry raw bytes, and the
+  USB-MIDI form, which wraps the same packets in SysEx with a 7-bit packing routine in Python. It then
+  covers the packet header and checksum, the acknowledgement, preset selection across the 21 presets, the
+  reordering of the six effect blocks, and the toggle, model and knob addresses of each block with the
+  models and parameters of the effects. It also describes the 92-byte preset record, how to read it and how
+  to write it back to flash. The author tested it on firmware TANK MINI_009 and says
+  the amp and cabinet blocks hold 20 user-loadable slots. The repository contains only the README. The
+  badge at the top says MIT, but there is no licence file.
+status: dormant
+authors:
+- name: Yuri Rangel
+  url: https://github.com/xxyurirangelxx
+source: https://github.com/xxyurirangelxx/mvave-tank-mini-protocol
+source_status: open
+license: unspecified
+license_notes: >-
+  GitHub detects no licence. The README shows an MIT badge, but the repository has no LICENSE file and no
+  other licence statement.
+distribution: source-only
+install_notes: >-
+  Documentation only, nothing to install. The commands it describes write to the pedal's flash, so check a
+  packet against the spec before sending it.
+brick_risk: false
+tags: [research, sysex, usb-midi, bluetooth, midi, presets]
+versions:
+- version: main @ bbe935c
+  date: 2026-10-14
+  url: https://github.com/xxyurirangelxx/mvave-tank-mini-protocol/commit/bbe935ca47b0f0adeb55737d5de33fad9eb4e2d0
+  notes: No tagged releases; this is the latest commit.

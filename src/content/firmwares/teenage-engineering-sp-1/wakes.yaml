@@ -4,8 +4,8 @@ summary: Semimodular synth firmware for the SP-1 that combines Mutable Instrumen
 description: >-
   Runs Plaits as the sound source and Marbles as a random sequencer, each
   played from the SP-1's faders and buttons. Later releases add USB audio out,
-  USB MIDI, four preset slots saved as .prst files and a storage mode in which
-  the SP-1 appears as a drive on the computer. The README says the engine
+  USB MIDI, four preset slots saved as .prst files, a storage mode in which
+  the SP-1 appears as a drive on the computer and custom scales in Scala format. The README says the engine
   assignments, MIDI behaviour and audio levels are editable through text files,
   and states that the project is unaffiliated with Teenage Engineering or
   Mutable Instruments.
@@ -27,6 +27,10 @@ install_notes: >-
 brick_risk: false
 tags: [synth-engine, performance, midi, usb-audio]
 versions:
+  - version: v0.9.0
+    date: 2026-10-30
+    url: https://github.com/Worldwave/Wakes/releases/tag/v0.9.0
+    notes: Adds custom scales for the Plaits quantizer and Marbles' X STPS quantization, set in a scales.cnfg file in Scala .scl format with seven slots.
   - version: v0.8.2
     date: 2026-10-16
     url: https://github.com/Worldwave/Wakes/releases/tag/v0.8.2

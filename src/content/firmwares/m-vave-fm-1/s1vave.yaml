@@ -9,7 +9,7 @@ description: >-
   sources. The filter is a cascaded state-variable design with key tracking and self-oscillation, and the LFO has a
   tempo-synced mode and an audio-rate mode. A riser and downer sweep generator, stereo chorus, ping-pong delay and
   plate reverb are included, along with a two-track sequencer with ratchets and per-step probability, 64 factory
-  programs and USB audio and MIDI. The firmware's MIDI CC map follows the S-1's. The repository's build script has
+  programs and USB audio and MIDI. The firmware's MIDI CC map follows the S-1's, and the 1.1 release adds arp hold, battery monitoring and SysEx preset sync. The repository's build script has
   an SMK-37 board option, but no SMK-37 build is published.
 status: active
 authors:
@@ -25,7 +25,7 @@ license_notes: >-
 homepage: https://andrewgg.one/s1vave/
 distribution: browser-installer
 install_notes: >-
-  The homepage has a WebMIDI installer for Chrome, Edge, Brave or Opera that flashes the v1.0 package it hosts,
+  The homepage has a WebMIDI installer for Chrome, Edge, Brave or Opera that flashes the v1.1 package it hosts,
   and the README also names the FM-1 Firmware Hub. To build and flash it yourself, run build.sh and
   tools/fm1_install.py. The installer warns that flashing erases the presets and settings of the previous firmware
   and that an interrupted flash can brick the FM-1.
@@ -38,7 +38,7 @@ image:
   source_url: https://github.com/AndrewGG88/S1Vave
   first_party: true
 versions:
-- version: master @ 9730337
-  date: 2026-10-26
-  url: https://github.com/AndrewGG88/S1Vave/commit/97303378678c247ca1d005ae641114f4544acf65
-  notes: No tagged releases or GitHub release page; this is the latest commit, titled S1Vave 1.0, and the homepage installer offers v1.0.
+- version: '1.1'
+  date: 2026-10-30
+  url: https://github.com/AndrewGG88/S1Vave/releases/tag/v1.1
+  notes: The release page has no notes beyond a changelog link; the tagged commit is titled as adding arp hold, battery monitoring, key tracking and SysEx preset sync. The homepage installer offers 1.1.

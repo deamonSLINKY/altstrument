@@ -1,0 +1,27 @@
+name: Matribox II Pro
+manufacturer: Sonicake
+category: pedal
+tagline: Floor multi-effects processor with touchscreen and expression pedal (QME-200)
+description: >-
+  The Matribox II Pro (QME-200) is a floor multi-effects processor from Sonicake for guitar and bass. It has a
+  4.3-inch colour touchscreen, four footswitches with bank switching, a built-in expression pedal, amp and effect
+  models, cabinet simulation with user IR slots and NAM model support, and a USB audio interface. Sonicake's
+  Matribox II Pro software edits presets, and firmware updates are installed through it.
+stock_firmware: V1.2.2
+links:
+  manufacturer: https://www.sonicake.com/products/matribox-ii-pro
+notes: >-
+  The only custom firmware listed is an experimental build of Sonicake's V1.2.2 image that adds effects ported from
+  other manufacturers' pedals, so read its rights warning. Sonicake's own page says the firmware update must be run
+  from its initial V1.0.0 software, and on Windows 11 it advises updating the driver first.
+related: [valeton-gp-200]
+image:
+  src: /images/devices/sonicake-matribox-ii-pro.webp
+  style: photo
+  alt: Top view of the Sonicake Matribox II Pro, a grey-beige floor unit with a colour touchscreen, three knobs, a menu and master knob, footswitches and a black expression pedal at the right
+  width: 1200
+  height: 1200
+  credit: Sonicake
+  license: manufacturer product image
+  source_url: https://www.sonicake.com/products/matribox-ii-pro
+  original_url: https://www.sonicake.com/cdn/shop/files/QME-200-1.jpg

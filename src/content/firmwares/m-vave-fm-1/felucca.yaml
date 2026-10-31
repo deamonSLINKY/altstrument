@@ -34,6 +34,12 @@ video:
   credit: "Stanley Gurvich"
   first_party: false
 versions:
+- version: 1.8.0
+  date: 2026-10-31
+  url: https://github.com/hugelton/Felucca/releases/tag/v1.8.0
+  notes: >-
+    Adds MENU > SYSTEM > CLEAR ALL to start a new project, key and channel aftertouch routing (off by default), undo for
+    steps edited by hand and a prompt before loading a project over unsaved changes. Fixes FM6 operators that use AMS.
 - version: 1.7.0
   date: 2026-10-28
   url: https://github.com/hugelton/Felucca/releases/tag/v1.7.0

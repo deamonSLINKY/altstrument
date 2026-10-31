@@ -1,0 +1,30 @@
+name: Cube Baby
+manufacturer: M-VAVE
+category: pedal
+tagline: Compact battery-powered guitar multi-effects pedal with amp models and IR cabinets
+description: >-
+  The Cube Baby is a small guitar multi-effects pedal from M-VAVE, sold under the Cuvave name as well. It
+  chains an amp module with modulation, delay, reverb and a cabinet section of nine IR slots, eight of them
+  classic IRs. Ten knobs and three footswitches, A, B and C, run it in PRESET, LIVE and EDIT modes. It plays
+  Bluetooth audio, records from a phone, and runs for about six hours from a built-in rechargeable battery
+  charged over USB. CubeSuite, M-VAVE's app and desktop software, edits it and loads IRs.
+links:
+  manufacturer: https://www.cuvave.com/product?id=cube-baby
+  community:
+  - label: M-VAVE software and firmware downloads
+    url: https://www.m-vave.com/download
+notes: >-
+  No custom firmware exists for this pedal. M-VAVE also makes Cube Baby AC and Cube Baby Bass variants,
+  which this catalog does not list separately. The projects listed here are host-side tools that speak the
+  pedal's USB-MIDI protocol, and none of them replaces its firmware.
+related: [m-vave-ir-box]
+image:
+  src: /images/devices/m-vave-cube-baby.webp
+  style: photo
+  alt: "M-VAVE Cube Baby, a black pedal with a row of ten white knobs labelled Volume, IR Cab, Reverb, Mix, FB, Time, Mod, Tone, Gain and Type above three footswitches marked A, B and C"
+  width: 1000
+  height: 1000
+  credit: M-VAVE
+  license: manufacturer product image
+  source_url: https://www.cuvave.com/product?id=cube-baby
+  original_url: https://www.m-vave.com/images/products/cube-baby.webp

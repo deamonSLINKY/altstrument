@@ -10,7 +10,7 @@ description: >-
   cutoff, resonance, envelope mod and decay, then tune, accent, slide and tempo, then drive, accent decay, key
   tracking and attack, then FM, swing, length and level, and two pages of switches for wave, sub oscillator,
   muffler, sweep speed, hi-res and poles. The project site has an online player, a guide and a cheat sheet. The
-  releases are labelled beta, and the README says only that it has been tested.
+  releases up to 0.0.4 are labelled beta; 1.0.0 is not, and the README says only that it has been tested.
 status: active
 authors:
 - name: Pasquale Barilla (pbarilla)
@@ -36,6 +36,10 @@ image:
   source_url: https://github.com/pbarilla/smileyface
   first_party: true
 versions:
+- version: 1.0.0
+  date: 2026-10-31
+  url: https://github.com/pbarilla/smileyface/releases/tag/v1.0.0
+  notes: First release without the beta label; the release page has no notes beyond the changelog link.
 - version: 0.0.4-beta
   date: 2026-10-30
   url: https://github.com/pbarilla/smileyface/releases/tag/v0.0.4-beta
